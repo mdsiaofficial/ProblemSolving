@@ -14,7 +14,7 @@ int main() {
     //cout << N << endl;
     cout << a+b << endl ;
     float sum = c+d;
-    cout << fixed << setprecision(1) << sum << endl;
+    cout << fixed << setprecision(1) << sum << endl; // "setprecision" sets the value after point, and "fixed" set its fixed
     cout << e+f;
 
     return 0;
