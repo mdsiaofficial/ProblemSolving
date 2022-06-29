@@ -3,8 +3,8 @@
 int main() {
     double A,B;
 
-    scanf("%.1lf %.1lf", &A, &B);
-
+    scanf("%lf", &A);
+    scanf("%lf", &B);
     double MEDIA = (A+B)/2;
 
     printf("MEDIA = %.5lf", MEDIA);
