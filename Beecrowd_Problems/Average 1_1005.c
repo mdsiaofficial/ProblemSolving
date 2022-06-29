@@ -7,7 +7,7 @@ int main() {
 
     double MEDIA = (A+B)/2;
 
-    printf("MEDIA = %.5lf", MEDIA)
+    printf("MEDIA = %.5lf", MEDIA);
 
 	return 0;
 }
