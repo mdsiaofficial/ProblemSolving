@@ -11,7 +11,7 @@ int main(void) {
     //double s=pow(R,2);
     A = pi*pow(R,2);
 
-    printf("%.4lf", A);
+    printf("%.4lf\n", A);
 
 	return 0;
 }
