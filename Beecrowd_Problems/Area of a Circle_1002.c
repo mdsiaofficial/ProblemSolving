@@ -1,15 +1,10 @@
 #include <stdio.h>
-#include <math.h>
 
-//#define pi 3.14159
-
-int main(void) {
-
-    const double pi = 3.14159;
+int main() {
     double A, R;
     scanf("%lf", &R);
-    //double s=pow(R,2);
-    A = pi*pow(R,2);
+   
+    A = 3.14159*R*R;
 
     printf("%.4lf\n", A);
 
