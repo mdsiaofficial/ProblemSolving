@@ -5,9 +5,10 @@ int main() {
 
     scanf("%lf", &A);
     scanf("%lf", &B);
-    double MEDIA = (A+B)/2;
 
-    printf("MEDIA = %.5lf", MEDIA);
+    double MEDIA = (A*3.5 + B*7.5)/(3.5+7.5);
+
+    printf("MEDIA = %.5lf\n", MEDIA);
 
 	return 0;
 }
