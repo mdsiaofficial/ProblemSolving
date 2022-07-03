@@ -9,9 +9,9 @@ int main() {
     //hour = (float)hour;
     float salary = hour*perhour;
     printf("%d", hour);
-/* 
+
     printf("NUMBER = %d\n", EmNum);
     printf("SALARY = U$ %.2f\n", salary);
- */
+
 	return 0;
 }
