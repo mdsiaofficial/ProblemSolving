@@ -6,9 +6,9 @@ int main() {
     float perhour;
 
     scanf("%d %d %f", &EmNum, &hour, &perhour);
-    hour= (float)hour;
+    //hour = (float)hour;
     float salary = hour*perhour;
-    printf()
+    printf("%d", hour);
 /* 
     printf("NUMBER = %d\n", EmNum);
     printf("SALARY = U$ %.2f\n", salary);
