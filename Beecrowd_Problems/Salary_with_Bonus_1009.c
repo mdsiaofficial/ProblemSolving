@@ -9,7 +9,7 @@ int main() {
     double bonus = (sales*15)/100;
     double total =  salary+bonus;
 
-    printf("TOTAL = R$ %d\n", total);
+    printf("TOTAL = R$ %lf\n", total);
 
 
 	return 0;
