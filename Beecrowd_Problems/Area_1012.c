@@ -8,11 +8,11 @@ int main() {
 
     scanf("%lf%lf%lf", &A, &B, &C);
 
-    double Area_Triangle = (1/2)*A*C;
+    double Area_Triangle = 0.5*A*C;
     // area of triangle
     double Area_Circle = pi*pow(C,2);
 
-    double Area_Trapezium = (1/2)*(A+B)*C;
+    double Area_Trapezium = 0.5*(A+B)*C;
 
     double Area_Square = pow(B,2);
 
