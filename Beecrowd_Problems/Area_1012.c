@@ -21,9 +21,9 @@ int main() {
 
     printf("%lf\n", Area_Triangle);
     printf("%lf\n", Area_Circle);
-    printf("%lf\n", Area_Triangle);
-    printf("%lf\n", Area_Triangle);
-    printf("%lf\n", Area_Triangle);
+    printf("%lf\n", Area_Trapezium);
+    printf("%lf\n", Area_Square);
+    printf("%lf\n", Area_Rectangle);
 
 	return 0;
 }
