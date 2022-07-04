@@ -19,11 +19,11 @@ int main() {
     double Area_Rectangle = A*B;
 
 
-    printf("Tri = %.3lf\n", Area_Triangle);
-    printf("Cir = %.3lf\n", Area_Circle);
-    printf("Trape = %.3lf\n", Area_Trapezium);
-    printf("Sqr = %.3lf\n", Area_Square);
-    printf("Rect = %.3lf\n", Area_Rectangle);
+    printf("TRIANGULO: %.3lf\n", Area_Triangle);
+    printf("CIRCULO: %.3lf\n", Area_Circle);
+    printf("TRAPEZIO: %.3lf\n", Area_Trapezium);
+    printf("QUADRADO: %.3lf\n", Area_Square);
+    printf("RETANGULO: %.3lf\n", Area_Rectangle);
 
 	return 0;
 }
