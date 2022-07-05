@@ -1,12 +1,16 @@
 #include <stdio.h>
 
-int main() {
-    double A, R;
-    scanf("%lf", &R);
-   
-    A = 3.14159*R*R;
+int main(void) {
 
-    printf("A=%.4lf\n", A);
+    int X;
+    // input value
+    scanf("%d", &X);
+
+    for(int i=1; i<=X; i++){
+        if (i%2==1){
+            printf("%d\n", i);
+        }
+    }
 
 	return 0;
 }
