@@ -7,7 +7,7 @@ int main(void) {
     scanf("%d", &X);
 
     for(int i=1; i<=X; i++){
-        if (i%2!= 0){
+        if (i%2==1){
             printf("%d\n", i);
         }
     }
