@@ -12,8 +12,8 @@ int main() {
     // dy2 = pow(dy,2);
 
     //double distance=sqrt(dx2+dy2);
-    double distance=sqrt( pow(dx,2) + pow(dy,2) );
-
+    //double distance=sqrt( pow(dx,2) + pow(dy,2) );
+    double distance=sqrt( pow( (x2-x1), 2) + pow( (y2-y1),2) );
     printf("%.4lf\n", distance);
 
 
