@@ -2,12 +2,12 @@
 
 int main() {
     int X;
-    float Y;
-    scanf("%d %f", &X, &Y);
+    double Y;
+    scanf("%d %lf", &X, &Y);
 
-    float Avrg_Consumption = (X/Y);
+    double Avrg_Consumption = (X/Y);
 
-    printf("%.3f km/l\n", Avrg_Consumption);
+    printf("%.3lf km/l\n", Avrg_Consumption);
 
 	return 0;
 }
