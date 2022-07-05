@@ -3,7 +3,7 @@
 int main() {
     int X;
     float Y;
-    scanf("%d %.1f", &X, &Y);
+    scanf("%d %f", &X, &Y);
 
     float Avrg_Consumption = (X/Y);
 
