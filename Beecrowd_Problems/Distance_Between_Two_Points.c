@@ -8,12 +8,13 @@ int main() {
     double dx = (x2-x1);
     double dy = (y2-y1);
 
-    double dx2 = pow(dx,2);
-    double dy2 = pow(dy,2);
+    //double dx2 = pow(dx,2);
+    // dy2 = pow(dy,2);
 
-    double distance=sqrt(dx2+dy2);
+    //double distance=sqrt(dx2+dy2);
+    double distance=sqrt( pow(dx,2) + pow(dy,2) );
 
-    printf("%lf\n", distance);
+    printf("%.4lf\n", distance);
 
 
     return 0;
