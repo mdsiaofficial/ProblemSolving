@@ -1,28 +1,14 @@
-#include <assert.h>
-#include <ctype.h>
-#include <limits.h>
-#include <math.h>
-#include <stdbool.h>
-#include <stddef.h>
-#include <stdint.h>
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
 
 int main()
 {
-    
     int distance;
-    // Distance between two car
-    float perminute = 30/60;
-    float time; 
-    
+
     scanf("%d", &distance);
-    //float d= (float(distance);
-    time = (float)distance*perminute;
-    int t= (int)time;
-    printf("%d minutos", t);
+
+    int time = distance*2;
+
+    printf("%d minutos\n", time);
 
     return 0;
 }
