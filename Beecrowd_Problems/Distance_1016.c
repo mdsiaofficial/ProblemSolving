@@ -15,7 +15,7 @@ int main()
     
     int distance;
     // Distance between two car
-    int perminute = 30/60;
+    float perminute = 30/60;
     int time; 
     scanf("%d", &distance);
 
