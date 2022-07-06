@@ -19,7 +19,7 @@ int main()
     float time; 
     scanf("%d", &distance);
 
-    time=distance*perminute);
+    time=distance*perminute;
 
     printf("%d minutos", time);
 
