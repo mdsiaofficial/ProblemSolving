@@ -11,7 +11,7 @@ int main()
 
     float distance= (float)time*(float)avrg_speed;
 
-    float fuelperkm = (1/12);
+    float fuelperkm = 0.0833;
 
     float fuelspent = distance*fuelperkm;
     printf("%.3f", fuelspent);
