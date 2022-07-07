@@ -9,7 +9,7 @@ int main()
 
     scanf("%d %d", &time, & avrg_speed);
 
-    float distance= time*avrg_speed;
+    float distance= (float)time*(float)avrg_speed;
 
     float fuelperkm = (1/12);
 
