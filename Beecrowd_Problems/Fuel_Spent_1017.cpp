@@ -1,12 +1,13 @@
-#include <stdio.h>
+#include<iostream>
+//#include<bits/stdc++.h>
 
+using namespace std;
 
+int main(){
 
-int main()
-{
-    
     int time, avrg_speed;
 
+    cin>>time>>avrg_speed;
     scanf("%d %d", &time, & avrg_speed);
 
     float distance= (float)time*(float)avrg_speed;
@@ -15,6 +16,6 @@ int main()
 
     float fuelspent = distance*fuelperkm;
     printf("%.3f\n", fuelspent);
-
+    cout<< setprecision(3) <<fuelspent<< endl;
     return 0;
 }
