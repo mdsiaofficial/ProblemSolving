@@ -16,5 +16,6 @@ int main(){
 
     cout<<fixed<<setprecision(3) <<fuelspent<< endl;
 
+
     return 0;
 }
