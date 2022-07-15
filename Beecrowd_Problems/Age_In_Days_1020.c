@@ -10,7 +10,7 @@ int main(void) {
     int month = L/30;
     int day = L%30;
 
-    printf("%d:%d:%d\n",year,month,day);
+    printf("%d ano(s)\n%d mes(es)\n%d dia(s)\n",year,month,day);
     
 
 	return 0;
