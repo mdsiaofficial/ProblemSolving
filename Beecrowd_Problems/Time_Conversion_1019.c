@@ -11,7 +11,7 @@ int main(void) {
     int second = L%60;
 
 
-    printf("%d:%d:%d",hour,minute,second);
+    printf("%d:%d:%d\n",hour,minute,second);
     
 
 	return 0;
