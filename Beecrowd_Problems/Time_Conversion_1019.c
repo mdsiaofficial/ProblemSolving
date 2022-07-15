@@ -3,7 +3,7 @@
 int main(void) {
 
     int N;
-    scanf("%d", &n);
+    scanf("%d", &N);
     
     int hour = N/3600;
     int L = N%3600;
