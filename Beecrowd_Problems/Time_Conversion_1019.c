@@ -2,16 +2,16 @@
  
 int main(void) {
 
-    int n;
+    int N;
     scanf("%d", &n);
-    int minute = n/60;
+    
+    int hour = N/3600;
+    int L = N%3600;
+    int minute = L/60;
+    int second = L%60;
 
-    int hour = minute/60;
 
-    int minute2 = hour%60;
-    int sec = minute%60;
-
-    printf("%d:%d:%d",hour,minute2,sec);
+    printf("%d:%d:%d",hour,minute,second);
     
 
 	return 0;
