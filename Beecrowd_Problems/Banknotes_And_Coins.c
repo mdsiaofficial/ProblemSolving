@@ -6,7 +6,7 @@ int main(void) {
 
     scanf("%d", &notes);
 
-    printf("%d\n", notes);
+    printf("NOTAS:\n");
     printf("%d nota(s) de R$ 100,00\n", notes/100);
     aux = (notes%100);
 
