@@ -5,7 +5,7 @@ int main(void) {
     int notes, aux;
 
     scanf("%d", &notes);
-
+/* 
     printf("NOTAS:\n");
     printf("%d nota(s) de R$ 100,00\n", notes/100);
     aux = (notes%100);
@@ -27,6 +27,11 @@ int main(void) {
 
     printf("MOEDAS:\n");
     printf("%d nota(s) de R$ 1,00\n", aux/1);
+ */
 
+    aux=notes%100;
+    printf("%d",aux);
+
+    printf("1 moeda(s) de R$ 0.50");
 	return 0;
 }
