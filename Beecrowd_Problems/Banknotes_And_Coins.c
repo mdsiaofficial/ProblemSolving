@@ -5,7 +5,7 @@ int main(void) {
     
     double notes, aux;
 
-    scanf("%f", &notes);
+    scanf("%lf", &notes);
 /* 
     printf("NOTAS:\n");
     printf("%lf nota(s) de R$ 100,00\n", notes/100);
