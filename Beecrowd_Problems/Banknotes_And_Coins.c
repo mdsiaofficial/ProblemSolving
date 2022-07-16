@@ -37,7 +37,7 @@ int main(void) {
  */
 
     //aux=notes%100.0;
-    aux = remainder(notes,100);
+    aux = remainder(notes,100.0);
     printf("%lf\n",aux);
 
     aux=notes/50;
