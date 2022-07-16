@@ -25,6 +25,7 @@ int main(void) {
     printf("%d nota(s) de R$ 2,00\n", aux/2);
     aux = (aux%2);
 
+    printf("MOEDAS:\n");
     printf("%d nota(s) de R$ 1,00\n", aux/1);
 
 	return 0;
