@@ -5,9 +5,9 @@ int main(void) {
     
     int N;
     scanf("%d",&N);
-    //int factorial
+    int fact;
     for(int i=1; i<N; i++){
-        int factorial = factorial*i;
+        fact = fact*i;
     }
     printf("%d\n",factorial);
 
