@@ -6,7 +6,7 @@ int main(void) {
     float notes, aux;
     scanf("%f", &notes);
 
-    aux= remainder(notes,10);
+    aux= remainder(10,notes);
     printf("Note: %f\n", aux);
 	return 0;
 }
