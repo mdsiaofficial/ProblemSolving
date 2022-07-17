@@ -8,5 +8,7 @@ int main(void) {
 
     aux= remainder(notes,10.0);
     printf("Note: %.1f\n", aux);
+
+    
 	return 0;
 }
