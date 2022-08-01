@@ -21,7 +21,6 @@ int main(void) {
     for(i=0;i<5;i++) {
         ccc[i]=a/c[i];
         a=a%c[i];
-
     }
 
     printf("NOTAS:\n");
