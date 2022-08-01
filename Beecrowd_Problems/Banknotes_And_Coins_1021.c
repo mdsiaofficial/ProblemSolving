@@ -5,15 +5,21 @@ int main(void) {
 	// your code goes here
  
     float notes, aux;
- 
+    int nnn;
+
     scanf("%f", &notes);
  
     printf("NOTAS:\n");
+
+    nnn = (int)notes/100;
     
-    printf("%f nota(s) de R$ 100,00\n", notes/100);
+    printf("%d nota(s) de R$ 100,00\n",nnn);
+    //printf("%f nota(s) de R$ 100,00\n", notes/100);
     //aux = (notes%100);
     aux = remainder (notes,100);
  
+
+    
     printf("%f nota(s) de R$ 50,00\n", aux/50);
     //aux = (aux%50);
     aux = remainder (notes,50);
