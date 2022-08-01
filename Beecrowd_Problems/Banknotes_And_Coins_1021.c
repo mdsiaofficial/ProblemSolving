@@ -8,7 +8,8 @@ int main(void) {
  
     scanf("%f", &notes);
  
-    printf("%f\n", notes);
+    printf("NOTAS:\n");
+    
     printf("%f nota(s) de R$ 100,00\n", notes/100);
     //aux = (notes%100);
     aux = remainder (notes,100);
