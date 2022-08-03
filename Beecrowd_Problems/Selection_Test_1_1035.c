@@ -10,7 +10,7 @@ int main(){
     int sum2 = a+b;
 
 // int - +// number >=0
-    if(b>c && d>a && sum1>sum2 && c>=0 && d>=0 && a%2==0){
+    if(b>c && d>a && sum1>sum2 && c>0 && d>0 && a%2==0){
     
         printf("Valores aceitos\n");
         
