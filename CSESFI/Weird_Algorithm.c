@@ -6,7 +6,7 @@ int main(void) {
     scanf("%d",&n);
 
     printf("%d ",n);
-    if(n!=1){
+    while(n!=1){
 
         if(n%2==0){
 
