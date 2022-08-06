@@ -8,7 +8,7 @@ int main(void) {
 
     while(n!=1){
 
-        if(n%=2){
+        if(n%2=0){
 
         n=n/2;
         printf("%d \n",n);
