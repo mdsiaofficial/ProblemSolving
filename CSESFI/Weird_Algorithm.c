@@ -8,11 +8,11 @@ int main(void) {
 
     if(n!=1){
 
-        if(n%==2){
+        if(n%=2){
 
         n=n/2;
         printf("%d\n",n);
-        
+
         }else{
 
         n=(n*3)+1;
