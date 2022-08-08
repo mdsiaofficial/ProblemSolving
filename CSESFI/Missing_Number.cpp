@@ -7,8 +7,9 @@ int main() {
     cin >> n;
 
     for(int i=0; i<=n;i++){
+        n=n-1;
         cout<<n<<" ";
-        
+        n=
     }
 /* 
     n--;
