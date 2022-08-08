@@ -8,7 +8,7 @@ int main() {
     cin >> n;
 
     for (long long int i = 0; i < n-1; i++) {
-        cin>>t[];
+        cin>>t[i];
     }
 
     for(long long int j=0; j<n; j++){
