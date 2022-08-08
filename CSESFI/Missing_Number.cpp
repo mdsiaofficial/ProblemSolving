@@ -5,12 +5,9 @@ int main() {
 	
     long int n;
     cin >> n;
-
-    for(int i=0; i<=n;i++){
-        n=n-1;
-        cout<<n<<" ";
-        n=
-    }
+    
+    int sumofnthnumber= (n*(n+1))/2;
+    cout<<sumofnthnumber;
 
 	return 0;
 }
