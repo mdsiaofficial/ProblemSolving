@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 	
-    long int n;
+    long long int n;
     cin >> n;
     
     int sumofnthnumber= (n*(n+1))/2;
