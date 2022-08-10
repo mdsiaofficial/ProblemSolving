@@ -9,7 +9,7 @@ int main(void) {
     double del = (b*b)-4*a*c;
     
 
-    if(del > 0) {
+    if(del > 0 && a!=0) {
         del = sqrt(del);
         double r1= (del-b)/(2*a);
         double r2= (-del-b)/(2*a);
