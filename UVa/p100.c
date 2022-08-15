@@ -17,11 +17,68 @@ int main() {
         
     }
  */
+
+//first algorithm code    
+    /*
+    int n;
+    scanf("%d",&n);
+
+    /*
+    for(int i=1; n!=1; i++){
+        if(n%2==0){
+            n=n/2;
+            printf("\n%d",n);
+
+        }else{
+            n=3*n+1;
+            printf("\n%d",n);
+        }
+    }
+    */
+    
+    /*
+    printf("%d ",n);
+
+    while(n!=1){
+        if(n%2==0){
+            n=n/2;
+            printf("%d ",n);
+
+        }else{
+            n=3*n+1;
+            printf("%d ",n);
+        }
+    }
+    */
+
+    //printf("Hello");
+
+    /*
+    int n;
+    scanf("%d",&n);
+    printf("\n%d",n);
+    if(n=1){
+    }else{
+        if(n%2==0){
+            n=n/2;
+            printf("\n%d",n);
+
+        }else{
+            n=3*n+1;
+            printf("\n%d",n);
+        }
+    }
+    */
+    
+
+
     int i,j,result;
     while(scanf("%d %d",&i,&j)!=EOF){
         result = func(i , j);
         printf("%d %d %d\n",i,j,result);
     }
+
+
 
     
 	return 0;
