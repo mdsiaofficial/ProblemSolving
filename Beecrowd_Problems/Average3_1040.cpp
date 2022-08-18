@@ -9,7 +9,7 @@ int main(){
 
     float average= (n1+n2+n3+n4)/4;
 
-    cout<<fixed<<setprecision(1)<<average<<endl;
+    cout<<"Media: "<<fixed<<setprecision(1)<<average<<endl;
 
 
 
