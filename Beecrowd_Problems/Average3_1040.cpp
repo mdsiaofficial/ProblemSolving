@@ -9,7 +9,7 @@ int main(){
     cin>>n1>>n2>>n3>>n4;
     //cin>>score;
 
-    float average= (n1+n2+n3+n4)/4;
+    float average= ((n1*2)+(n2*3)+(n3*4)+n4)/10.0;
     //float average2 = (average+score)/2;
     
     //cout<<"Media: "<<fixed<<setprecision(1)<<average<<endl;
@@ -36,7 +36,7 @@ int main(){
         //cout<<"Aluno aprovado."<<endl;
         //cout<<"Media final: "<<fixed<<setprecision(1)<<average2<<endl;
         cin>>score;
-        float average2 = (average+score)/2;
+        float average2 = (average+score)/2.0;
         cout<<"Nota do exame: "<<fixed<<setprecision(1)<<score<<endl;
         if(average2>5.0){
             cout<<"Aluno aprovado."<<endl;
