@@ -7,18 +7,18 @@ int main(){
 
     cin>>x>>y;
 
-    cout<<x<<endl<<y;
+    //cout<<x<<endl<<y;
 
     if(x==0 && y==0){
-        cout<<"Origem";
+        cout<<"Origem"<<endl;
     }else if(x>0 && y>0){
-        cout<<"Q1";
+        cout<<"Q1"<<endl;
     }else if(x<0 && y>0){
-        cout<<"Q2";
+        cout<<"Q2"<<endl;
     }else if(x<0 && y<0){
-        cout<<"Q3";
+        cout<<"Q3"<<endl;
     }else if(x>0 && y<0){
-        cout<<"Q4";
+        cout<<"Q4"<<endl;
     }
     
     return 0;
