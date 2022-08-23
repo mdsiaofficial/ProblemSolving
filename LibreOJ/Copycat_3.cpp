@@ -4,9 +4,11 @@ using namespace std;
 int main(){
     int t;
     int n;
+    int num[];
     cin>>t;
-    for(n=1; n<=t; n++){
-        cin>>n;
+
+    for(n=0; n<=t; n++){
+        cin>>num[n];
     }
 
     return 0;
