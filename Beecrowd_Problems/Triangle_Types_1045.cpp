@@ -7,21 +7,28 @@ int main(){
     double a2=a*a;
     double b2=b*b;
     double c2=c*c;
-
+/* 
+    int A,B,C;
     if(a>b && a>c){
-        int A=a;
-        int B=b;
-        int C=c;
-    }else if(b>a && b>c){
-        int A=b;
-        int B=a;
-        int C=c;
-    }else if(c>a && c>b){
-        int A=c;
-        int B=a;
-        int C=b;
-    }
+        A=a;
+        if(b>c){
+            B=b;
+        }else{
+            B=c;
+        }
 
+
+
+    }else if(b>a && b>c){
+        A=b;
+        B=a;
+        C=c;
+    }else if(c>a && c>b){
+        A=c;
+        B=a;
+        C=b;
+    }
+ */
 
     if(a>=b+c){
         cout<<"NAO FORMA TRIANGULO"<<endl;
