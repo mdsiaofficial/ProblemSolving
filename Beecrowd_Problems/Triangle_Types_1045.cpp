@@ -4,10 +4,7 @@ using namespace std;
 int main(){
     double a,b,c;
     cin>>a>>b>>c;
-    double a2=a*a;
-    double b2=b*b;
-    double c2=c*c;
- 
+    
     int A,B,C;
     if(a>b && a>c){
         A=a;
@@ -39,15 +36,21 @@ int main(){
         }
     }
 
+    double A2=A*A;
+    double B2=B*B;
+    double C2=C*C;
+ 
 
-    if(a>=b+c){
+    if(A>=B+C){
         cout<<"NAO FORMA TRIANGULO"<<endl;
-    }else if(a2==b2+c2){
+    }else if(A2==B2+C2){
         cout<<"TRIANGULO RETANGULO"<<endl;
-    }else if(a2>b2+c2){
+    }else if(A2>B2+C2){
         cout<<"TRIANGULO OBTUSANGULO"<<endl;
-    }else if(a2<b2+c2){
-        cout<<"TRIANGULO OBTUSANGULO"<<endl;
+    }else if(A2<B2+C2){
+        cout<<"TRIANGULO ACUTANGULO"<<endl;
+    }else if(A==B && B==C && A==C){
+        cout<<"TRIANGULO EQUILATERO"<<endl;
     }
 
 
