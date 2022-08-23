@@ -11,5 +11,9 @@ int main(){
         cin>>num[n];
     }
 
+    for(int m=0; m<=t; m++){
+        cout<<num[m];
+    }
+
     return 0;
 }
