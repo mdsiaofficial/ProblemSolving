@@ -12,7 +12,7 @@ int main(){
 
         if(n2<n3){
             cout<<n2<<endl;
-            cout<<n3<<endl
+            cout<<n3<<endl;
         }else{
             cout<<n3<<endl;
             cout<<n2<<endl;
