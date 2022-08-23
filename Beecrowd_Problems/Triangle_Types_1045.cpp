@@ -2,10 +2,13 @@
 #include <iomanip> //this library need to use setprecision
 using namespace std;
 int main(){
+
     double a,b,c;
     cin>>a>>b>>c;
     
-    int A,B,C;
+    double A,B,C;
+
+    // this if else will find the decreasing order
     if(a>b && a>c){
         A=a;
         if(b>c){
@@ -40,6 +43,7 @@ int main(){
     double B2=B*B;
     double C2=C*C;
  
+    // these conditions are logics of triangle
 
     if(A>=B+C){
         cout<<"NAO FORMA TRIANGULO"<<endl;
