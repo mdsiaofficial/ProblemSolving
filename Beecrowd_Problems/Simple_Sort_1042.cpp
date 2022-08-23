@@ -8,30 +8,30 @@ int main(){
 
 
     if(n1<n2 && n1<n3){
-        cout<<n1<<endl<<endl;
+        cout<<n1<<endl;
 
         if(n2<n3){
-            cout<<n2<<endl<<endl;
+            cout<<n2<<endl;
         }else{
-            cout<<n3<<endl<<endl;
+            cout<<n3<<endl;
         }
 
     }else if(n2<n1 && n2<n3){
         cout<<n2<<endl<<endl;
 
         if(n1<n3){
-            cout<<n1<<endl<<endl;
+            cout<<n1<<endl;
         }else{
-            cout<<n3<<endl<<endl;
+            cout<<n3<<endl;
         }
 
     }else{
-        cout<<n3<<endl<<endl;
+        cout<<n3<<endl;
 
         if(n1<n2){
-            cout<<n1<<endl<<endl;
+            cout<<n1<<endl;
         }else{
-            cout<<n2<<endl<<endl;
+            cout<<n2<<endl;
         }
     }
 
