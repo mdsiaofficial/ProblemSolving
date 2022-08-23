@@ -49,8 +49,12 @@ int main(){
         cout<<"TRIANGULO OBTUSANGULO"<<endl;
     }else if(A2<B2+C2){
         cout<<"TRIANGULO ACUTANGULO"<<endl;
-    }else if(A==B && B==C && A==C){
+    }
+    
+    if(A==B && B==C && A==C){
         cout<<"TRIANGULO EQUILATERO"<<endl;
+    }else if(A==B || A==C || B==C){
+        cout<<"TRIANGULO ISOSCELES"<<endl;
     }
 
 
