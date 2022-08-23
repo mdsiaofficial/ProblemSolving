@@ -7,12 +7,12 @@ int main(){
     int num[1000];
     cin>>t;
 
-    for(n=0; n<=t; n++){
+    for(n=1; n<=t; n++){
         cin>>num[n];
     }
 
-    for(int m=0; m<=t; m++){
-        cout<<num[m];
+    for(int m=1; m<=t; m++){
+        cout<<num[m]<<endl;
     }
 
     return 0;
