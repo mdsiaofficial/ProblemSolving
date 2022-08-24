@@ -67,6 +67,7 @@ int main(){
 
 
     //input same hoileo jani kam kore tai eita korlam
+    //eidai kam korse at last .... *** fixed ***
     if(a>=b && a>=c){
         A=a;
         if(b>=c){
