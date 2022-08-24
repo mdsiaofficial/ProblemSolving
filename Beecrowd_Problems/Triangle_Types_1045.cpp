@@ -130,6 +130,8 @@ int main(){
 
  */
 
+
+    //eita test purpose lekha,, dekhlam je ki output dey,,,
     cout<<endl<<fixed<<setprecision(1)<<A<<endl<<B<<endl<<C<<endl;
 
 
