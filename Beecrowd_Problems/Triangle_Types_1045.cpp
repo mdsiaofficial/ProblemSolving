@@ -7,7 +7,7 @@ int main(){
     cin>>a>>b>>c;
     
     double A,B,C;
-
+/* 
     // this if else will find the decreasing order
     if(a>b && a>c){
         A=a;
@@ -38,7 +38,29 @@ int main(){
             C=a;
         }
     }
-    cout<<A<<B<<C;
+
+ */
+
+
+    if(a>b){
+        A=a;
+        B=b;
+    }else{
+        A=b;
+        B=a;
+    }
+    if(A>c){
+        C=A;
+        if(B>c){
+            A=B;
+            B=c;
+        }else{
+            A=c;
+        }
+    }else{
+        A=c;
+    }
+    cout<<A<<endl<<B<<endl<<C<<endl;
 /* 
     double A2=A*A;
     double B2=B*B;
