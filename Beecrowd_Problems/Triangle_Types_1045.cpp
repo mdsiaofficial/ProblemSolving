@@ -65,7 +65,9 @@ int main(){
     }
  */
 
+
     // at last eida kam korse...tao abr floting number re output e int banay dey :(
+    // input 2 ta same dile abr eita kaj kore nah
     if(a>b && a>c){
         A=a;
         if(b>c){
