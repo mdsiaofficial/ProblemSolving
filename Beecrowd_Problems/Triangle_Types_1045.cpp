@@ -65,8 +65,37 @@ int main(){
     }
  */
 
+    if(a>=b && a>=c){
+        A=a;
+        if(b>=c){
+            B=b;
+            C=c;
+        }else{
+            B=c;
+            C=b;
+        }
+    }else if(b>=a && b>=c){
+        A=b;
+        if(a>=c){
+            B=a;
+            C=c;
+        }else{
+            B=c;
+            C=a;
+        }
+    }else{
+        A=c;
+        if(a>=b){
+            B=a;
+            C=b;
+        }else{
+            B=b;
+            C=a;
+        }
+    }
 
-    // at last eida kam korse...tao abr floting number re output e int banay dey :(
+
+/*     // at last eida kam korse...tao abr floting number re output e int banay dey :(
     // input 2 ta same dile abr eita kaj kore nah
     if(a>b && a>c){
         A=a;
@@ -97,7 +126,7 @@ int main(){
         }
     }
 
-
+ */
 
     cout<<endl<<A<<endl<<B<<endl<<C<<endl;
 
@@ -109,8 +138,8 @@ int main(){
     double B2=B*B;
     double C2=C*C;
  
-    // these conditions are logics of triangle
 
+    // these conditions are logics of triangle
     if(A>=B+C){
         cout<<"NAO FORMA TRIANGULO"<<endl;
     }else if(A2==(B2+C2)){
