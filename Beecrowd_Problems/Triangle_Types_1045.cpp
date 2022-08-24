@@ -7,7 +7,7 @@ int main(){
     cin>>a>>b>>c;
     
     double A,B,C;
-/* 
+
     // this if else will find the decreasing order
     if(a>b && a>c){
         A=a;
@@ -39,9 +39,9 @@ int main(){
         }
     }
 
- */
+ 
 
-
+/* 
     if(a>b){
         A=a;
         B=b;
@@ -61,7 +61,11 @@ int main(){
         A=c;
     }
     cout<<A<<endl<<B<<endl<<C<<endl;
-/* 
+
+ */
+
+
+
     double A2=A*A;
     double B2=B*B;
     double C2=C*C;
@@ -84,6 +88,6 @@ int main(){
         cout<<"TRIANGULO ISOSCELES"<<endl;
     }
 
- */
+
     return 0;
 }
