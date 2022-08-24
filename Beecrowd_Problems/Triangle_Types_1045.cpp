@@ -38,7 +38,8 @@ int main(){
             C=a;
         }
     }
-
+    cout<<A<<B<<C;
+/* 
     double A2=A*A;
     double B2=B*B;
     double C2=C*C;
@@ -61,6 +62,6 @@ int main(){
         cout<<"TRIANGULO ISOSCELES"<<endl;
     }
 
-
+ */
     return 0;
 }
