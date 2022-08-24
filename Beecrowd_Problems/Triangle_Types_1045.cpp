@@ -4,8 +4,10 @@ using namespace std;
 int main(){
 
     double a,b,c;
+
     cin>>a>>b>>c;
-    
+
+/*     
     double A,B,C;
 
     // this if else will find the decreasing order
@@ -39,9 +41,9 @@ int main(){
         }
     }
 
- 
+ */ 
 
-/* 
+
     if(a>b){
         A=a;
         B=b;
@@ -62,10 +64,10 @@ int main(){
     }
     cout<<A<<endl<<B<<endl<<C<<endl;
 
- */
 
 
 
+/* 
     double A2=A*A;
     double B2=B*B;
     double C2=C*C;
@@ -88,6 +90,6 @@ int main(){
         cout<<"TRIANGULO ISOSCELES"<<endl;
     }
 
-
+ */
     return 0;
 }
