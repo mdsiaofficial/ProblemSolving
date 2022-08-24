@@ -7,9 +7,9 @@ int main(){
 
     cin>>a>>b>>c;
 
-/*     
+     
     double A,B,C;
-
+/*
     // this if else will find the decreasing order
     if(a>b && a>c){
         A=a;
