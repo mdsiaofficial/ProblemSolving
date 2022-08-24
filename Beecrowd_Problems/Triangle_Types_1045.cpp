@@ -130,7 +130,7 @@ int main(){
 
  */
 
-    cout<<endl<<A<<endl<<B<<endl<<C<<endl;
+    cout<<endl<<fixed<<setprecision(1)<<A<<endl<<B<<endl<<C<<endl;
 
 
 
