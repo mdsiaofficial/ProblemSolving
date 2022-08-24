@@ -10,7 +10,8 @@ int main(){
      
     double A,B,C;
 /*
-    // this if else will find the decreasing order
+    // this if else will find the decreasing order 
+    // eitai koi jani vul hoise :(
     if(a>b && a>c){
         A=a;
         if(b>c){
@@ -43,7 +44,7 @@ int main(){
 
  */ 
 
-/* 
+/* // eita stackoverflow er code, kam kore nah !!!
     if(a>b){
         A=a;
         B=b;
@@ -62,9 +63,9 @@ int main(){
     }else{
         A=c;
     }
-
  */
 
+    // at last eida kam korse...tao abr floting number re output e int banay dey :(
     if(a>b && a>c){
         A=a;
         if(b>c){
@@ -96,7 +97,7 @@ int main(){
 
 
 
-    cout<<A<<endl<<B<<endl<<C<<endl;
+    cout<<endl<<A<<endl<<B<<endl<<C<<endl;
 
 
 
