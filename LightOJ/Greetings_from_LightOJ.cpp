@@ -31,10 +31,10 @@ int main(){
     int b;
     cin>>count;
 
-    for(int i=1; i<count; i++){
+    for(int i=0; i<count; i++){
         cin>>a;
         cin>>b;
-        cout<<"Case "<<i<<": "<<a+b<<endl;
+        cout<<"Case "<<i+1<<": "<<a+b<<endl;
     }
     return 0;
 }
