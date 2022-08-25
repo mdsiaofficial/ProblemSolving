@@ -2,6 +2,9 @@
 #include <iomanip> //this library need to use setprecision
 using namespace std;
 int main(){
+/* 
+
+
     int t;
     int n;
     long int num[1000];
@@ -19,6 +22,19 @@ int main(){
         sum[1000];
         cout<<"Case "<< m <<sum[m]<<endl<<"Case "<<m+1<<sum[m+1];
     }
+
+
+ */
+
+    int count;
+    int a;
+    int b;
+    cin>>count;
+
+    for(int i=1; i<count; i++){
+        cin>>a;
+        cin>>b;
+        cout<<"Case "<<i<<": "<<a+b<<endl;
 
     return 0;
 }
