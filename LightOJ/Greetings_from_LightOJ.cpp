@@ -35,6 +35,6 @@ int main(){
         cin>>a;
         cin>>b;
         cout<<"Case "<<i<<": "<<a+b<<endl;
-
+    }
     return 0;
 }
