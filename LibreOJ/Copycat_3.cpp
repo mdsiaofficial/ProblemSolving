@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     int t;
     int n;
-    long long int num[1000];
+    unsigned long long int num[1000];
     cin>>t;
 
     for(n=1; n<=t; n++){
