@@ -14,6 +14,9 @@ int main(){
 
     cout<<"O JOGO DUROU "<<hout<<" HORA(S)"<<endl;
  */
+
+/* 
+    // my solve :/
     int count=1;
     if(start>end){
         for(int i =start; i<=24; i++){
@@ -31,8 +34,21 @@ int main(){
         }
         cout<<"O JOGO DUROU "<<count-2<<" HORA(S)"<<endl;
     }
-    
     //MAYBE SOLVED
+
+ */
+    int time;
+    if(start<end){
+        time = end-start;
+        cout<<"O JOGO DUROU "<<time<<" HORA(S)"<<endl;
+    }else if(start>end){
+        time = 24-(start-end);
+        cout<<"O JOGO DUROU "<<time<<" HORA(S)"<<endl;
+    }else if(start==end){
+        time = 24;
+        cout<<"O JOGO DUROU "<<time<<" HORA(S)"<<endl;
+    }
+
 
     return 0;
 }
