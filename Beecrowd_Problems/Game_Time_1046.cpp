@@ -18,13 +18,19 @@ int main(){
     if(start>end){
         for(int i =start; i<=24; i++){
             count++;
-            cout<<endl<<count<<endl<<i<<endl<<start<<endl;
+            //cout<<endl<<count<<endl<<i<<endl<<start<<endl;
+            
         }
+        cout<<"O JOGO DUROU "<<count<<" HORA(S)"<<endl;
+    }else if(start==0||end==0){
+        cout<<"O JOGO DUROU "<<24<<" HORA(S)"<<endl;
     }else{
         for(int i =start; i<=end; i++){
             count++;
-            cout<<endl<<count<<endl<<i<<endl<<start<<endl;
+            //cout<<endl<<count-2<<endl<<i<<endl<<start<<endl;
         }
+        cout<<"O JOGO DUROU "<<count-2<<" HORA(S)"<<endl;
     }
+
     return 0;
 }
