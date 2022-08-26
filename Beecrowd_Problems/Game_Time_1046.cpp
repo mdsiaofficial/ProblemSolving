@@ -8,8 +8,8 @@ int main(){
 
     int start, end;
     cin>>start>>end;
-    
 
+    
 
     return 0;
 }
