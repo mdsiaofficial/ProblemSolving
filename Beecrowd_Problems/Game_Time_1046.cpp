@@ -6,16 +6,8 @@ using namespace std;
 
 int main(){
 
-    int time, avrg_speed;
 
-    cin>>time>>avrg_speed;
-
-    float distance= (float)time*(float)avrg_speed;
-    float fuelperkm = 0.0833333333;
-    float fuelspent = distance*fuelperkm;
-
-    cout<<fixed<<setprecision(3) <<fuelspent<< endl;
-
+    
 
     return 0;
 }
