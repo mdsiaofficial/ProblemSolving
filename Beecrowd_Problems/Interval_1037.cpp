@@ -18,5 +18,6 @@ int main(){
 		cout<<"Fora de intervalo"<<endl;
 	}
     
+	
     return 0;
 }
