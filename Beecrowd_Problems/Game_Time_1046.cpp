@@ -7,9 +7,11 @@ using namespace std;
 int main(){
 
     int start, end;
-    cin>>start>>end;
+    cin>>start;
 
-    
+    for(int i=1; i<=start; i++){
+        cout<<i;
+    }
 
     return 0;
 }
