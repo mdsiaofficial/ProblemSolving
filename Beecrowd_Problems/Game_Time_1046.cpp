@@ -31,6 +31,8 @@ int main(){
         }
         cout<<"O JOGO DUROU "<<count-2<<" HORA(S)"<<endl;
     }
+    
+    //MAYBE SOLVED
 
     return 0;
 }
