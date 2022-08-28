@@ -8,18 +8,26 @@ int main(){
     cin>>sh>>sm>>eh>>em;
 
     int hour;
-    if(sh<eh){
+    int minute;
+    if(sh<eh && sm<em){
         hour = eh-sh;
-        cout<<"O JOGO DUROU "<<time<<" HORA(S)"<<endl;
-    }else if(sh>eh){
-        hour = 24-(sh-eh);
-        cout<<"O JOGO DUROU "<<time<<" HORA(S)"<<endl;
-    }else if(sh==eh){
+        minute = em-sm;
+        //cout<<"O JOGO DUROU "<<hour<<" HORA(S)"<<endl;
+        cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<minute<<" MINUTO(S)"<<endl;
+    }else if(sh>eh && sm>em){
+        hour = 24-(sh-eh)-1;
+        minute = 60-(sm-em);
+        //minute = 
+        //cout<<"O JOGO DUROU "<<hour<<" HORA(S)"<<endl;
+        cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<minute<<" MINUTO(S)"<<endl;
+    }else if(sh==eh && sm==em){
         hour = 24;
-        cout<<"O JOGO DUROU "<<time<<" HORA(S)"<<endl;
+        minute = 0;
+        //cout<<"O JOGO DUROU "<<hour<<" HORA(S)"<<endl;
+        cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<minute<<" MINUTO(S)"<<endl;
     }
 
-    cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<sm<<" MINUTO(S)"<<endl;
+    //cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<sm<<" MINUTO(S)"<<endl;
 
     return 0;
 }
