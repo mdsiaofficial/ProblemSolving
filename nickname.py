@@ -8,8 +8,8 @@ secondL=["Jumper","Killer","Noob","Man","Hero","devil","Thief","Kid","Dragon","s
 
 fs1=random.choice(firstL)
 fs2=random.choice(secondL)
-fs=fs1+"_"+fs2
-
+#fs=fs1+"_"+fs2
+fs=fs1+fs2
 print("Your name is: ")
 print(fs)
 print("")
