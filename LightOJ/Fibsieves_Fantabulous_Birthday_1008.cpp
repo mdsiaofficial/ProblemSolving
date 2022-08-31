@@ -6,7 +6,8 @@ int main()
    cin>>t;
    while(t--)
    {   cin>>n;
-       long long int sq=ceil(sqrt(n));
+        //sqrt korar liga upre #cmath library add kora lagche
+       long long int sq=ceil(sqrt(n)); //onk boro input aibar pare :(
        long long int r=sq*sq-n;
        long long int x,y;
        if(r<sq)
