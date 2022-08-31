@@ -15,6 +15,13 @@ int main()
     }
     //cout<<find;
 
-    if(find)
+    if(find%2==0){
+        cout<<"EVEN"<<endl;
+
+    }else{
+        cout<<"ODD"<<endl;
+    }
+
+    
     return 0;
 }
