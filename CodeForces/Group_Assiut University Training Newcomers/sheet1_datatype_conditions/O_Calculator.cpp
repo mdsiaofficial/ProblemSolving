@@ -5,7 +5,7 @@ int main()
 {
     int a,b,x;
     cin>>a>>x>>b;
-    cout<<a<<x<<b;
+    //cout<<a<<x<<b;
     if(x=='+'){
         cout<<a+b<<endl;
 
@@ -20,6 +20,6 @@ int main()
 
     }
 
-    
+
     return 0;
 }
