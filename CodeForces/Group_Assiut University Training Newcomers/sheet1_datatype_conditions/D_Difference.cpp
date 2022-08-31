@@ -9,6 +9,6 @@ int main()
 
     cin>>a>>b>>c>>d;
 
-    cout<<"Difference = "<<a-b-c-d<<endl;
+    cout<<"Difference = "<<(a*b)-(c*d)<<endl;
 	return 0;
 }
