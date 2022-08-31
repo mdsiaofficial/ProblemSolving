@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    double a,b;
+    long double a,b;
 
     cin>>a>>b;
 
