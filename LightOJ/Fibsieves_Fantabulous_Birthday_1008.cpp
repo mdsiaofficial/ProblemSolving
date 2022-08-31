@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>
+#include <cmath> //maths er function gula korar liga ei library 
 using namespace std;
 int main()
 {  long long int n,t,j=0;
