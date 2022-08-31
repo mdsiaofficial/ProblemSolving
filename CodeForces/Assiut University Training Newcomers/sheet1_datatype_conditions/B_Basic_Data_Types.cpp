@@ -7,7 +7,7 @@ int main()
 {
 
     int a;
-    long long int b;
+    long long b;
     char c;
     float d;
     double e;
