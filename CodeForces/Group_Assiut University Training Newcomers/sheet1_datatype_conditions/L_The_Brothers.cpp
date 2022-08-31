@@ -19,6 +19,8 @@ int main()
     //getline(cin, n2);
 
     //cout<<f1<<endl<<s1<<endl<<f2<<endl<<s2;
+
+    
     if(s1==s2){
         cout<<"ARE Brothers"<<endl;
 
