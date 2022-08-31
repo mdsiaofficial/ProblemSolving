@@ -29,6 +29,6 @@ int main()
             max=a;
         }
     }
-
+    cout<<min<<" "<<max<<endl;
     return 0;
 }
