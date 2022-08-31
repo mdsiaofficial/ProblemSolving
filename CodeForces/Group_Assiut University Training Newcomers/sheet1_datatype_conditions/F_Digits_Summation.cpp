@@ -6,10 +6,13 @@ using namespace std;
 int main()
 {
 
-    long long int n;
+    long long int a,b;
 
-    cin>>n;
+    cin>>a>>b;
 
-    
+    a=a%10;
+    b=b%10;
+    cout<<a+b<<endl;
+
 	return 0;
 }
