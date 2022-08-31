@@ -6,11 +6,26 @@ int main()
     double a,b;
 
     cin>>a>>b;
-    cout<<"floor "<<a<<" / "<<b<<" = "<<a/b<<endl;
-    cout<<"ceil "<<a<<" / "<<b<<" = "<<a%b<<endl;
-    cout<<"round "<<a<<" / "<<b<<" = "<<a/b<<endl;
+
+    //floor functione bujhi nai first e hahah
+    //cout<<"floor "<<a<<" / "<<b<<" = "<<a/b<<endl;
+    //cout<<"ceil "<<a<<" / "<<b<<" = "<<remainder(a,b)<<endl;
+    //cout<<"round "<<a<<" / "<<b<<" = "<<a/b<<endl;
 
 
+    /*
+    Several programming languages have a specific built-in 
+    function or operator for calculating floor division.
+    floor() method is used in C++
+    */
+
+    
+    cout<<"floor "<<a<<" / "<<b<<" = "<<floor(a/b)<<endl;
+    cout<<"ceil "<<a<<" / "<<b<<" = "<<ceil(a/b)<<endl;
+    cout<<"round "<<a<<" / "<<b<<" = "<<round(a/b)<<endl;
+    //round er kahini da ehono bujhi nai :(
+    
+    
     return 0;
 
 }
