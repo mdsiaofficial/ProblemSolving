@@ -29,6 +29,7 @@ int main()
         }
 
     }
-    
+    cout<<endl<<a<<endl<<b<<endl<<c<<endl;
+
     return 0;
 }
