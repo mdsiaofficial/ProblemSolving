@@ -7,7 +7,7 @@ int main()
     cin>>x;
 
     if(x<0.0 || x>100.0){
-        cout<<"Out of INtervals"<<endl;
+        cout<<"Out of Intervals"<<endl;
 
     }else if(x>=0.0 && x<=25.0){
         cout<<"Interval [0,25]"<<endl;
