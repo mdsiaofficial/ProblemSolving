@@ -19,7 +19,7 @@ void retNr(float x)
 
 
 
- 
+
 int main()
 {
 
@@ -52,6 +52,16 @@ int main()
  */
 
 
+/* 
+    // solve 3
+    // In C++ we have a in-built function that is typeof(). 
+    // Just use this function with variable which you want 
+    // to check what type of variable it is.
+    string number;
+    cin>>number;
+
+    cout<< typeof(number)<<endl;
+  */   
 
     return 0;
 }
