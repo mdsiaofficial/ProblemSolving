@@ -6,10 +6,13 @@ int main()
 
     int n;
     cin>>n;
-    n=n/365
-    int year = n;
-    int month = n/30;
-    int day = n%30;
+    int remain =n/365;
+        
+    int year = remain;
+    int remain2 = n%365;
+    int month = remain2/30;
+
+    int day = remain2%30;
 
     cout<<year<<" years"<<endl<<month<<" months"<<endl<<day<<" days"<<endl;
 
