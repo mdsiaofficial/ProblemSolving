@@ -102,6 +102,8 @@ int main()
 
  */
 
+
+    // ***** FInally SOLVED******
     // SOLVE 6
     // One effective way to convert a string object into 
     // a numeral int is to use the stoi() function.
@@ -113,8 +115,8 @@ int main()
     cin>>number;
     //int de=(int)number;
     //float fr=(float)number;
-    int de=stoi(number);
-    float fr=stof(number);
+    long int de=stoi(number);
+    long double fr=stod(number);
 
     if(de==fr){
         cout<<"int "<<de<<endl;
