@@ -120,7 +120,8 @@ int main()
         cout<<"int "<<de<<endl;
 
     }else{
-        cout<<fixed<<setprecesion(3)<<"float "<<de<<" "<<fr-de<<endl;
+        float res=fr-de;
+        cout<<"float "<<de<<" "<<fixed<<setprecision(3)<<res<<endl;
     }
     //cout<<number<<endl<<de<<endl<<fr<<endl;
     //if(de)
