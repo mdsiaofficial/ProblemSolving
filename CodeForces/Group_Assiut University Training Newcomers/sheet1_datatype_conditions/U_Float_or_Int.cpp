@@ -1,5 +1,8 @@
 #include <iostream>
 #include <cmath> //maths er function gula korar liga ei library 
+// #include <string>
+// #include <stdlib.h>
+#include <iomanip>
 using namespace std;
 
 
@@ -100,13 +103,30 @@ int main()
  */
 
     // SOLVE 6
+    // One effective way to convert a string object into 
+    // a numeral int is to use the stoi() function.
+                    // stoi() - convert string to int
+                    // stof() - convert string to float
+                    // stod() - convert string to double
+                    // stold() - convert string to long double
     string number;
     cin>>number;
-    int de=(int)number;
-    float fr=(float)number;
+    //int de=(int)number;
+    //float fr=(float)number;
+    int de=stoi(number);
+    float fr=stof(number);
 
-    cout<<number<<endl<<de<<endl<<fr<<endl;
+    if(de==fr){
+        cout<<"int "<<de<<endl;
+
+    }else{
+        cout<<fixed<<setprecesion(3)<<"float "<<de<<" "<<fr-de<<endl;
+    }
+    //cout<<number<<endl<<de<<endl<<fr<<endl;
     //if(de)
+    
+
+
 
 
     return 0;
