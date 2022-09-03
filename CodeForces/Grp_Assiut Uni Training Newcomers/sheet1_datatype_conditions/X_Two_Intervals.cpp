@@ -3,7 +3,7 @@
 using namespace std;
 int main(){
 
-    long int l1,r1, l2,r2;
+    long long int l1,r1, l2,r2;
     cin>>l1>>r1>>l2>>r2;
     if(r1>=l2 && r1<=r2){
         cout<<l2<<" "<<r1<<endl;
