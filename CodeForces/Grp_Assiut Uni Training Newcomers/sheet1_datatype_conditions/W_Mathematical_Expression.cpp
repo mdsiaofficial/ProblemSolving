@@ -6,8 +6,19 @@ int main(){
     char x,y;
 
     cin>>a>>x>>b>>y>>s;
-    if(x=='+' && a+b==)
-
+    if(x=='+' && a+b==s){
+        cout<<"Yes"<<endl;
+    }else if(x=='-' && a-b==s){
+        cout<<"Yes"<<endl;
+    }else if(x=='*' && a*b==s){
+        cout<<"Yes"<<endl;
+    }else if(x=='+' && a+b!=s){
+        cout<<a+b<<endl;
+    }else if(x=='-' && a-b!=s){
+        cout<<a-b<<endl;
+    }else if(x=='*' && a*b!=s){
+        cout<<a*b<<endl;
+    }
 
 
     return 0;
