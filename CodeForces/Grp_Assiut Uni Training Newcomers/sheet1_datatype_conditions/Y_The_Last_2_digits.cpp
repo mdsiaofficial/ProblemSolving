@@ -2,14 +2,14 @@
 #include <iomanip> //this library need to use setprecision
 using namespace std;
 int main(){
-    unsigned long long a,b,c,d;
+     long long a,b,c,d;
     cin>>a>>b>>c>>d;
-
-    unsigned long long sum = a*b*c*d;
+    
+    long long sum = a*b*c*d;
 
 
      
-    //cout<<sum<<endl;
+    cout<<sum<<endl;
     //cout<<sum%100;
     //sum=sum/10;
     //cout<<sum%10<<endl;
