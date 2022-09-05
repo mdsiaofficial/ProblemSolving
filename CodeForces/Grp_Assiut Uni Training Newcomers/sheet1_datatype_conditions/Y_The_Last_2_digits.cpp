@@ -9,7 +9,7 @@ int main(){
 
 
      
-    cout<<sum<<endl;
+    //cout<<sum<<endl;
     //cout<<sum%100;
     //sum=sum/10;
     //cout<<sum%10<<endl;
