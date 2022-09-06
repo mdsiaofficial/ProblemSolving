@@ -11,22 +11,37 @@ int main(){
 /*     long long ct=sqrt(a,b);
     long long ct2 =sqrt(c,d); */
 
-    a=a%100;
-    b=b/10;
-    c=c%100;
-    d=d/10;
-    //cout<<a<<endl;
-    //cout<<b<<endl;
-    
-    long long ct=pow(a,b);
-    long long ct2 =pow(c,d);
+    if(a<=10000 && c<=10000 && b<=1000000 && d<=1000000){
 
-    if(ct>ct2){
-        cout<<"YES"<<endl;
+        long long ct=pow(a,b);
+        long long ct2 =pow(c,d);
 
+        if(ct>ct2){
+            cout<<"YES"<<endl;
+
+        }else{
+            cout<<"NO"<<endl;
+        }
     }else{
-        cout<<"NO"<<endl;
+        a=a%100;
+        b=b/10;
+        c=c%100;
+        d=d/10;
+        //cout<<a<<endl;
+        //cout<<b<<endl;
+        
+        long long ct=pow(a,b);
+        long long ct2 =pow(c,d);
+
+        if(ct>ct2){
+            cout<<"YES"<<endl;
+
+        }else{
+            cout<<"NO"<<endl;
+        }
     }
+
+    
 
 
     return 0;
