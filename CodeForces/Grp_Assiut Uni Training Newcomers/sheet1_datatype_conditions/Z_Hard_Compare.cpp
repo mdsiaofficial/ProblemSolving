@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+#include <iomanip> //this library need to use setprecision
+#include <cmath>
+using namespace std;
+int main(){
+
+    long long a,b,c,d;
+    cin>>a>>b>>c>>d;
+
+    long long ct=sqrt(a,b);
+    long long ct2 =sqrt(c,d);
+
+    if(ct>ct2){
+        cout<<"YES"<<endl;
+
+    }else{
+        cout<<"NO"<<endl;
+    }
+
+    return 0;
+}
