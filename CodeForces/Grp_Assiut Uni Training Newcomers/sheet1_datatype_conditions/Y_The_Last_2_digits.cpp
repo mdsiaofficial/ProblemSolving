@@ -11,7 +11,7 @@ int main(){
 
 
      
-    //cout<<sum<<endl;
+    cout<<sum<<endl;
     //cout<<sum%100;
     //sum=sum/10;
     //cout<<sum%10<<endl;
@@ -19,7 +19,7 @@ int main(){
 
     
     //solve 1: done
-    if(sum<=9){
+    if(sum<10){
         cout<<sum<<endl;
     }else{
         cout<<sum%100<<endl;
