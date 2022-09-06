@@ -7,8 +7,10 @@ int main(){
     long long a,b,c,d;
     cin>>a>>b>>c>>d;
 
-    long long ct=sqrt(a,b);
-    long long ct2 =sqrt(c,d);
+/*     long long ct=sqrt(a,b);
+    long long ct2 =sqrt(c,d); */
+    long long ct=pow(a,b);
+    long long ct2 =pow(c,d);
 
     if(ct>ct2){
         cout<<"YES"<<endl;
