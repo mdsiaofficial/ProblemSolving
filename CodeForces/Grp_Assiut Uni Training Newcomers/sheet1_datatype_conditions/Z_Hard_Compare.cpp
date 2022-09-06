@@ -9,6 +9,14 @@ int main(){
 
 /*     long long ct=sqrt(a,b);
     long long ct2 =sqrt(c,d); */
+
+    a=a%100;
+    b=b/10;
+    c=c%100;
+    d=d/10;
+    //cout<<a<<endl;
+    //cout<<b<<endl;
+    
     long long ct=pow(a,b);
     long long ct2 =pow(c,d);
 
