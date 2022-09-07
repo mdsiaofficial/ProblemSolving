@@ -34,9 +34,9 @@ int main(){
     if(sum<10){
         cout<<sum2<<endl;
     }else{
-        long long q = sum2%100
+        long long q = sum2%100;
         if(q==0){
-            cout<<"0"<<q<<endl;
+            cout<<"0"<<q434500145 147276606 217842775 236387740<<endl;
         }else{
             cout<<q<<endl;
         }
