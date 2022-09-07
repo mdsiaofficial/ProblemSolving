@@ -23,7 +23,7 @@ int main(){
         }
         ball=c%6;
         over=c/6;
-
+/* 
         if(c<6){
             cout<<c<<" BALLS"<<endl;
         }else if(c==6){
@@ -31,6 +31,14 @@ int main(){
         }else if(c>6){
             cout<<over<<" OVER "<<ball<<" BALL"<<endl;
         }
+
+         */
+        if(ball == 0 && over != 0)
+			printf("%d %s\n", over, (over>1)? "OVERS" : "OVER");
+		else if(over == 0 && ball != 0)
+			printf("%d %s\n", ball, (ball>1)? "BALLS" : "BALL");
+		else
+			printf("%d %s %d %s\n", over, (over>1)? "OVERS" : "OVER", ball, (ball>1)? "BALLS" : "BALL");
     }
 
 
