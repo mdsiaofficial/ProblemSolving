@@ -21,7 +21,7 @@ int main(){
         }
         for(int k=0; k<leng; k++){
             //if(b[k]=='N' || b[k]=='W' || b[k]=='D' || b[k]=='O'){
-            if(b[k]>=0 && b[k]<=6){
+            if(b[k]>='0' && b[k]<='6'){
                 ballcount++;
             }else{
                 
@@ -37,7 +37,7 @@ int main(){
         }else if(ballcount>6){
             cout<<ballcount/6<<" OVER"<<ballcount%6<<" BALL"<<endl;
         }
-        
+
     }
 
     
