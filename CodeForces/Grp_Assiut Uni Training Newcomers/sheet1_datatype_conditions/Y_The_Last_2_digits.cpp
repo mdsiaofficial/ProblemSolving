@@ -10,7 +10,7 @@ int main(){
     long long sum = a*b*c*d;
 
 
-     
+    
     cout<<sum<<endl;
     //cout<<sum%100;
     //sum=sum/10;
