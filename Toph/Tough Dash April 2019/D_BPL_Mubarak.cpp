@@ -10,7 +10,9 @@ int main(){
     cin>>n;
 
     for(int i=0; i<n; i++){
-        int c=0;over=0;ball=0;
+        int c=0;
+        int over=0;
+        int ball=0;
         string bowls;
         cin>>bowls;
 
@@ -27,9 +29,12 @@ int main(){
         }else if(c==6){
             cout<<"1 OVER"<<endl;
         }else if(c>6){
-            cout<<over<<" OVER"<<ball<<" BALL"<<endl;
+            cout<<over<<" OVER "<<ball<<" BALL"<<endl;
         }
     }
+
+
+
 /* 
     for(int i=0; i<n; i++){
         string bowls;
