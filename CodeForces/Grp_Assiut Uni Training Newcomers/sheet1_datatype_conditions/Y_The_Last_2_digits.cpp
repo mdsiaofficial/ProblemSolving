@@ -28,8 +28,8 @@ int main(){
     c=c%100;
     d=d%100;
     long long sum2 = a*b*c*d;
-    cout<<sum2<<endl;
-    cout<<a%100<<endl<<b%100<<endl<<c%100<<endl<<d%100<<endl<<endl;
+    //cout<<sum2<<endl;
+    //cout<<a%100<<endl<<b%100<<endl<<c%100<<endl<<d%100<<endl<<endl;
     //solve 1: done
     if(sum2<10){
         cout<<sum2<<endl;
