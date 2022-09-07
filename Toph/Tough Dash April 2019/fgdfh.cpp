@@ -19,7 +19,7 @@ int main(){
         for(int j=0; j<leng; j++){
 
             char b = bowls.at(j);
-            
+            cout<<b[j]<<endl;
         }
     }
     return 0;

@@ -10,6 +10,29 @@ int main(){
     cin>>n;
 
     for(int i=0; i<n; i++){
+        int c=0;over=0;ball=0;
+        string bowls;
+        cin>>bowls;
+
+        for(int j=0; j<bowls.length(); j++){
+            if(bowls[j]!='N' && bowls[j]!='W' && bowls[j]!='D'){
+                c++;
+            }
+        }
+        ball=c%6;
+        over=c/6;
+
+        if(c<6){
+            cout<<c<<" BALLS"<<endl;
+
+        }else if(c==6){
+            cout<<"1 OVER"<<endl;
+        }else if(c>6){
+            cout<<over<<" OVER"<<ball<<" BALL"<<endl;
+        }
+    }
+/* 
+    for(int i=0; i<n; i++){
         string bowls;
         cin>>bowls;
         
@@ -26,14 +49,14 @@ int main(){
                 
             }
         }
-        /* for(int k=0; k<leng; k++){
+         for(int k=0; k<leng; k++){
             //if(b[k]=='N' || b[k]=='W' || b[k]=='D' || b[k]=='O'){
             if(b[k]=='0' || b[k]=='1' || b[k]=='2' || b[k]=='3' || b[k]=='4' || b[k]=='5' || b[k]=='6'){
                 ballcount++;
             }else{
                 
             }
-        } */
+        } 
         //int overs;
         if(ballcount<6){
 
@@ -46,7 +69,7 @@ int main(){
         }
 
     }
-
+*/
     
     return 0;
 }
