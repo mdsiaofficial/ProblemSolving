@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-int main(){
+void main(){
 
     int n;
     cin>>n;
@@ -18,17 +18,21 @@ int main(){
         int ballcount;
         for(int j=0; j<leng; j++){
 
-            b = bowls.at(j);
-        
+            char b = bowls.at(j);
+            if(b[j]=='0' || b[j]=='1' || b[j]=='2' || b[j]=='3' || b[j]=='4' || b[j]=='5' || b[j]=='6'){
+                ballcount++;
+            }else{
+                
+            }
         }
-        for(int k=0; k<leng; k++){
+        /* for(int k=0; k<leng; k++){
             //if(b[k]=='N' || b[k]=='W' || b[k]=='D' || b[k]=='O'){
             if(b[k]=='0' || b[k]=='1' || b[k]=='2' || b[k]=='3' || b[k]=='4' || b[k]=='5' || b[k]=='6'){
                 ballcount++;
             }else{
                 
             }
-        }
+        } */
         //int overs;
         if(ballcount<6){
 
