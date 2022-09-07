@@ -1,9 +1,8 @@
-    long long ct=pow(a,b);
-    long long ct2 =pow(c,d);
 
-    if(ct>ct2){
-        cout<<"YES"<<endl;
-
+    
+    //solve 1: done
+    if(sum<10){
+        cout<<sum<<endl;
     }else{
-        cout<<"NO"<<endl;
+        cout<<sum%100<<endl;
     }
