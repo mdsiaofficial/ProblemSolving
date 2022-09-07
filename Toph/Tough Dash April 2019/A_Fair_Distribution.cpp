@@ -4,10 +4,6 @@
 using namespace std;
 
 int main(){
-    long int a;
-    cin>>a;
-    string b = to_string(a);
     
-
     return 0;
 }
