@@ -17,9 +17,10 @@ int main(){
         int leng = bowls.length();
         int ballcount;
         for(int j=0; j<leng; j++){
-
+            
             char b = bowls.at(j);
-            if(b[j]=='0' || b[j]=='1' || b[j]=='2' || b[j]=='3' || b[j]=='4' || b[j]=='5' || b[j]=='6'){
+            if(b[j]=="0" || b[j]=="1" || b[j]=="2"|| b[j]=="3" || b[j]=="4" || b[j]=="5" || b[j]=="6"){
+            //if(b[j]=='0' || b[j]=='1' || b[j]=='2' || b[j]=='3' || b[j]=='4' || b[j]=='5' || b[j]=='6'){
                 ballcount++;
             }else{
                 
