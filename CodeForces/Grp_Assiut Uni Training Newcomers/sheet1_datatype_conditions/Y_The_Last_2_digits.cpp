@@ -32,10 +32,11 @@ int main(){
     //cout<<a%100<<endl<<b%100<<endl<<c%100<<endl<<d%100<<endl<<endl;
     //solve 1: done
     if(sum2<10){
-        cout<<sum2<<endl;
+        
+        cout<<"0"<<sum2<<endl;
     }else{
         long long q = sum2%100;
-        if(q==0){
+        if(q==0 || q<10){
             cout<<"0"<<q<<endl;
         }else{
             cout<<q<<endl;
