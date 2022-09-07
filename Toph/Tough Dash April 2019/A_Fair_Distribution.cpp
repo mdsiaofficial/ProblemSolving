@@ -8,12 +8,12 @@ int main(){
     cin>>x>>y;
 
     //cout<<y%3
-
-    for(int i=0; y%x==0; i++){
+    int i;
+    for( i=0; y%x!=0; i++){
         y=y+1;
 
     }
     cout<<i<<endl;
-    
+
     return 0;
 }
