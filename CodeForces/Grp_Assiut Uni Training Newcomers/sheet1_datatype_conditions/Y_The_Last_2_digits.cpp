@@ -31,7 +31,7 @@ int main(){
     cout<<sum2<<endl;
     cout<<a%100<<endl<<b%100<<endl<<c%100<<endl<<d%100<<endl<<endl;
     //solve 1: done
-    if(sum<10){
+    if(sum2<10){
         cout<<sum2<<endl;
     }else{
         long long q = sum2%100;
