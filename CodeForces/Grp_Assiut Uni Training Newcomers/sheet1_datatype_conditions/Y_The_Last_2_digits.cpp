@@ -10,8 +10,8 @@ int main(){
     
 //check 1 
     long long sum = a*b*c*d;
-    cout<<sum<<endl;
-    cout<<a%100<<endl<<b%100<<endl<<c%100<<endl<<d%100<<endl<<endl;
+    //cout<<sum<<endl;
+    //cout<<a%100<<endl<<b%100<<endl<<c%100<<endl<<d%100<<endl<<endl;
     //solve 1: done
     if(sum<10){
         cout<<sum<<endl<<endl;
@@ -20,20 +20,24 @@ int main(){
     }
 
 
+
+ 
 // check 2
     a=a%100;
     b=b%100;
     c=c%100;
     d=d%100;
     long long sum2 = a*b*c*d;
-    cout<<sum2<<endl;
-    cout<<a%100<<endl<<b%100<<endl<<c%100<<endl<<d%100<<endl<<endl;
+    //cout<<sum2<<endl;
+    //cout<<a%100<<endl<<b%100<<endl<<c%100<<endl<<d%100<<endl<<endl;
     //solve 1: done
     if(sum<10){
-        cout<<sum<<endl;
+        cout<<sum2<<endl;
     }else{
-        cout<<sum%100<<endl;
+        cout<<sum2%100<<endl;
     }
+
+
 
 
     //cout<<sum%100;
@@ -41,7 +45,7 @@ int main(){
     //cout<<sum%10<<endl;
 
  
-    
+/*     
     //solve 1: done
     if(sum<10){
         cout<<sum<<endl;
@@ -49,7 +53,7 @@ int main(){
         cout<<sum%100<<endl;
     }
 
-
+ */
 
 
 /* 
@@ -58,6 +62,26 @@ int main(){
 
     cout<<sum%(10*10)<<endl;
 
+ */
+
+
+
+
+/* 
+
+    a=a%100;
+    b=b%100;
+    c=c%100;
+    d=d%100;
+    long long sum = a*b*c*d;
+    //cout<<sum2<<endl;
+    //cout<<a%100<<endl<<b%100<<endl<<c%100<<endl<<d%100<<endl<<endl;
+    //solve 1: done
+    if(sum<10){
+        cout<<sum<<endl;
+    }else{
+        cout<<sum%100<<endl;
+    }
  */
 
 
