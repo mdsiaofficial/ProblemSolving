@@ -7,7 +7,7 @@ int main(){
     long long a,b,c,d;
     cin>>a>>b>>c>>d;
     
-    
+/*     
 //check 1 
     long long sum = a*b*c*d;
     cout<<sum<<endl;
@@ -20,7 +20,7 @@ int main(){
     }
 
 
-
+ */
  
 // check 2
     a=a%100;
