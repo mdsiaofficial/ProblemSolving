@@ -24,7 +24,6 @@ int main(){
 
         if(c<6){
             cout<<c<<" BALLS"<<endl;
-
         }else if(c==6){
             cout<<"1 OVER"<<endl;
         }else if(c>6){
