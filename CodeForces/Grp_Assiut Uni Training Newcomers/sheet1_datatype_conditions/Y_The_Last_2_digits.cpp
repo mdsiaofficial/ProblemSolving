@@ -36,7 +36,7 @@ int main(){
     }else{
         long long q = sum2%100;
         if(q==0){
-            cout<<"0"<<q434500145 147276606 217842775 236387740<<endl;
+            cout<<"0"<<q<<endl;
         }else{
             cout<<q<<endl;
         }
