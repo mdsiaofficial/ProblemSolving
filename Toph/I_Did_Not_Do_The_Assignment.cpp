@@ -12,11 +12,6 @@ int main(){
             c++;
             //cout<<"I DID NOT DO THE ASSIGNMENT."<< endl;
             break;
-
-
-            
-        }else{
-            //cout<<"NO PUNNISHMENT"<<endl;
         }
 
     }
