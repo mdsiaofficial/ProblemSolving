@@ -11,5 +11,7 @@ int main()
     cin>>r;
     cout<<fixed<<setprecision(9)<<pi*r*r<<endl;
 
+
+    //cout
 	return 0;
 }
