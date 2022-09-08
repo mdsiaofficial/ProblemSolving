@@ -24,10 +24,11 @@ int main(){
         c++;
     }
 
+    reverse(newdi.begin(),newdi.end());
 
     //cout<<b<<endl;
     
-    
+    cout<<newdi<<endl;
 
     return 0;
 }
