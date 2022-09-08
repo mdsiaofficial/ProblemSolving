@@ -24,7 +24,7 @@ int main(){
     }
 
     if(c==0){
-        cout<<"NO PUNNISHMENT"<<endl;
+        cout<<"NO PUNISHMENT"<<endl;
 
     }
     //cout<<n%(n-1)<<endl;
