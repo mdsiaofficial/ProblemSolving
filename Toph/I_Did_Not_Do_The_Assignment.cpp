@@ -10,16 +10,22 @@ int main(){
 
         if(n%i==0){
             c++;
-            cout<<"I DID NOT DO THE ASSIGNMENT."<< endl;
+            //cout<<"I DID NOT DO THE ASSIGNMENT."<< endl;
             break;
         }else{
-            cout<<"NO PUNNISHMENT"<<endl;
+            //cout<<"NO PUNNISHMENT"<<endl;
         }
 
     }
-    /* if(c==0){
-        cout<<
-    } */
+
+    if(c==0){
+        cout<<"NO PUNNISHMENT"<<endl;
+
+    }else{
+        for(int j=0; j<n; j++){
+            cout<<"I DID NOT DO THE ASSIGNMENT."<<endl;
+        }
+    }
     //cout<<n%(n-1)<<endl;
     return 0;
 }

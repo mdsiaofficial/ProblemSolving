@@ -1,3 +1,3 @@
- for(int i=0;i<n1;i++){
-        
+if(c==0){
+        cout<<
     }
