@@ -9,11 +9,16 @@ int main(){
     for(int i=2; i<n; i++){
 
         if(n%i==0){
-            c++;
+             
             //cout<<"I DID NOT DO THE ASSIGNMENT."<< endl;
+            
+
+            for(int j=0; j<n; j++){
+                cout<<"I DID NOT DO THE ASSIGNMENT."<<endl;
+                
+            }
+            c++;
             break;
-        }else{
-            //cout<<"NO PUNNISHMENT"<<endl;
         }
 
     }
@@ -21,10 +26,6 @@ int main(){
     if(c==0){
         cout<<"NO PUNNISHMENT"<<endl;
 
-    }else{
-        for(int j=0; j<n; j++){
-            cout<<"I DID NOT DO THE ASSIGNMENT."<<endl;
-        }
     }
     //cout<<n%(n-1)<<endl;
     return 0;
