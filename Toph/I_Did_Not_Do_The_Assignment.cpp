@@ -5,14 +5,21 @@ int main(){
 
     int n;
     cin>>n;
+    int c=0;
+    for(int i=2; i<n; i++){
 
-    if(n%2=0){
-        cout<<"not prime"<<endl;
+        if(n%i==0){
+            c++;
+            cout<<"I DID NOT DO THE ASSIGNMENT."<< endl;
+            break;
+        }else{
+            cout<<"NO PUNNISHMENT"<<endl;
+        }
 
-    }else{
-        cout<<"Prime"<<endl;
     }
-
-    cout<<n%(n-1)<<endl;
+    /* if(c==0){
+        cout<<
+    } */
+    //cout<<n%(n-1)<<endl;
     return 0;
 }
