@@ -23,6 +23,7 @@ int main(){
     } */
 
 
+/*
     string s;
     cin>>s;
     reverse(s.begin(),s.end());
@@ -45,7 +46,7 @@ int main(){
     reverse(ss.begin(),ss.end());
     cout<<ss<<endl;
 
-
+*/
 
     return 0;
 }
