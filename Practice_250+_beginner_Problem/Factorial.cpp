@@ -9,7 +9,7 @@ int main(){
     //int i=1;
 
     if(a==0){
-        cout<<"No Factorial!!!"<<endl;
+        cout<<"No Factorial !!!"<<endl;
     }else{
         for(long long i=a; i>=1; i--){
             a=a*i;
