@@ -9,9 +9,9 @@ int main(){
     //int i=1;
 
     
-    for(int i=1; i<a; i++){
-        //a=a*i;
-        a*=i;
+    for(int i=a; i>=1; i--){
+        a=a*i;
+        //a*=i;
     }
 /*
     while(i<=a){
