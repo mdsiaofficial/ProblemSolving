@@ -13,5 +13,6 @@ int main(){
     long int pow3= pow(n,3);
 
     cout<<pow1<<endl<<pow2<<endl<<pow3<<endl;
+    return 0;
 
 }
