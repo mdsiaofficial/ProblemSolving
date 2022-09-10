@@ -8,10 +8,14 @@ int main(){
     //int f;
     //int i=1;
 
-    
-    for(int i=a; i>=1; i--){
-        a=a*i;
-        //a*=i;
+    if(a==0){
+        cout<<"No Factorial!!!"<<endl;
+    }else{
+        for(int i=a; i>=1; i--){
+            a=a*i;
+            //a*=i;
+        }
+        cout<<a<<endl;
     }
 /*
     while(i<=a){
@@ -19,6 +23,6 @@ int main(){
         i++;
     }
 */
-    cout<<a<<endl;
+    
     return 0;
 }
