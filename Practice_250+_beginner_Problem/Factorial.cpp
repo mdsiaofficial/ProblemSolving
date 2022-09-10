@@ -3,14 +3,15 @@
 using namespace std;
 
 int main(){
-    long int a;
+    long long a;
     cin>>a;
     //int f;
     //int i=1;
 
     
-    for(int i=1; i<=a; ++i){
-        a=a*i;
+    for(int i=1; i<a; i++){
+        //a=a*i;
+        a*=i;
     }
 /*
     while(i<=a){
