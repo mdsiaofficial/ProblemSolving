@@ -10,5 +10,7 @@ int main(){
     cin>>radius;
 
     float area= pi*pow(radius,2);
+    cout<<area<<endl;
+    
     return 0;
 }
