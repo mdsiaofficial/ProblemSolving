@@ -11,7 +11,7 @@ int main(){
     if(a==0){
         cout<<"No Factorial!!!"<<endl;
     }else{
-        for(int i=a; i>=1; i--){
+        for(long long i=a; i>=1; i--){
             a=a*i;
             //a*=i;
         }
