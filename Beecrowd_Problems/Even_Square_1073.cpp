@@ -1,6 +1,6 @@
 #include<iostream>
 
-#include <cmath>
+//#include <cmath>
 using namespace std;
 
 int main(){
@@ -10,7 +10,7 @@ int main(){
     for(long long i=1; i<=n; i++){
 
         if(i%2==0){
-            cout<<i<<"^2 = "<<pow(i,2)<<endl;
+            cout<<i<<"^2 = "<<i*i<<endl;
         }
     }
 
