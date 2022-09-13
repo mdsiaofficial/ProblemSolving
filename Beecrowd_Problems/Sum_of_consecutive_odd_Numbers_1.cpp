@@ -37,7 +37,7 @@ int main(){
             odds=odds+i;
             cout<<odds<<endl;
         } */
-    }
+    
     //cout<<odds<<endl; */
     
 /*     
