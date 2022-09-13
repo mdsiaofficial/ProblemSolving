@@ -37,6 +37,13 @@ int main(){
     }
     cout<<odds<<endl;
     
+    for(int i=x; i<y; i++){
+        if(i%2!=0){
+            odds=odds+i;
+
+        }
+    }
+    cout<<odds<<endl;
 /* 
     int h=9;
     int j=-4;
