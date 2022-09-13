@@ -8,7 +8,7 @@ int main(){
     int odds=0;
 
     
-    for(int i=y; i<x; ++i){
+    for(int i=y+1; i<x; ++i){
         if(i%2==0){
             //cout<<odds<<endl;
             //odds=odds+i;
