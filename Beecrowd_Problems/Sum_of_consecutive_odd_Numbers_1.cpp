@@ -7,22 +7,42 @@ int main(){
 
     int odds=0;
 
-    
-    for(int i=y+1; i<x; ++i){
-        if(i%2==0){
+
+    if(x>y){
+        for(int i=y+1; i<x; i++){
+            if(i%2!=0){
+                odds=odds+i;
+                //cout<<odds<<endl;
+            }
+        }
+    }else{
+        for(int i=x+1; i<y; i++){
+        if(i%2!=0){
+            odds=odds+i;
             //cout<<odds<<endl;
-            //odds=odds+i;
-        }else{
+        }/* else{
             
             odds=odds+i;
             cout<<odds<<endl;
-        }
+        } */
+    }
+    }
+    
+    for(int i=y+1; i<x; i++){
+        if(i%2!=0){
+            odds=odds+i;
+            //cout<<odds<<endl;
+        }/* else{
+            
+            odds=odds+i;
+            cout<<odds<<endl;
+        } */
     }
     //cout<<odds<<endl;
     
 /*     
     if(x>y){
-        for(int i=y; i<x; i++){
+        for(int i=y+1; i<x; i++){
             if(i%2==0){
                 cout//odds=odds+i;
             }else{
@@ -32,7 +52,7 @@ int main(){
         cout<<odds<<endl;
 
     }else{
-        for(int i=x; i<y; i++){
+        for(int i=x+1; i<y; i++){
             if(i%2==0){
                 //odds=odds+i;
 
@@ -41,9 +61,9 @@ int main(){
             }
         }
         cout<<odds<<endl;
-    }  */
+    } 
    
-
+ */
 
 /* 
     for(int i=y; i<x; i++){
