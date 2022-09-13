@@ -8,9 +8,9 @@ int main(){
     int odds=0;
 
     
-    for(int i=y; i<x; i++){
+    for(int i=y; i<x; ++i){
         if(i%2==0){
-            cout<<odds<<endl;
+            //cout<<odds<<endl;
             //odds=odds+i;
         }else{
             
@@ -18,7 +18,7 @@ int main(){
             cout<<odds<<endl;
         }
     }
-    cout<<odds<<endl;
+    //cout<<odds<<endl;
     
 /*     
     if(x>y){
