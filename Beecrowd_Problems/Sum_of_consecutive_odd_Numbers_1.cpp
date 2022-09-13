@@ -9,7 +9,7 @@ int main(){
 
     
 
-    
+/*     
     if(x>y){
         for(int i=y; i<x; i++){
             if(i%2!=0){
@@ -25,10 +25,13 @@ int main(){
             }
         }
         cout<<odds<<endl;
-    }
+    } 
+    */
 
-
-    //cout<<odds<<endl;
+    int h=9;
+    int j=-4;
+    int l=h-j;
+    cout<<l<<endl;
 
     return 0;
 }
