@@ -15,19 +15,19 @@ int main(){
                 //cout<<odds<<endl;
             }
         }
+        cout<<odds<<endl;
     }else{
         for(int i=x+1; i<y; i++){
-        if(i%2!=0){
-            odds=odds+i;
-            //cout<<odds<<endl;
-        }/* else{
-            
-            odds=odds+i;
-            cout<<odds<<endl;
-        } */
+            if(i%2!=0){
+                odds=odds+i;
+                //cout<<odds<<endl;
+            }
+        }
+        cout<<odds<<endl;
     }
-    }
-    
+
+
+/*     
     for(int i=y+1; i<x; i++){
         if(i%2!=0){
             odds=odds+i;
@@ -38,7 +38,7 @@ int main(){
             cout<<odds<<endl;
         } */
     }
-    //cout<<odds<<endl;
+    //cout<<odds<<endl; */
     
 /*     
     if(x>y){
