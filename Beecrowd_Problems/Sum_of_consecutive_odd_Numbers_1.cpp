@@ -32,7 +32,7 @@ int main(){
 
     for(int i=y; i<x; i++){
         if(i%2!=0){
-            odds=odds+i;
+            odds=i;
         }
     }
     cout<<odds<<endl;
