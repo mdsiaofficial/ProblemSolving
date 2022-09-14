@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include<cmath>
 using namespace std;
 
 int main(){
@@ -9,10 +10,10 @@ int main(){
 
     for (int i = 1; i <= n; i++)
     {
-        signed long long int n1,n2;
+        long long n1,n2;
         cin>>n1>>n2;
-        long double sum=n1+n2;
-        cout<<"Case #"<<i<<": "<<sum<<endl;
+        long long sum=n1+n2;
+        cout<<"Case #"<<i<<": "<<fixed<<sum<<endl;
     }
     
 
