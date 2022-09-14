@@ -10,7 +10,7 @@ int main(){
     for (int i = 0; i < n; i++)
     {
         cin>>n1>>n2;
-        cout<<Case #<<i<<": "<<n1+n2<<endl;
+        cout<<"Case #"<<i<<": "<<n1+n2<<endl;
     }
     
 
