@@ -12,8 +12,9 @@ int main(){
     {
         string n1,n2;
         cin>>n1>>n2;
-        
-        signed long long sum=stoi(n1)+stoi(n2);
+        signed long long sum=n1+n2;
+
+        //signed long long sum=stoi(n1)+stoi(n2);
         cout<<"Case #"<<i<<": "<<fixed<<sum<<endl;
     }
     
