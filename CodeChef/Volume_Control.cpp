@@ -11,9 +11,15 @@ int main(){
         cin>>a>>b;
 
         if(a<b){
-            for(int j=a; j<b; j++){
-                
+            for(int j=0; a==b; j++){
+                a++;
             }
+            cout<<j<<endl;
+        }else{
+            for(int k=0; a==b; k++){
+                a--;
+            }
+            cout<<k<<endl;
         }
     }
     
