@@ -3,6 +3,7 @@ using namespace std;
 int main(){
 
     int count;
+    cin>>count;
     int vol;
     for (int i = 0; i < count; i++)
     {
