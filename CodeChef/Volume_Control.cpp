@@ -3,25 +3,32 @@ using namespace std;
 int main(){
 
     int count;
-
+    int vol;
     for (int i = 0; i < count; i++)
     {
         /* code */
         int a,b;
         cin>>a>>b;
-
+        //int vol;
         if(a<b){
-            for(int j=0; a==b; j++){
+            //int j;
+            vol=b-a;
+            /* for(j=0; a==b; j++){
                 a++;
-            }
+            } 
             cout<<j<<endl;
+            */
         }else{
-            for(int k=0; a==b; k++){
+            vol=a-b;
+            /* int k;
+            for(k=0; a==b; k++){
                 a--;
             }
-            cout<<k<<endl;
+            cout<<k<<endl; */
         }
+        cout<<vol<<endl;
     }
+
     
     
     return 0;
