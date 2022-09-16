@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
+//ICPC Dhaka Regional Preliminary Contest, 2021
+//Hosted by: BUBT
 int main(){
 
     long int count;
@@ -18,10 +20,11 @@ int main(){
         }*/
 
         if((a+b+c)%3==0){
-            cout<<"Case "<<i<<": Peaceful."<<endl;
+            cout<<"Case "<<i<<": Peaceful"<<endl;
         }else{
-            cout<<"Case "<<i<<": Fight."<<endl;
+            cout<<"Case "<<i<<": Fight"<<endl;
         }
     }
+    
     return 0;
 }
