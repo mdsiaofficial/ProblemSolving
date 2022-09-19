@@ -6,6 +6,7 @@ int main(){
     cin>>x>>y>>z;
     res=(x+y)-z;
     cout<<res<<endl;
-    
+
+	// set autoindent	
     return 0;
 }

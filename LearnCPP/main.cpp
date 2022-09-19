@@ -2,10 +2,12 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
-    
-    cout<<"Name."<<endl;
+    string name;
+    cout<<"Name?"<<endl;
+	cin>>name;
 
-
+	cout<<"Hey "<<name<<", you are joss."<<endl;
+	
 	
     return 0;
 }
