@@ -2,7 +2,7 @@
 
 using namespace std;
 
-main(){
+int main(){
     
     double salary;
     cin>>salary;
