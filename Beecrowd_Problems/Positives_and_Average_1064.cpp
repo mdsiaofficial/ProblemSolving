@@ -16,17 +16,17 @@ int main(){
     for(i=0; i<6;i++){
         if(num[i] > 0){
             pos=pos+num[i];
-            cout<<pos<<endl;
+            //cout<<pos<<endl;
             count++;
         }
     }
 
 
     //cout<<sizeof(num)<<endl;
-
+    float avg =pos/count;
     
     cout<<count<<" valores positivos"<<endl;
-    cout<<pos/count<<endl;
+    cout<<fixed<<setprecision(1)<<avg<<endl;
 
     return 0;
 }
