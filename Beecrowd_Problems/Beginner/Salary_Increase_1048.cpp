@@ -62,20 +62,20 @@ int main(){
 
     cin>>sal;
 
-    if(sal>=0 && sal<=400.00){
+    if(sal>=0 && sal<=400){
         incre= sal*(15/100);
         sal=sal+incre;
-    }else if(sal>=400.01 && sal<=800.00){
+    }else if(sal>=400 && sal<=800){
         incre= sal*(12/100);
         sal=sal+incre;
-    }else if(sal>=800.01 && sal<=1200.00){
+    }else if(sal>=800 && sal<=1200){
         incre= sal*(10/100);
         sal=sal+incre;
-    }else if(sal>=1200.01 && sal<=2000.00){
+    }else if(sal>=1200 && sal<=2000){
         incre= sal*(7/100);
         sal=sal+incre;
-    }else if(sal>=2000.00){
-        incre= sal*(15/100);
+    }else if(sal>=2000){
+        incre= sal*(4/100);
         sal=sal+incre;
     }
 
