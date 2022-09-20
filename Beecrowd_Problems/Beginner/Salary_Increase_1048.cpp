@@ -4,9 +4,9 @@ using namespace std;
 
 int main(){
     
-    double salary;
+    float salary;
     cin>>salary;
-    double ext;
+    float ext;
     if(salary >= 0 && salary <=400.00){
 
         ext = (salary*(15/100));
