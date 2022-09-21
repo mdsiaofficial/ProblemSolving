@@ -56,7 +56,7 @@ int main(){
 
 
 
-
+    //sd
     //cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<sm<<" MINUTO(S)"<<endl;
 
     return 0;
