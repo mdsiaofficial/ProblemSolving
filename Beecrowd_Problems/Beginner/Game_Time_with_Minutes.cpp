@@ -1,5 +1,5 @@
-#include<bits/stdc++.h>
-#include <iomanip> //this library need to use setprecision
+#include<bits/stdc++.h> // ei library add korle ar kisu add kora lage nah 
+//#include <iomanip> //this library need to use setprecision
 using namespace std;
 int main(){
 
@@ -25,7 +25,24 @@ int main(){
         minute = 0;
         //cout<<"O JOGO DUROU "<<hour<<" HORA(S)"<<endl;
         cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<minute<<" MINUTO(S)"<<endl;
+    }else if(sh<eh && sm>em){
+        hour = eh-sh;
+        minute = 60-(sm-em);
+        //cout<<"O JOGO DUROU "<<hour<<" HORA(S)"<<endl;
+        cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<minute<<" MINUTO(S)"<<endl;
+    }else if(sh>eh && sm<em){
+        hour = 24-(sh-eh)-1;
+        minute = em-sm;
+        //minute = 
+        //cout<<"O JOGO DUROU "<<hour<<" HORA(S)"<<endl;
+        cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<minute<<" MINUTO(S)"<<endl;
+    }else if(sh==eh && sm==em){
+        hour = 24;
+        minute = 0;
+        //cout<<"O JOGO DUROU "<<hour<<" HORA(S)"<<endl;
+        cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<minute<<" MINUTO(S)"<<endl;
     }
+
 
     //cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<sm<<" MINUTO(S)"<<endl;
 
