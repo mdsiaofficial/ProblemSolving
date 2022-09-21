@@ -59,27 +59,34 @@ int main(){
 
     float sal;
     float incre;
-
+    int per;
     cin>>sal;
-
+    //(sal*15)/100
     if(sal>=0 && sal<=400){
-        incre= sal*(15/100);
+        incre= (sal*15)/100;
         sal=sal+incre;
+        per=15;
     }else if(sal>=400 && sal<=800){
-        incre= sal*(12/100);
+        incre= (sal*12)/100;
         sal=sal+incre;
+        per=12;
     }else if(sal>=800 && sal<=1200){
-        incre= sal*(10/100);
+        incre= (sal*10)/100;
         sal=sal+incre;
+        per=10;
     }else if(sal>=1200 && sal<=2000){
-        incre= sal*(7/100);
+        incre= (sal*7)/100;
         sal=sal+incre;
-    }else if(sal>=2000){
-        incre= sal*(4/100);
+        per=7;
+    }else if(sal>2000){
+        incre= (sal*4)/100;
         sal=sal+incre;
+        per=4;
     }
 
-    cout<<sal<<endl<<incre<<endl;
+    cout<< fixed << setprecision(2) <<"Novo salario: "<<sal<<endl;
+    cout<< fixed << setprecision(2) <<"Reajuste ganho: "<<incre<<endl;
+    cout<< fixed << setprecision(2) <<"Em percentual: "<<per<<" %"<<endl;
 
     return 0;
 
