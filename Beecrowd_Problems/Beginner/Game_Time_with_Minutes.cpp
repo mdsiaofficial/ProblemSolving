@@ -41,6 +41,16 @@ int main(){
         minute = 0;
         //cout<<"O JOGO DUROU "<<hour<<" HORA(S)"<<endl;
         cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<minute<<" MINUTO(S)"<<endl;
+    }else if(sh==eh && sm>em){
+        hour = 24;
+        minute = 60-(sm-em);
+        //cout<<"O JOGO DUROU "<<hour<<" HORA(S)"<<endl;
+        cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<minute<<" MINUTO(S)"<<endl;
+    }else if(sh==eh && sm<em){
+        hour = 24;
+        minute = em-sm;
+        //cout<<"O JOGO DUROU "<<hour<<" HORA(S)"<<endl;
+        cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<minute<<" MINUTO(S)"<<endl;
     }
 
 
