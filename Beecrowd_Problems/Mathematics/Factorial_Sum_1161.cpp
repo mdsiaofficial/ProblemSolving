@@ -15,7 +15,8 @@ int main(){
         factA*=i;
         //cout<<a<<endl;
     }
-    for(int i=b; i>=1; i--){
+    for(
+        int i=b; i>=1; i--){
         // a=a*i;
         factB*=i;
         //cout<<a<<endl;
