@@ -15,31 +15,31 @@ int main(){
             cin>>spec3;
             if(spec3=="carnivoro"){
                 cout<<"aguia"<<endl;
-            }else if(spec3=="onivoro"){
+            }else{          // if(spec3=="onivoro"){
                 cout<<"pomba"<<endl;
             }
         }else if(spec2=="mamifero"){
             cin>>spec3;
             if(spec3=="onivoro"){
                 cout<<"humem"<<endl;
-            }else if(spec3=="herbivoro"){
+            }else{          // if(spec3=="herbivoro"){
                 cout<<"vaca"<<endl;
             }
         }
-    }else if(spec1=="invertebrado"){
+    }else{              // if(spec1=="invertebrado"){
         cin>>spec2;
         if(spec2=="inseto"){
             cin>>spec3;
             if(spec3=="hematofago"){
                 cout<<"pulga"<<endl;
-            }else if(spec3=="herbivoro"){
+            }else{              // if(spec3=="herbivoro"){
                 cout<<"lagarta"<<endl;
             }
         }else if(spec2=="anelideo"){
             cin>>spec3;
             if(spec3=="hematofago"){
                 cout<<"sanguessuga"<<endl;
-            }else if(spec3=="onivoro"){
+            }else{              // if(spec3=="onivoro"){
                 cout<<"minhoca"<<endl;
             }
         }
