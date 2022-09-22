@@ -65,8 +65,23 @@ int main(){
 
 
     int ih, im, fh, fm;
+    cin>>ih>>im>>fh>>fm;
 
-    
+    int it = (ih*60)+im;
+    int ft = (fh*60)+fm;
+
+    int rem = ft-it;
+
+    if(rem <=0){
+        rem = rem+(24*60);
+        
+    }
+    int hour = rem/60;
+    int minute = rem%60;
+
+
+    //cout<<it<<endl<<ft<<endl;
+    cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<minute<<" MINUTO(S)"<<endl;
 
     //sd
     //cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<sm<<" MINUTO(S)"<<endl;
