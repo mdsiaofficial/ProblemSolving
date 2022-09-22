@@ -12,11 +12,17 @@ int main()
         int n;
         cin >> n;
         int arr[n];
+        int count;
         for(int j=0; i<n; j++){
 
             cin>>arr[j];
-            
+
+            if(arr[j] < 0){
+                count++;
+            }
         }
+        cout << count << endl;
+        
 
     }
     
