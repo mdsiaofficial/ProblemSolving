@@ -22,7 +22,7 @@ int main()
     }else if(n==19){
         cout<<"Campinas"<<endl;
     }else if(n==27){
-        cout<<"Viroria"<<endl;
+        cout<<"Vitoria"<<endl;
     }else if(n==31){
         cout<<"Belo Horizonte"<<endl;
     }else{
