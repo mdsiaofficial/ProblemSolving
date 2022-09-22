@@ -11,7 +11,7 @@ int main(){
     // Finally to determined total time duration.
 
     // unsolved //
-    int sh,sm,eh,em;
+/*      int sh,sm,eh,em;
 
     cin>>sh>>sm>>eh>>em;
 
@@ -60,9 +60,13 @@ int main(){
         //cout<<"O JOGO DUROU "<<hour<<" HORA(S)"<<endl;
         cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<minute<<" MINUTO(S)"<<endl;
     }
+*/
 
 
 
+    int ih, im, fh, fm;
+
+    
 
     //sd
     //cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<sm<<" MINUTO(S)"<<endl;
