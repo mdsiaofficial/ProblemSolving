@@ -9,7 +9,7 @@ int main(){
     long long factA=1;
     long long factB=1;
 
-    
+
     for(int i=a; i>=1; i--){
         // a=a*i;
         factA*=i;
@@ -21,5 +21,5 @@ int main(){
         //cout<<a<<endl;
     }
     cout<<factA+factB<<endl;
-
+    return 0;
 }
