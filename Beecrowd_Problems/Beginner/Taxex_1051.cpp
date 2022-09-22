@@ -5,7 +5,7 @@ int main(){
 
     float salary;
     cin>>salary;
-    int newsal
+    int newsal;
     if(salary >=0.00 && salary <=2000.00){
         cout<<"Isento"<<endl;
     }else if(salary >=2000.01 && salary <=3000.00){
