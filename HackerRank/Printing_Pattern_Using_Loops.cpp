@@ -3,6 +3,21 @@
 using namespace std;
 int main(){
 
+    int n;
+
+    cin>>n;
+
+    for(int i=0; i<n+(n-1); i++){
+        for(int i=0; i<n+(n-1); i++){
+            cout<<n<<" ";
+        }
+        cout<<endl<<n<<" ";
+        for(int i=0; i<n+(n-1); i++){
+            cout<<n<<" ";
+        }
+    }
     
+
+
     return 0;
 }
