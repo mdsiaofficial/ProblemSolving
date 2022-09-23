@@ -16,6 +16,8 @@ int main(){
         if(arr[j])
     }
 
-
+    // ar to partasi nah
+    
+     
     return 0;
 }
