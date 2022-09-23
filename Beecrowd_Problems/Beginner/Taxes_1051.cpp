@@ -3,6 +3,7 @@
 using namespace std;
 int main(){
 
+    // unsolved
     float salary;
     cin>>salary;
     int newsal;
