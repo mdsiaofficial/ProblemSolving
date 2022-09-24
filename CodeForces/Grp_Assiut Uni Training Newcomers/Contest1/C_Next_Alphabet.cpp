@@ -10,8 +10,12 @@ int main(){
     
     for(int i=0; i<sizeof(alpha); i++){
         if(ch==alpha[i]){
-            cout<<alpha[i+1];
+            if(ch=='z'){
+                cout<<"a"<<endl;
+            }else{
+                cout<<alpha[i+1];
             //break;
+            }
         }
     }
 
