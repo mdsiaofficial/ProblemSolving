@@ -12,10 +12,11 @@ int main(){
 
     }
 
-    for(int j=0; j<n; j++){
+    /* for(int j=0; j<n; j++){
         if(arr[j])
-    }
+    } */
 
+    
     // ar to partasi nah
     
      
