@@ -5,12 +5,18 @@ int main(){
 
     long long a,b,c,d;
     cin>>a>>b>>c>>d;
-
-    if((a+b+c)==d){
+        //+ - *
+    if((a+b-c)==d){
         cout<<"YES"<<endl;
-    }else if((a*b*c)==d){
+    }else if((a+b*c)==d){
         cout<<"YES"<<endl;
-    }else if((a-b-c)==d){
+    }else if((a-b+c)==d){
+        cout<<"YES"<<endl;
+    }else if((a-b*c)==d){
+        cout<<"YES"<<endl;
+    }else if((a*b+c)==d){
+        cout<<"YES"<<endl;
+    }else if((a*b-c)==d){
         cout<<"YES"<<endl;
     }else{
         cout<<"NO"<<endl;
