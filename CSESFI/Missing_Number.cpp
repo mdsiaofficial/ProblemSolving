@@ -15,5 +15,6 @@ int main() {
     }
     long long miss=sumofn-sumofnum;
     cout<<miss<<endl;
+    
 	return 0;
 }
