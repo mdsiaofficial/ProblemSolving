@@ -23,19 +23,27 @@ int main() {
 
 
     long long n;
-    long long sumofn=1;
+    long long sumofn=0;
     long long sumofnum=0;
     cin>>n;
     long int num[n-1];
     for(long long i=0; i<n-1; i++){
         cin>>num[i];
-        sumofn=sumofn+i;
-        sumofnum=sumofnum+num[i];
+        //sumofn=sumofn+i;
+        //sumofnum=sumofnum+num[i];
         // cout<<num[i]<<endl;
         // cout<<sumofn<<endl;
         // cout<<sumofnum<<endl;
     }
-    long long miss=sumofnum-sumofn;
+
+    for(long long j=1; j<=n; j++){
+        sumofn=sumofn+j;
+    }
+    for(long long z=0; z<n-1; z++){
+        sumofnum=sumofnum+num[z];
+    }
+
+    long long miss=sumofn-sumofnum;
     cout<<miss<<endl;
 
 /*     
