@@ -9,4 +9,6 @@ int main() {
     for(int i =0; i < n; i++){
         ss[i]=seq[i];
     }
+
+    
 }
