@@ -15,7 +15,7 @@ int main(){
         double areaofcir=pi*r*r;
         double areaofsq=(r*2)*(r*2);
         double areaofblue=areaofsq-areaofcir;
-        cout<<"Case "<<c<<": "<<areaofblue<<endl;
+        cout<<"Case "<<c<<": "<<fixed<<setprecision(2)<<areaofblue<<endl;
         c++;
     }
 
