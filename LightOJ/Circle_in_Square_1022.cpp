@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-#define pi 3.14159
+#define pi 3.14159266
 int main(){
 
     //unsolved
