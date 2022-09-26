@@ -15,10 +15,13 @@ int main(){
     while(t--){
         double r;
         cin>>r;
+        /* 
         double areaofcir=pi*r*r;
         double areaofsq=(r*2)*(r*2);
-        double areaofblue=areaofsq-areaofcir;
-        cout<<"Case "<<c<<": "<<fixed<<setprecision(2)<<areaofblue<<endl;
+        double areaofblue=areaofsq-areaofcir; 
+        */
+
+        cout<<"Case "<<c<<": "<<fixed<<setprecision(2)<<pow(r*2,2)-(pi*pow(r,2))<<endl;
         c++;
     }
 
