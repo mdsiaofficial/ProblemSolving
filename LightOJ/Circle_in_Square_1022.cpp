@@ -3,7 +3,10 @@ using namespace std;
 
 #define pi 3.14159266
 int main(){
+    
 
+    // ACos means inverse Cos
+    // Value of ACos(0.0) = 1.57079633 radian
     //unsolved
     
     int t;
