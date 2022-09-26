@@ -12,8 +12,10 @@ int main(){
     while(t--){
         double r;
         cin>>r;
-        double area=2*pi*r;
-        cout<<"Case "<<c<<": "<<area<<endl;
+        double areaofcir=pi*r*r;
+        double areaofsq=(r*2)*(r*2);
+        double areaofblue=areaofsq-areaofcir;
+        cout<<"Case "<<c<<": "<<areaofblue<<endl;
         c++;
     }
 
