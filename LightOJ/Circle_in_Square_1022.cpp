@@ -1,7 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-#define pi 3.14159266
+//#define pi 3.14159266
+#define pi 2*acos(0.0)
+
 int main(){
     
 
