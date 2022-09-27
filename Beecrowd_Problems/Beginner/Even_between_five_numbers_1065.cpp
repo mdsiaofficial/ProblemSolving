@@ -37,7 +37,7 @@ int main(){
           count++;
         }
     }
-    cout<<c<<" valores pares"<<endl;
+    cout<<count<<" valores pares"<<endl;
     return 0;
 
 }
