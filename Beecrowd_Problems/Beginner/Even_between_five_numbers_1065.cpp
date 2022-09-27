@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
+    
+    
+/* 
     //int a,b,c,d,e;
     int arr[5];
     cin>>arr[0]>>arr[1]>>arr[2]>>arr[3]>>arr[4];
@@ -11,7 +14,9 @@ int main(){
             c++;
         }
     }
+ */
 
+/* 
     if(arr[0]%2==0){
         c++;
     }else if(arr[1]%2==0){
@@ -24,6 +29,14 @@ int main(){
         c++;
     }
 
+ */
+    int i,num,count=0;
+    for(i=1;i<=5;i++){
+        cin >> num;
+        if(num%2==0){
+          count++;
+        }
+    }
     cout<<c<<" valores pares"<<endl;
     return 0;
 
