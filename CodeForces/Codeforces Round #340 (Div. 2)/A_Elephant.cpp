@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int d;
+    long long d;
     cin>>d;
 
     if(d%5==0){
