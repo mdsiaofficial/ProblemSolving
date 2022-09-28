@@ -9,7 +9,7 @@ int main(){
 
     int even=0,odd=0,pos=0,neg=0;
 
-    for(int i=0;i<sizeof(arr);i++){
+    for(int i=0;i<5;i++){
         if(arr[i]%2==0){
             even++;
         }else{
@@ -18,11 +18,11 @@ int main(){
 
         if(arr[i]>0){
             pos++;
-        }else{
+        }else if(arr[i]<0){
             neg++;
         }
     }
-    
+
     cout<<even<<" valor(es) par(es)"<<endl;
     cout<<odd<<" valor(es) impar(es)"<<endl;
     cout<<pos<<" valor(es) positivo(s)"<<endl;
