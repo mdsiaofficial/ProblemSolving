@@ -28,12 +28,16 @@
             "label": "C/C++: g++.exe build active file",
             "command": "G:\\Coding App\\Code Blocks\\codeblocks-20.03mingw-nosetup\\MinGW\\bin\\g++.exe",
             "args": [
-                "-fdiagnostics-color=always",
+                "-std=c++11",
+                "-std=c++17",
+                "-std=c++20",
+                "-stdlib=libc++",
+                "-fcolor-diagnostics",
+                "-fansi-escape-codes",
                 "-g",
-                "-std=c++20"
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {
                 "cwd": "${fileDirname}"
