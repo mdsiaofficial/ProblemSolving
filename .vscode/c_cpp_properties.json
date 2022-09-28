@@ -12,15 +12,37 @@
             "intelliSenseMode": "linux-gcc-x64"
         },
         {
-            "name": "ubuntu",
+            "name": "Win64",
             "includePath": [
                 "${workspaceFolder}/**"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/cpp",
-            "cStandard": "gnu17",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "linux-gcc-x64"
+            "compilerPath": "G:/Coding App/Code Blocks/codeblocks-20.03mingw-nosetup/MinGW/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "windows-gcc-x64",
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        },
+        {
+            "name": "windows",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "G:/Coding App/Code Blocks/codeblocks-20.03mingw-nosetup/MinGW/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "windows-gcc-x64"
         }
     ],
     "version": 4

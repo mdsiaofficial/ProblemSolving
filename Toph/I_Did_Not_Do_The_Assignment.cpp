@@ -16,6 +16,7 @@ int main(){
 
     }
 
+
     if(c==0){
         cout<<"NO PUNISHMENT"<<endl;
 
