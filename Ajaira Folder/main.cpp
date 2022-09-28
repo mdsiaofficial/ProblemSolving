@@ -5,6 +5,10 @@ int main(){
     std::cout<<"result"<<std::endl;
 
 
+
+    
+
+/* 
     // try 1
     int x, y; 
     x = 1; 
@@ -16,7 +20,7 @@ int main(){
     // try 2
     int x=1; y=x;
     x=2;
-    printf("x=%d \t y=%d", x,y);
+    printf("x=%d \tJarin er chosma y=%d", x,y);
 
 
     
@@ -24,10 +28,10 @@ int main(){
     x = 5; 
     y = x-2;
     x=x+5-2;
-    printf("x=%d \t y=%d", x,y);
+    printf("x=%d \tJarin er chosma y=%d", x,y);
 
 
-
+ */
     
 /*     
     int n;
