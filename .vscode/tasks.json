@@ -30,7 +30,6 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "-std=c++20"
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
