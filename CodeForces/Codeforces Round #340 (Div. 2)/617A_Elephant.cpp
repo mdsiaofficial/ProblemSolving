@@ -3,7 +3,7 @@ using namespace std;
 int main(){
     long long d;
     cin>>d;
-
+/* 
     if(d%5==0){
         cout<<d/5<<endl;
     }else if(d%4==0){
@@ -16,7 +16,10 @@ int main(){
         cout<<d<<endl;
     }
 
+ */
+    int steps[5]={5,4,3,2,1};
 
+    
     
     return 0;
 }
