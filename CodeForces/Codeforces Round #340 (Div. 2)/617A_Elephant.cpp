@@ -4,6 +4,9 @@ int main(){
     long long d;
     cin>>d;
 /* 
+
+
+    // failed here
     if(d%5==0){
         cout<<d/5<<endl;
     }else if(d%4==0){
@@ -21,6 +24,8 @@ int main(){
 
 
 /* 
+
+    // success here - try 1
     int steps[5]={5,4,3,2,1};
     int c=0;
     for(int i=0;i<5;i++){
@@ -33,7 +38,7 @@ int main(){
 
 */
 
-
+    //success here try 2
     int stp=5;
     int ct=0;
 
@@ -44,6 +49,6 @@ int main(){
     }
 
     
-    
+
     return 0;
 }
