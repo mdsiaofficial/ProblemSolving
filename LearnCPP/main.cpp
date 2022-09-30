@@ -54,6 +54,11 @@ int main(int argc, char const *argv[])
 
     int a, b = 5; // wrong (a is not initialized!)
     int a = 5, b = 5; // correct
+
+
+
+
+    
     return 0;
 }
 
