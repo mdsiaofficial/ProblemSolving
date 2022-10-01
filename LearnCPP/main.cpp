@@ -4,6 +4,8 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
+    
+/* 
     string name;
     cout<<"Name?"<<endl;
 	cin>>name;
@@ -66,10 +68,15 @@ int main(int argc, char const *argv[])
     std::cin >> x; // get number from keyboard and store it in variable x
 
     std::cout << "You entered " << x << '\n';
+ */
+
+    // define an integer variable named x
+    int x; // this variable is uninitialized because we haven't given it a value
+
+    // print the value of x to the screen
+    std::cout << x; // who knows what we'll get, because x is uninitialized
 
 
-
-    
     
     return 0;
 }
