@@ -6,7 +6,7 @@ int main(){
     // unsolved
     float salary;
     cin>>salary;
-    int newsal;
+    float newsal;
     if(salary >=0 && salary <=2000.00){
         cout<<"Isento"<<endl;
     }else if(salary >=2000.01 && salary <=3000.00){
