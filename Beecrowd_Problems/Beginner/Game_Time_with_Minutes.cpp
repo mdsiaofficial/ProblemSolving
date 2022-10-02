@@ -90,7 +90,20 @@ int main(){
 
     int hs, ms, he, me;
     cin >> hs >> ms >> he >> me;
-    int tms=
-
+    int tms = ( hs * 60 )+ ms;
+    int tme =( he * 60 )+ me;
+    int h;
+    int m;
+    if(tms>tme){
+        h = (tms - tme) / 60;
+        m = (tms - tme) % 60;
+        cout << "O JOGO DUROU " << h << " HORA(S) E " << m << " MINUTO(S)" << endl;
+    }else if(tms<tme){
+        h = (1440 - (tme - tms)) / 60;
+        m = (1440 - (tme - tms)) % 60;
+        cout << "O JOGO DUROU " << h << " HORA(S) E " << m << " MINUTO(S)" << endl;
+    }else{
+        cout << "O JOGO DUROU " << 24 << " HORA(S) E " << 0 << " MINUTO(S)" << endl;
+    }
     return 0;
 }
