@@ -24,24 +24,44 @@ int main(){
     cin >> second_e;
 
  */
-
+    //input variables
     string s1,s2;
     int day_s;
     int day_e;
     int hour_s, minute_s, second_s;
     int hour_e, minute_e, second_e;
 
+    // output variables
+    int day, hour, minute, second;
+
+    // taking input
     cin >> s1 >> day_s;
     cin >> hour_s >> minute_s >> second_s;
 
     cin >> s2 >> day_e;
     cin >> hour_e >> minute_e >> second_e;
 
+    //converting all to second
     int start_sec = (hour_s * 60 * 60) + (minute_s * 60) + second_s;
     int end_sec = (hour_e * 60 * 60) + (minute_e * 60) + second_e;
 
 
-    
+    if(start_sec<end_sec){
+        hour = (end_sec - start_sec) / (60 * 60);
+        int temp = (end_sec - start_sec) % (60 * 60);
+        minute = temp / 60;
+        second = temp % 60;
+        
+    }
+    else if (start_sec > end_sec)
+    {
+        hour = (86400-(end_sec - start_sec)) / (60 * 60);
+        int temp = (86400 - (end_sec - start_sec)) % (60 * 60);
+        minute = temp / 60;
+        second = temp % 60;
+    }else{
+        
+    }
     // getline(cin, day); // this code helps to take input with whitespace
     //cin >> day;
     //cout << day;
