@@ -31,7 +31,11 @@ int main(){
     int hour_s, minute_s, second_s;
     int hour_e, minute_e, second_e;
 
-    
+    cin >> s1 >> day_s;
+    cin >> hour_s >> minute_s >> second_s;
+
+    cin >> s2 >> day_e;
+    cin >> hour_e >> minute_e >> second_e;
 
     // getline(cin, day); // this code helps to take input with whitespace
     //cin >> day;
