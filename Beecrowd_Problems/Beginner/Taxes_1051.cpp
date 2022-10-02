@@ -27,7 +27,7 @@ int main(){
 
     */
 
-
+/*
     float taxes_in, tax_out;
 
     if(salary>=0 && salary<=2000.00){
@@ -43,6 +43,34 @@ int main(){
     }else if(salary > 4500.00){
         
     }
+*/
+
+
+
+
+    //salary = salary - 2000;
+    float tax;
+    if(salary >= 0 && salary <= 2000.00){
+
+        cout<<"Isento"<<endl;
+
+    }else if(salary >= 2000.01 && salary <=3000.00){
+        
+        salary = salary - 2000.00;
+        tax = salary*8/100;
+
+        cout<<fixed<<setprecision(2)<<"R$ "<<tax<<endl;
+    }else if(salary >=3000.01 && salary <=4500.00){
+        salary = salary - 2000.00;
+        tax = (1000*8/100) + ((salary-1000)*18/100);
+        //float temp_2to3 = 
+        cout<<fixed<<setprecision(2)<<"R$ "<<tax<<endl;
+    }else{
+        salary = salary - 2000.00;
+        tax = (1000*8/100) + (1500*18/100) + ((salary-2500)*28/100);
+        cout<<fixed<<setprecision(2)<<"R$ "<<tax<<endl;
+    }
+
 
     return 0;
 }
