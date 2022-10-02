@@ -37,6 +37,11 @@ int main(){
     cin >> s2 >> day_e;
     cin >> hour_e >> minute_e >> second_e;
 
+    int start_sec = (hour_s * 60 * 60) + (minute_s * 60) + second_s;
+    int end_sec = (hour_e * 60 * 60) + (minute_e * 60) + second_e;
+
+
+    
     // getline(cin, day); // this code helps to take input with whitespace
     //cin >> day;
     //cout << day;
