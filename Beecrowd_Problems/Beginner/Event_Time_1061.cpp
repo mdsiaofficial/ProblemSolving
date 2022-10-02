@@ -2,6 +2,7 @@
 using namespace std;
 int main(){
 
+/*
     cout << "Dia";
     int day_start;
     cin >> day_start;
@@ -22,9 +23,19 @@ int main(){
     cout << ":";
     cin >> second_e;
 
+ */
 
+    string s1,s2;
+    int day_s;
+    int day_e;
+    int hour_s, minute_s, second_s;
+    int hour_e, minute_e, second_e;
 
     
+
+    // getline(cin, day); // this code helps to take input with whitespace
+    //cin >> day;
+    //cout << day;
 
     return 0;
 }
