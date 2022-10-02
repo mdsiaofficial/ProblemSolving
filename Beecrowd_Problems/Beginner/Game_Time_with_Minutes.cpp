@@ -62,8 +62,8 @@ int main(){
     }
 */
 
-
-
+/* 
+    //solve 1
     int ih, im, fh, fm;
     cin>>ih>>im>>fh>>fm;
 
@@ -78,13 +78,19 @@ int main(){
     }
     int hour = rem/60;
     int minute = rem%60;
-
-
     //cout<<it<<endl<<ft<<endl;
     cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<minute<<" MINUTO(S)"<<endl;
 
     //sd
     //cout<<"O JOGO DUROU "<<hour<<" HORA(S) E "<<sm<<" MINUTO(S)"<<endl;
+
+ */
+
+    // solve 2: mine
+
+    int hs, ms, he, me;
+    cin >> hs >> ms >> he >> me;
+    int tms=
 
     return 0;
 }
