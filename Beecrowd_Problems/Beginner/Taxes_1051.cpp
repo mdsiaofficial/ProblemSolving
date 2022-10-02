@@ -57,7 +57,7 @@ int main(){
     }else if(salary >= 2000.01 && salary <=3000.00){
         
         salary = salary - 2000.00;
-        tax = salary * 8float t / 100;
+        tax = salary * 8/ 100;
 
         cout<<fixed<<setprecision(2)<<"R$ "<<tax<<endl;
     }else if(salary >=3000.01 && salary <=4500.00){
