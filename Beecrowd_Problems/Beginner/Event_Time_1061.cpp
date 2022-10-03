@@ -65,7 +65,14 @@ int main(){
     }
     // getline(cin, day); // this code helps to take input with whitespace
     //cin >> day;
-    cout << day_s <<endl<<day_e<<endl<<hour_s<<endl<<minute_s<<endl<<second_s<<end;
+    cout << day_s << endl
+         << day_e << endl
+         << hour_s << endl
+         << minute_s << endl
+         << second_s << endl
+         << hour_e << endl
+         << minute_e << endl
+         << second_e << endl;
 
     return 0;
 }
