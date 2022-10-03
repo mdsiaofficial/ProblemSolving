@@ -52,20 +52,33 @@ int main(){
         int temp = (end_sec - start_sec) % (60 * 60);
         minute = temp / 60;
         second = temp % 60;
-        
-    }
-    else if (start_sec > end_sec)
-    {
+
+        cout << hour << endl
+             << minute << endl
+             << second << endl;
+            
+    }else if (start_sec > end_sec){
         hour = (86400-(end_sec - start_sec)) / (60 * 60);
         int temp = (86400 - (end_sec - start_sec)) % (60 * 60);
         minute = temp / 60;
         second = temp % 60;
+
+        cout << hour << endl
+             << minute << endl
+             << second << endl;
     }else{
         
     }
     // getline(cin, day); // this code helps to take input with whitespace
     //cin >> day;
-    cout << day_s <<endl<<day_e<<endl<<hour_s<<endl<<minute_s<<endl<<second_s<<endl<<hour_e<<endl<<minute_e<<endl<<second_e<<endl;
+    cout << day_s << endl
+         << day_e << endl
+         << hour_s << endl
+         << minute_s << endl
+         << second_s << endl
+         << hour_e << endl
+         << minute_e << endl
+         << second_e << endl;
 
     return 0;
 }
