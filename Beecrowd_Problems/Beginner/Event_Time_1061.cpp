@@ -30,16 +30,17 @@ int main(){
     int day_e;
     int hour_s, minute_s, second_s;
     int hour_e, minute_e, second_e;
-
+    char a, b, c, d;
     // output variables
     int day, hour, minute, second;
 
     // taking input
     cin >> s1 >> day_s;
-    cin >> hour_s >> minute_s >> second_s;
+    cin >> hour_s >> a >> minute_s >> b >> second_s;
 
     cin >> s2 >> day_e;
-    cin >> hour_e >> minute_e >> second_e;
+    cin >> hour_e >> c >> minute_e >> d >> second_e;
+
 
     //converting all to second
     int start_sec = (hour_s * 60 * 60) + (minute_s * 60) + second_s;
@@ -64,7 +65,7 @@ int main(){
     }
     // getline(cin, day); // this code helps to take input with whitespace
     //cin >> day;
-    //cout << day;
+    cout << day_s <<endl<<day_e<<endl<<hour_s<<endl<<minute_s<<endl<<second_s<<end;
 
     return 0;
 }
