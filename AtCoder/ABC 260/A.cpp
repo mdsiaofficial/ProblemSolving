@@ -17,6 +17,7 @@ int main(){
 
     //int c;
 
+
     // if(st[0]!=st[1] && st[0]!=st[2]){
     //     cout<<st[0]<<endl;
     // }else if(st[1]!=st[0] && st[0]!=st[2]){
