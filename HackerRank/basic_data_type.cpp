@@ -6,7 +6,7 @@ int main(){
     long long b;
     char c;
     float d;
-    long double e;
+    double e;
     cin>>a>>b>>c>>d>>e;
 
     //printf(%d %)
