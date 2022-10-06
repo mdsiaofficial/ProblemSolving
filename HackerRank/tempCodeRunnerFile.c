@@ -1,17 +1,37 @@
-#include <stdio.h>
-#include <math.h>
+    
+    int a, b;
+    scanf("%d\n%d", &a, &b);
+  	// Complete the code.
+    for(int n=5; n<10; n++){
 
-//#define pi 3.14159
+        if(n>=1 && n<=9){
+            
+            if(n==1){
+                printf("one");
+            }else if(n==2){
+                printf("two");
+            }else if(n==3){
+                printf("three");
+            }else if(n==4){
+                printf("four");
+            }else if(n==5){
+                printf("five");
+            }else if(n==6){
+                printf("six");
+            }else if(n==7){
+                printf("seven");
+            }else if(n==8){
+                printf("eight");
+            }else if(n==9){
+                printf("nine");
+            }
+        }else{
+            if(n%2==0){
+                printf("even");
 
-int main(void) {
+            }else{
+                printf("odd");
+            }
+        }
 
-    const double pi = 3.14159;
-    double A, R;
-    scanf("%lf", &R);
-    //double s=pow(R,2);
-    A = pi*pow(R,2);
-
-    printf("%.4lf", A);
-
-	return 0;
-}
+    }

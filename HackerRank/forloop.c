@@ -7,7 +7,7 @@
 
 int main() 
 {
-    
+/*     
     int a, b;
     char *str[]={"one","two","three","four","five","six","seven","eight","nine","odd","even"};
 
@@ -21,44 +21,46 @@ int main()
             printf("%s\n", str[9+(n%2)]);
         }
     }
+ */
 
-/*     
+
+    
     int a, b;
     scanf("%d\n%d", &a, &b);
   	// Complete the code.
-    for(int n=5; n<10; n++){
+    for(int n=a; n<=b; n++){
 
         if(n>=1 && n<=9){
             
             if(n==1){
-                printf("one");
+                printf("one\n");
             }else if(n==2){
-                printf("two");
+                printf("two\n");
             }else if(n==3){
-                printf("three");
+                printf("three\n");
             }else if(n==4){
-                printf("four");
+                printf("four\n");
             }else if(n==5){
-                printf("five");
+                printf("five\n");
             }else if(n==6){
-                printf("six");
+                printf("six\n");
             }else if(n==7){
-                printf("seven");
+                printf("seven\n");
             }else if(n==8){
-                printf("eight");
+                printf("eight\n");
             }else if(n==9){
-                printf("nine");
+                printf("nine\n");
             }
         }else{
             if(n%2==0){
-                printf("even");
+                printf("even\n");
 
             }else{
-                printf("odd");
+                printf("odd\n");
             }
         }
 
     }
- */
+
     return 0;
 }
