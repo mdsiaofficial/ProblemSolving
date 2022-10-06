@@ -3,14 +3,14 @@ using namespace std;
 int main(){
 
     int a;
-    long int b;
+    long long b;
     char c;
     float d;
-    double e;
+    long double e;
     cin>>a>>b>>c>>d>>e;
 
     //printf(%d %)
-    cout<<a<<endl<<b<<endl<<c<<endl<<d<<endl<<e<<endl;
+    cout<<a<<endl<<b<<endl<<c<<endl<<d<<endl<<fixed<<setprecision(9)<<e<<endl;
 
     return 0;
 }
