@@ -10,7 +10,7 @@ int main(){
     cin>>a>>b>>c>>d>>e;
 
     //printf(%d %)
-    cout<<a<<endl<<b<<endl<<c<<endl<<d<<endl<<fixed<<setprecision(9)<<e<<endl;
+    cout<<a<<endl<<b<<endl<<c<<endl<<fixed<<setprecision(3)<<d<<endl<<fixed<<setprecision(9)<<e<<endl;
 
     return 0;
 }
