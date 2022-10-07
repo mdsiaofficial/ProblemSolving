@@ -7,11 +7,14 @@ int main(){
 
     int ii;
     double dd;
-    string ss;
+    
 
     cin>>ii>>dd;
+    string ss;
     getline(cin,ss);
 
-    cout<<i+ii<<endl<<d+dd<<endl<<s<<ss<<endl;
+    cout<<i+ii<<endl<<d+dd<<endl;
+    printf("%s%s",s,ss);
+    //<<s<<ss<<endl;
     return 0;
 }
