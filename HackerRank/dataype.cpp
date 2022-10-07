@@ -12,8 +12,11 @@ int main(){
     cin>>ii>>dd;
     //char ss[];
     string ss;
-    getline('\n',cin,ss);
-
+    
+    // this two line is very important to get line input with white space
+    cin.ignore();
+    getline(cin,ss);
+    //
     cout<<i+ii<<endl<<d+dd<<endl;
     cout<<s<<ss<<endl;
     //printf("%s%s",s,ss);
