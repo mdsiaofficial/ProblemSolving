@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+// solved
 int main(){
     int i = 4;
     double d = 4.0;
