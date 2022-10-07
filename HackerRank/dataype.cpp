@@ -17,7 +17,7 @@ int main(){
     cin.ignore();
     getline(cin,ss);
     //
-    cout<<i+ii<<endl<<d+dd<<endl;
+    cout<<i+ii<<endl<<fixed<<setprecision(1)<<d+dd<<endl;
     cout<<s<<ss<<endl;
     //printf("%s%s",s,ss);
     //<<s<<ss<<endl;
