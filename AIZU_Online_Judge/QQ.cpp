@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+// solved
 int main(){
 
     int n=10;
