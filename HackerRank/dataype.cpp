@@ -5,10 +5,10 @@ int main(){
     double d = 4.0;
     //char s[] = "HackerRank ";
     string s="HackerRank ";
+    
+    
     int ii;
     double dd;
-    
-
     cin>>ii>>dd;
     //char ss[];
     string ss;
