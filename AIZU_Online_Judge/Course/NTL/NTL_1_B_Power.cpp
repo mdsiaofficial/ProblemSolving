@@ -7,7 +7,7 @@ int main(){
 //
     cout<<pow(m,n)<<endl;
 
-
+//
 
 
 
