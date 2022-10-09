@@ -30,7 +30,8 @@ int main(){
     int day_e;
     int hour_s, minute_s, second_s;
     int hour_e, minute_e, second_e;
-    char a, b, c, d;
+
+    char a, b, c, d; //eida ajaira just colon input nibo 
     // output variables
     int day, hour, minute, second;
 
@@ -41,6 +42,8 @@ int main(){
     cin >> s2 >> day_e;
     cin >> hour_e >> c >> minute_e >> d >> second_e;
 
+
+/*  //failed with this code
 
     //converting all to second
     int start_sec = (hour_s * 60 * 60) + (minute_s * 60) + second_s;
@@ -69,6 +72,7 @@ int main(){
     }else{
         
     }
+*/
     // getline(cin, day); // this code helps to take input with whitespace
     //cin >> day;
     
@@ -81,6 +85,21 @@ int main(){
          << minute_e << endl
          << second_e << endl;
     */
+
+
+    
+
+    //converting all to second
+    int start_sec = (day_s*24*60*60)+(hour_s * 60 * 60) + (minute_s * 60) + second_s;
+    int end_sec =(day_e*24*60*60)+(hour_e * 60 * 60) + (minute_e * 60) + second_e;
+
+    int deff=end_sec-start_sec;
+    
+    day= deff/(24*60*60);
+    hour= deff/(24*60*60)-
+    minute=
+    second=
+
 
     return 0;
 }
