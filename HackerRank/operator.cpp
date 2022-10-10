@@ -13,7 +13,7 @@ float mealcost(float base_meal, int tips, int tax){
  */
 int main(){
 
-    float base_meal, tips, tax;
+    double base_meal, tips, tax;
     cin>>base_meal>>tips>>tax;
 
     cout<<round(base_meal + (base_meal*(tips/100.0) + (base_meal*(tax/100.0))))<<endl;
