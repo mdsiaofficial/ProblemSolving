@@ -1,10 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-mealcost(int base_meal, int tips, int tax){
+mealcost(float base_meal, int tips, int tax){
     
 
-    float total_meal= base_meal + (base_meal*(tips/100) + (base_meal*(tax/100))) ;
+    int total_meal= base_meal + (base_meal*(tips/100) + (base_meal*(tax/100))) ;
 
     cout<<total_meal<<endl;
     //return total_meal;
