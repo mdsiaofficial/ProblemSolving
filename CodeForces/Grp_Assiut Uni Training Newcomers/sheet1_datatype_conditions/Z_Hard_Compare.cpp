@@ -11,7 +11,7 @@ int main(){
 /*     long long ct=sqrt(a,b);
     long long ct2 =sqrt(c,d); */
 
-/* 
+/*  try 1: failed
     if(a<=10000 && c<=10000 && b<=1000000 && d<=1000000){
 
         long long ct=pow(a,b);
@@ -44,7 +44,7 @@ int main(){
 
      */
 
-
+/*  // try 2 : failed
     if(a<=10000 && c<=10000 && b<=1000000 && d<=1000000){
 
         long long ct=pow(a,b);
@@ -75,6 +75,10 @@ int main(){
         }
     }
 
+ */
 
+
+
+    
     return 0;
 }
