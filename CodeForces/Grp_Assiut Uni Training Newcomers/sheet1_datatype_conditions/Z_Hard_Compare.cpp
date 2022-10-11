@@ -5,7 +5,8 @@ using namespace std;
 
 int main(){
 
-    long long a,b,c,d;
+    // long long a,b,c,d;
+    double a,b,c,d;
     cin>>a>>b>>c>>d;
 
 /*     long long ct=sqrt(a,b);
@@ -80,8 +81,10 @@ int main(){
 
     // try 3 :
 
-    long long power1 = pow(a,b);
-    long long power2 = pow(c,d);
+    // long long power1 = pow(a,b);
+    // long long power2 = pow(c,d);
+    double power1 = b*log(a);
+    double power2 = d*log(c);
 
     if(power1>power2){
         cout<<"YES"<<endl;
