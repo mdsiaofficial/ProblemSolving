@@ -1,8 +1,7 @@
 #include<bits/stdc++.h>
-#include <iomanip> //this library need to use setprecision
-#include <cmath>
 using namespace std;
 
+// solved
 int main(){
 
     // long long a,b,c,d;
@@ -79,7 +78,7 @@ int main(){
  */
 
 
-    // try 3 :
+    // try 3 : solved
 
     // long long power1 = pow(a,b);
     // long long power2 = pow(c,d);
