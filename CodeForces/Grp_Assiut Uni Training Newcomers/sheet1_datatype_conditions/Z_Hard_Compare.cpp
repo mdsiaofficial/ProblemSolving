@@ -80,7 +80,14 @@ int main(){
 
     // try 3 :
 
-    
+    long long power1 = pow(a,b);
+    long long power2 = pow(c,d);
+
+    if(power1>power2){
+        cout<<"YES"<<endl;
+    }else{
+        cout<<"NO"<<endl;
+    }
 
     return 0;
 }
