@@ -72,6 +72,8 @@ int main(){
     int end_sec =(day_e*24*60*60)+(hour_e * 60 * 60) + (minute_e * 60) + second_e;
     
     
+
+    
     // solve 1: done ; 
     // solve by calculating
     int deff=end_sec-start_sec;
