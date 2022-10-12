@@ -18,7 +18,7 @@ int main(){
     scanf("%d",&a);
     printf("\n%d\n",a);
  */
-
+/* 
     int a; 
     a = 1000; 
     printf("Value of a is %d\n", a); 
@@ -32,6 +32,15 @@ int main(){
     printf("Value of a is %d\n", a); 
     a = -4325987632; 
     printf("Value of a is %d\n", a);
+ */
 
+
+    double a, b, sum; 
+    a = 9.5; 
+    b = 8.743; 
+    sum = a + b; 
+    printf("Sum is: %lf\n", sum); 
+    printf("Sum is: %0.2lf\n", sum); 
+    
     return 0;
 }
