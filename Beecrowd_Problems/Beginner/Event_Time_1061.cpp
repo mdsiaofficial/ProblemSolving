@@ -70,19 +70,18 @@ int main(){
     //converting all to second
     int start_sec = (day_s*24*60*60)+(hour_s * 60 * 60) + (minute_s * 60) + second_s;
     int end_sec =(day_e*24*60*60)+(hour_e * 60 * 60) + (minute_e * 60) + second_e;
-    
+    int deff= end_sec - start_sec;
     
 
-    
+/* 
     // solve 1: done ; 
     // solve by calculating
-    int deff=end_sec-start_sec;
     day= deff/(24*60*60);
     hour= (deff - (day*24*60*60))/(60*60);
     minute= (deff - (day*24*60*60) - (hour*(60*60)))/60;
     second = (deff - (day*24*60*60) - (hour*(60*60)) - (minute*60));
 
-
+ */
 
 
 /*  // solved. solve 2
@@ -130,6 +129,22 @@ int main(){
         day-=1;
     }
  */
+
+
+
+
+    // solve 4:
+    day = deff/(24*60*60);
+    int temp = deff%(24*60*60);
+    hour = temp/(60*60);
+    temp = temp%(3600);
+    minute = temp/60;
+    temp = temp % 60;
+    second = temp;
+
+
+
+    
 
 
     cout<<day<<" dia(s)"<<endl;
