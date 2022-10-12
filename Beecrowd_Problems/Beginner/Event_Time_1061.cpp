@@ -33,7 +33,7 @@ int main(){
 
     char a, b, c, d; //eida ajaira just colon input nibo 
     // output variables
-    int day, hour, minute, second;
+    int day=0, hour=0, minute=0, second=0;
 
     // taking input
     cin >> s1 >> day_s;
