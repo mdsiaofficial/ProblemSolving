@@ -95,13 +95,35 @@ int main(){
 
     int deff=end_sec-start_sec;
     
+/*     // solve by calculating
     day= deff/(24*60*60);
     hour= deff/(24*60*60)-
     minute=
     second=
 
+ */
 
+    // solve by looping
+    for(int i=start_sec; i<=end_sec; i++){
+        second++;
+        if(second==60){
+            minute++;
+            second=0;
 
+            if(minute==60){
+                hour++;
+                minute=0;
+
+                if(hour==0){
+                    day++;
+                    hour=0;
+                }
+            }
+        }
+    }
+
+    cout<<day<<" dia(s)"<<hour<<" hora(s)"<<minute<<" minuto(s)"<<second<<" segundo(s)"<<endl;
+    
 // undone
 
     return 0;
