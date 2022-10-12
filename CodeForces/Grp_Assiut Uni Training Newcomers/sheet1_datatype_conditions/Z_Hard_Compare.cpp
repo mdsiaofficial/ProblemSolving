@@ -8,6 +8,8 @@ int main(){
     double a,b,c,d;
     cin>>a>>b>>c>>d;
     // taking input
+
+    
 /*     long long ct=sqrt(a,b);
     long long ct2 =sqrt(c,d); */
 
