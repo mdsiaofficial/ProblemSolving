@@ -114,7 +114,7 @@ int main(){
                 hour++;
                 minute=0;
 
-                if(hour==0){
+                if(hour==60){
                     day++;
                     hour=0;
                 }
