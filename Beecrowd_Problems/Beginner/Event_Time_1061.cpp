@@ -103,8 +103,8 @@ int main(){
 
  */
 
-    // solve by looping
-    for(int i=start_sec; i<=end_sec; i++){
+    // solve by looping: Success
+    for(int i=start_sec; i<end_sec; i++){
         second++;
         if(second==60){
             minute++;
@@ -122,12 +122,15 @@ int main(){
         }
     }
 
+
+
+
     cout<<day<<" dia(s)"<<endl;
     cout<<hour<<" hora(s)"<<endl;
     cout<<minute<<" minuto(s)"<<endl;
     cout<<second<<" segundo(s)"<<endl;
 
-// undone
+
 
     return 0;
 }
