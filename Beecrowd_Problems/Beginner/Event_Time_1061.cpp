@@ -146,7 +146,7 @@ int main(){
 
     
 
-
+    // output here:
     cout<<day<<" dia(s)"<<endl;
     cout<<hour<<" hora(s)"<<endl;
     cout<<minute<<" minuto(s)"<<endl;
