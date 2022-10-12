@@ -122,8 +122,11 @@ int main(){
         }
     }
 
-    cout<<day<<" dia(s)"<<hour<<" hora(s)"<<minute<<" minuto(s)"<<second<<" segundo(s)"<<endl;
-    
+    cout<<day<<" dia(s)"<<endl;
+    cout<<hour<<" hora(s)"<<endl;
+    cout<<minute<<" minuto(s)"<<endl;
+    cout<<second<<" segundo(s)"<<endl;
+
 // undone
 
     return 0;
