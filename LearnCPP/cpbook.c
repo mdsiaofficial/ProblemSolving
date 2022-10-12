@@ -14,7 +14,7 @@ int main(){
      */
 
 
-    long int a;
+    long long a;
     scanf("%d",&a);
     printf("\n%d\n",a);
 
