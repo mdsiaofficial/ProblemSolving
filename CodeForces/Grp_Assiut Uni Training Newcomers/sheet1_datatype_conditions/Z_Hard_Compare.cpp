@@ -7,7 +7,7 @@ int main(){
     // long long a,b,c,d;
     double a,b,c,d;
     cin>>a>>b>>c>>d;
-
+    // taking input
 /*     long long ct=sqrt(a,b);
     long long ct2 =sqrt(c,d); */
 
@@ -83,7 +83,7 @@ int main(){
     // long long power1 = pow(a,b);
     // long long power2 = pow(c,d);
     // log compresses the whole number into small fractional number
-    
+
     double power1 = b*log(a);
     double power2 = d*log(c);
 
