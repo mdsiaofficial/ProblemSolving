@@ -2,28 +2,6 @@
 using namespace std;
 int main(){
 
-/*
-    cout << "Dia";
-    int day_start;
-    cin >> day_start;
-    int hour_s, minute_s, second_s;
-    cin >> hour_s;
-    cout << ":";
-    cin >> minute_s;
-    cout << ":";
-    cin >> second_s;
-
-    cout << "Dia";
-    int day_end;
-    cin >> day_end;
-    int hour_e, minute_e, second_e;
-    cin >> hour_e;
-    cout << ":";
-    cin >> minute_e;
-    cout << ":";
-    cin >> second_e;
-
- */
     //input variables
     string s1,s2;
     int day_s;
@@ -102,6 +80,9 @@ int main(){
     second=
  */
 
+
+
+/*  // solved. solve 2
     // solve by looping: Success
     for(int i=start_sec; i<end_sec; i++){
         second++;
@@ -120,6 +101,31 @@ int main(){
             }
         }
     }
+
+ */
+
+
+
+
+    //solve 3: 
+    day= day_e - day_s;
+    hour= hour_e- hour_s;
+    minute= minute_e - minute_s;
+    second= second_e - second_s;
+
+    if(second<0){
+        second=second+60;
+        minute-=1;
+    }
+    if(minute<0){
+        minute+=60;
+        hour-=1;
+    }
+    if(hour<0){
+        hour+=24;
+        day-=1;
+    }
+    
     cout<<day<<" dia(s)"<<endl;
     cout<<hour<<" hora(s)"<<endl;
     cout<<minute<<" minuto(s)"<<endl;
