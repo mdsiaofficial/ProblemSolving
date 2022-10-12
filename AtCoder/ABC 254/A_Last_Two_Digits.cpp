@@ -8,7 +8,7 @@ int main(){
     int temp = n%10;
     int temp2 = n/10;
     int temp3 = temp2%10;
-    cout<<temp3<<temp3<<endl;
+    cout<<temp3<<temp<<endl;
 
     return 0;
 }
