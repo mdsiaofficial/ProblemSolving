@@ -3,8 +3,11 @@
 int main(){
 
     /* 
+
     A = P(1+(r/n))^nt
     ci = (P(1+(r/n))^nt) - P
+
+    ci = compound interest
     A = amount
     P = principal
     r = rate of interest
