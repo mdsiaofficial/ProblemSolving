@@ -7,6 +7,6 @@ int main(){
 
     area = (base * height)/2;
 
-    printf("Area of Triangle: %f")
+    printf("\nArea of Triangle: %f\n", area);
     return 0;
 }
