@@ -29,5 +29,7 @@ int main(){
     int b=10;
 
     printf("%d %d", (a>b)&&*(a!=b),)
+
+    
     return 0;
 }
