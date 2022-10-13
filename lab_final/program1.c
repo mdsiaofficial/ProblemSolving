@@ -7,7 +7,7 @@ int main(){
     b = d+a-c;
     a = b-c+b;
 
-    printf("The values are:\na= %d\nb=%d\nc=%d\nd=%d\n",a,b,c,d);
-    
+    printf("The values are:\na = %d\nb = %d\nc = %d\nd = %d\n",a,b,c,d);
+
     return 0;
 }
