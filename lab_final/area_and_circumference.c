@@ -2,7 +2,8 @@
 int main(){
 
     float radius;
-
+    printf("Enter the value of Radius: ");
+    
     scanf("%f", &radius); 
     // input nilam, radius variable e value rakhlam
 

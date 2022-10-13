@@ -3,7 +3,8 @@ int main(){
 
     int length, breadth;
     // prostho er nam breadth/width ekla bollei hoy
-
+    printf("Enter the value of Length & Breadth: ");
+    
     scanf("%f%f", &length, &breadth); 
     // input nilam, doirgho ar prostho variable e value rakhlam
 
