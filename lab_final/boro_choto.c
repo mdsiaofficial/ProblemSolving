@@ -23,13 +23,11 @@ int main(){
 */
 
 
-
-
     int a=5;
     int b=10;
 
-    printf("%d %d", (a>b)&&*(a!=b),)
+    printf("%d %d", (a>b)&&(a!=b),(b>a)||(b==a));
 
-    
+
     return 0;
 }
