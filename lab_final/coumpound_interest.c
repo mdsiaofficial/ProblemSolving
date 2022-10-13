@@ -4,11 +4,8 @@ int main(){
 
     /* 
 
-    A = P(1+(r/n))^nt
-    ci = (P(1+(r/n))^nt) - P
-    this is : ci = (P(1+(r/100))^t) - P
-
-    ci = compound interest
+    A = P(1+(r/100))^t
+    
     A = amount
     P = principal
     r = rate of interest
@@ -23,11 +20,9 @@ int main(){
     
     scanf("%f%f%f", &principal, &rate, &time);
 
-    int temp = N*time;
     amount = principal*pow((1+(rate/100)),time);
-    float ci = amount - principal;
 
-    printf("Compound Interest: %f", ci);
+    printf("Compound Interest: %f", amount);
 
     return 0;
     
