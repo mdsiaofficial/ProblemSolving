@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 int main(){
-
+    // answer of 4 b: 
     /* 
 
     A = P(1+(r/100))^t
