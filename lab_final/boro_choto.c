@@ -1,3 +1,4 @@
+/*
 #include<stdio.h>
 int main(){
 /* 
@@ -30,7 +31,3 @@ int main(){
     printf("%d %d", (a>b)&&*(a!=b),)
     return 0;
 }
-
-
-
-
