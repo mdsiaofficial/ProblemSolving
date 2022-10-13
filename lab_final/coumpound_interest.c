@@ -16,7 +16,7 @@ int main(){
 
     float principal, rate, time, amount;
 
-    printf("Enter the value of Principal, Rate and Time and N(interest counts per year): ");
+    printf("Enter the value of Principal, Rate and Time: ");
     
     scanf("%f%f%f", &principal, &rate, &time);
 
