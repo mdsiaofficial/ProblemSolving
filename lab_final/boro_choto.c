@@ -23,9 +23,13 @@ int main(){
 */
 
 
-    int a=5;
+/*     int a=5;
     int b=10;
+ */
 
+    int a,b;
+    scanf("%d%d", &a, &b);
+    
     printf("%d %d", ((a>b)&&(a!=b)),((b>a)||(b==a)));
 
 
