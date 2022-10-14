@@ -28,8 +28,12 @@ int main(){
  */
 
     int a,b;
+    // %d int integer
+    // %f float floating point number
+    // %lf double long floating point number
+    // 
     scanf("%d%d", &a, &b);
-    
+
     printf("%d %d", ((a>b)&&(a!=b)),((b>a)||(b==a)));
 
 
