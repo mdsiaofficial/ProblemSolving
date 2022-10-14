@@ -16,6 +16,10 @@ ajaira_oddnum(){
 
     }
     
+
+    
+
+    
 }
 int main(){
 
