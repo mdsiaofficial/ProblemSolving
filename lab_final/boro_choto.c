@@ -26,7 +26,7 @@ int main(){
 /*     int a=5;
     int b=10;
  */
-
+/* 
     int a,b;
     // %d int integer
     // %f float floating point number
@@ -36,6 +36,20 @@ int main(){
 
     printf("%d %d", ((a>b)&&(a!=b)),((b>a)||(b==a)));
 
+ */
+
+/*     //int a=5, b=3;
+
+    printf("%d %d\n", a+b, a-b);
+    printf("\n%d", -a+b);
+
+    printf("\n\n%d %d", a>b, a==b);
+ */
+
+    int a=5;
+    int b=10;
+
+    printf("%d %d", (a>b)&&(a!=b), !(b>a)||(b==a));
 
     return 0;
 }
