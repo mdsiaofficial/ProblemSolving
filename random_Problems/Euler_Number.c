@@ -1,4 +1,11 @@
-#include 
+#include<stdio.h>
+
+/*
+Write a program to compute the value of 
+Euler's number e, that is used as the base of 
+natural logarithms. Use the following 
+formula. e=1+1/1! +1/2+1/3+...+1/n!
+*/
 int main()
 {
 	double term = 1.0;
