@@ -8,11 +8,13 @@ int main(){
     int n;
     cin>>n;
 
-    //int fnf= 
+    
+
     int fn= n * (n-1);
+
+    
     if(n==0){
         cout<<"1"<<endl;
-
     }else if(n>0){
         cout<<fn<<endl;
     }
