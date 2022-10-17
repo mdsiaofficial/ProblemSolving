@@ -14,7 +14,24 @@ int main(){
     cin>>n;
 
     int prime = 0;
-    if(n<2){
+
+    for (int i = 2; i < n; i++)
+    {
+        /* code */
+        if(n%i==0)
+        {
+            prime++;
+            break;
+        }
+    }
+    if(prime==0){
+        cout<<"Yes"<<endl;
+
+    }else{
+        cout<<"No"<<endl;
+    }
+    
+/*     if(n<2){
         cout<<"No"<<endl;
 
     }else{
@@ -33,7 +50,7 @@ int main(){
             cout<<"No"<<endl;
         }
     }
-    
+     */
 /*     if(n%(n+1)!=0){
         cout<<"No"<<endl;
     }else if(n%n==0 && n%1==0){
