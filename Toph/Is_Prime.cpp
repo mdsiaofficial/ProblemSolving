@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 //#include <stdio.h>
+    
 
+    // solved
 using namespace std;
 int main(){
 
@@ -57,5 +59,7 @@ int main(){
         cout<<"Yes"<<endl;
     }
  */
+    
+    //
     return 0;
 }
