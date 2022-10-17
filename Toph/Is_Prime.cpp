@@ -19,7 +19,7 @@ int main(){
 
     }else if(n%(n+1)!=0){
         cout<<"No"<<endl;
-    }else{
+    }else if(n%n==0 && n%1==0){
         cout<<"Yes"<<endl;
     }
 
