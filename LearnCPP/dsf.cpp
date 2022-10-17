@@ -8,4 +8,6 @@ int main()
                  "really long line\n"; // text aligned with the previous line for continuation line
 
     std::cout << "This one is short\n";
+
+    reture 0;
 }

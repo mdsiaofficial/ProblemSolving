@@ -13,7 +13,7 @@ int main()
     std::cout << "This is another really, really, really, really, really, really, really, "
                  "really long line\n"; // text aligned with the previous line for continuation line
 
-    std::cout << "This one is short\n";
+    //std::cout << "This one is short\n";
     return 0; // returns value zero after run
 
     
