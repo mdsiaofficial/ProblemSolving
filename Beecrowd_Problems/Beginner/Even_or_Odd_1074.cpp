@@ -9,9 +9,6 @@ int main(){
     {   
         int a;
         cin>>a;
-
-
-
         if(a==0){
             cout<<"NULL"<<endl;
 
@@ -22,17 +19,12 @@ int main(){
                 cout<<"EVEN NEGATIVE"<<endl;
             }
         }else if(a%2!=0){
-
             if(a>0){
                 cout<<"ODD POSITIVE"<<endl;
             }else{
                 cout<<"ODD NEGATIVE"<<endl;
             }
         }
-
- 
-
-        /* code */
     }
     
     return 0;
