@@ -11,7 +11,7 @@ int main(){
         cin>>a;
 
 
-/* 
+
         if(a==0){
             cout<<"NULL"<<endl;
 
@@ -30,7 +30,7 @@ int main(){
             }
         }
 
- */
+ 
 
         /* code */
     }
