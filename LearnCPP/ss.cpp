@@ -1,4 +1,9 @@
 #include<iostream>
+
+void doPrint()
+{
+    std::cout << "In doPrint()\n";
+}
 int main()
 {
     std::cout << "Starting main()\n";
