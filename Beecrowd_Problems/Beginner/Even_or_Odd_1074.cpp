@@ -10,23 +10,28 @@ int main(){
         int a;
         cin>>a;
 
+
+/* 
         if(a==0){
             cout<<"NULL"<<endl;
 
-        }else if(n%2==0){
-            if(n>0){
+        }else if(a%2==0){
+            if(a>0){
                 cout<<"EVEN POSITIVE"<<endl;
             }else{
                 cout<<"EVEN NEGATIVE"<<endl;
             }
-        }else if(n%2!=0){
+        }else if(a%2!=0){
 
-            if(n>0){
+            if(a>0){
                 cout<<"ODD POSITIVE"<<endl;
             }else{
                 cout<<"ODD NEGATIVE"<<endl;
             }
         }
+
+ */
+
         /* code */
     }
     
