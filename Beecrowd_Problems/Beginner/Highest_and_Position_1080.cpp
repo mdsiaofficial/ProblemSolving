@@ -16,7 +16,7 @@ int main(){
         for(int k=0; k<100; k++){
 
             if(numbers[j]>numbers[k]){
-                
+                cout<<numbers[j]<<endl<<j+1<<endl;
             }
         }
     }
