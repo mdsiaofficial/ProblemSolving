@@ -5,15 +5,21 @@ int main(){
 
     // read 100 int
 
-    int position;
-    int big;
+    int position=0;
+    int big=0;
     int numbers[100];
-    
+
+
+/*     
     for(int i = 0; i<100; i++){
         cin>>numbers[i];
-
+        
     }
-/* 
+
+ */
+
+
+/*  // failed here
     for(int j=0; j<100; j++){
 
         for(int k=0; k<100; k++){
@@ -24,7 +30,11 @@ int main(){
         }
     }
  */ 
-/*     for(int z=0; z<100; z++){
+
+
+/*     
+    // failed here
+    for(int z=0; z<100; z++){
 
         if(numbers[z]>numbers[z+1]){
             big=numbers[z];
@@ -34,6 +44,11 @@ int main(){
     }
  */
 
+
+
+
+/* 
+    // half solved : gets biggest number , not position //
 
     int num= numbers[0];
     for(int h=0; h<100; h++){
@@ -48,6 +63,22 @@ int main(){
             position = h+1;
         }
     }
+
+
+ */
+    
+
+    //last try : solved
+    int n;
+    for(int i = 0; i<100; i++){
+        cin>>n;
+        if(n>big){
+            big=n;
+            position=i+1;
+        }
+        
+    }
+
     cout<<endl<<big<<endl<<position<<endl;
     return 0;
 }
