@@ -10,7 +10,7 @@ int main(){
         cin>>x>>y;
 
         if(y==0){
-            cout<<“divisao impossivel”<<endl;
+            cout<<"divisao impossivel"<<endl;
 
         }else{
             float div=x/y;
