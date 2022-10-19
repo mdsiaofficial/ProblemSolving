@@ -31,9 +31,9 @@ int main(){
 
     }
 
-    PerRab = (rabbit/total)*100;
-    PerRat = (rat/total)*100;
-    PerFrog = (frog/total)*100;
+    PerRab = rabbit/total*100;
+    PerRat = rat/total*100;
+    PerFrog = frog/total*100;
 
     cout<<"Total: "<<total<<" cobaias"<<endl;
     cout<<"Total de coelhos: "<<rabbit<<endl;
