@@ -79,6 +79,6 @@ int main(){
         
     }
 
-    cout<<endl<<big<<endl<<position<<endl;
+    cout<<big<<endl<<position<<endl;
     return 0;
 }
