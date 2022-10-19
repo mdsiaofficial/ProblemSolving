@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
 
-    int x,y;
+    float x,y;
     int n;
 
     for(int i=1; i<=n; i++){
