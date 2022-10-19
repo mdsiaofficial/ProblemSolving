@@ -7,7 +7,7 @@ int main(){
 
     int position=0;
     int big=0;
-    int numbers[100];
+    //int numbers[100];
 
 
 /*     
