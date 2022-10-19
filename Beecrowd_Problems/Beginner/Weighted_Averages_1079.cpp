@@ -10,8 +10,8 @@ int main(){
         cin>>x>>y>>z;
 
         float avrg = ((x*2)+(y*3)+(z*5))/3;
-        cout<<avrg<<endl;
-        
+        cout<<fixed<<setprecision(1)<<avrg<<endl;
+
     }
     
     return 0;
