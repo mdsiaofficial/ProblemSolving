@@ -12,7 +12,7 @@ int main(){
             cout<<"divisao impossivel"<<endl;
 
         }else{
-            float div=x/y;
+            float div=(x)/(y);
             cout<<fixed<<setprecision(1)<<div<<endl;
         }
     }
