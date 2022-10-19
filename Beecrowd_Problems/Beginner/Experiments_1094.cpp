@@ -26,10 +26,21 @@ int main(){
         }else if(y=='S'){
             frog = frog + x;
             total = total + x;
-            
+
         }
 
     }
 
+    PerRab = (rabbit/total)*100;
+    PerRat = (rat/total)*100;
+    PerFrog = (frog/total)*100;
+
+    cout<<"Total: "<<total<<" cobaias"<<endl;
+    cout<<"Total de coelhos: "<<rabbit<<endl;
+    cout<<"Total de ratos: "<<rat<<endl;
+    cout<<"Total de sapos: "<<frog<<endl;
+    cout<<"Percentual de coelhos: "<<PerRab<<" %"<<endl;
+    cout<<"Percentual de ratos: "<<PerRat<<" %"<<endl;
+    cout<<"Percentual de sapos: "<<PerFrog<<" %"<<endl;
     return 0;
 }
