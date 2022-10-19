@@ -8,6 +8,7 @@ int main(){
     int position;
     int big;
     int numbers[100];
+    
     for(int i = 0; i<100; i++){
         cin>>numbers[i];
 
@@ -39,11 +40,14 @@ int main(){
         if(num>numbers[h]){
             big=num;
             num=big;
+            position= h-1;
             
         }else{
             big=numbers[h];
             num=numbers[h];
+            position = h+1;
         }
     }
+    cout<<endl<<big<<endl<<position<<endl;
     return 0;
 }
