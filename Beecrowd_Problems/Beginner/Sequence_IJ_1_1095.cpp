@@ -5,7 +5,7 @@ int main(){
 
 
     int d=1;
-    for(int i=60; i>=0; i-5){
+    for(int i=60; i>=0; i=i-5){
         cout<<"I="<<d<<" J="<<i<<endl;
         d+=3;
     }
