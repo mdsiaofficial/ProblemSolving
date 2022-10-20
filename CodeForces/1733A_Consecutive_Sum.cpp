@@ -2,7 +2,7 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
+long long ma[105];
 int main()
 {
 
