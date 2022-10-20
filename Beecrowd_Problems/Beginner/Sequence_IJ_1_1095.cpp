@@ -4,10 +4,10 @@ using namespace std;
 int main(){
 
 
-    int d=1;
-    for(int i=60; i>=0; i=i-5){
-        cout<<"I="<<d<<" J="<<i<<endl;
-        d+=3;
+    int i=1;
+    for(int j=60; j>=0; j=j-5){
+        cout<<"I="<<i<<" J="<<j<<endl;
+        i=i+3;
     }
     return 0;
 }
