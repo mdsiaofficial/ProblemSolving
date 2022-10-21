@@ -8,8 +8,12 @@ int main()
         for (float j = 1; j <= 3; j++)
         {
             
+            //j=j+i;
+            for(float z=1; z<=3; z++){
+                j=j+i;
+                cout<<"I="<<i<<" J="<<j<<endl;
+            }
             
-            cout<<"I="<<i<<" J="<<j<<endl;
         }
         
     }
