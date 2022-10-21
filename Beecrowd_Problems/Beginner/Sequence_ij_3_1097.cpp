@@ -1,5 +1,5 @@
-//#include<bits/stdc++.h>
-#include <iostream>
+#include<bits/stdc++.h>
+
 using namespace std;
 
 int main()
@@ -28,7 +28,7 @@ int main()
         }
         
         // ei loop e i er value ar j er value serially print korsi
-        
+
         for (int c = 1; c <= 3; c++)
         {
             
