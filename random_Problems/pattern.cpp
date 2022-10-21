@@ -8,6 +8,7 @@ aaaabbb**J
 aaaaabbbb***M
 aaaaaabbbbb****P
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
