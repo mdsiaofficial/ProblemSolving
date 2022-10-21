@@ -51,7 +51,7 @@ int main(){
  */
 
 
-        // try 2 solved
+        // try 2 solvedggg
     float x, y, z, n;
     y = 0;
     z = 0;
