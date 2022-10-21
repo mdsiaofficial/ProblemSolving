@@ -1,24 +1,39 @@
-//#include<bits/stdc++.h>
-#include<iostream>
+#include<bits/stdc++.h>
+//#include<iostream>
 
 using namespace std;
 
 int main(){
 
-<<<<<<< HEAD
-    int sum=0;
-    int div=1;
-    for(int i=1; i<=39; i=i+2){
+
+    float sum=0;
+    float div=1;
+    for(float i=1; i<=39; i=i+2){
         sum = sum + (i/div);
 
         div = div*2;
 
     }
-    cout<<sum<<endl;
+    cout<<fixed<<setprecision(2)<<sum<<endl;
     
-=======
-    cout<<"Hello World"<<endl;
->>>>>>> e589d6fa400573bec5ad5c5993e769c648649d90
+    
+
+
+/* 
+    //c solution
+
+    float soma = 1;
+    int b = 2;
+    for(int i = 3; i < 40; i++){
+            soma += (float)i/(float)b;
+            i++;
+            b *= 2;
+    }
+    printf("%.2f\n",soma);
+ */
+
     return 0;
 
 }
+
+
