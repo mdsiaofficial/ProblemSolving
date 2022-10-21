@@ -30,6 +30,8 @@ int main()
         // ei loop e i er value ar j er value serially print korsi
 
 
+
+
         for (int c = 1; c <= 3; c++)
         {
             
