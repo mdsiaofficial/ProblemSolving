@@ -18,13 +18,13 @@ int main()
         if(a>0 && b>0){
             if(a<b){
                 for(int i=a; i<=b; i++){
-                    cout<<"i ";
+                    cout<<i<<" ";
                     sum=sum+i;
                     
                 }
             }else{
                 for(int i=b; i<=a; i++){
-                    cout<<"i ";
+                    cout<<i<<" ";
                     sum=sum+i;
                     
                 }
