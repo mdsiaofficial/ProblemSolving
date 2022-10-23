@@ -7,9 +7,9 @@ int main()
 {
 
 
-/*  // solution 1;
-    int count;
-    cin>>count;
+ // solution 1;
+    //int count;
+    //cin>>count;
 
     for (int i = 0; i < count; i++)
     {
@@ -17,6 +17,8 @@ int main()
         int a,b;
         cin>>a>>b;
         int sum=0;
+
+
         if(a>0 && b>0){
             if(a<b){
                 for(int i=a; i<=b; i++){
@@ -33,14 +35,15 @@ int main()
             }
 
         }
+        
         cout<<"Sum="<<sum<<endl;
 
     }
     
 
- */
 
 
+/* 
     // solution 2 ;
     int n;
     int x, y, aux;
@@ -67,7 +70,7 @@ int main()
     }
 
 
-
+ */
 
     return 0;
 }
