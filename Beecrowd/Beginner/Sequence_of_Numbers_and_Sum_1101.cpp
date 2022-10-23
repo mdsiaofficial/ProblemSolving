@@ -73,6 +73,7 @@ int main()
  */
 
     int a, b, i, j, temp, x = 0;
+    int sum=0;
     for (; i; i++)
     {
         cin >> a >> b;
