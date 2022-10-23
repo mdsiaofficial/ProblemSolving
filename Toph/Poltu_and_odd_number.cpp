@@ -1,6 +1,6 @@
 #include <iostream>
-#include <iomanip>
-#include <cmath>
+//#include <iomanip>
+//#include <cmath>
 using namespace std;
 int main()
 {
@@ -8,7 +8,7 @@ int main()
     cin >> n;
     for (int i = 1; i <=n; i++)
     {
-        long long a, b;
+        int a, b;
         int odd_sum=0;
 
 
