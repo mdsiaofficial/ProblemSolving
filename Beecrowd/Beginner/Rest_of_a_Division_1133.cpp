@@ -8,8 +8,10 @@ int main()
 
     int x, y;
 
-    cin>> x >> y;
+    cin >> x;
     
+    cin >> y;
+
     if(x<y){
 
         for (int i = x + 1; i < y; i++)
