@@ -15,6 +15,8 @@ int main()
             cout << "Crescente" << endl;
             break;
         }
+
+        cout << "Decrescente" << endl;
     }
     
     return 0;
