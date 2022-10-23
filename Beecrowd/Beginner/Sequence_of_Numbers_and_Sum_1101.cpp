@@ -79,22 +79,17 @@ int main()
         cin >> a >> b;
         if(a<=0 || b<=0)break;
 
-        if (a < b)
-        {
-            for (int i = a; i <= b; i++)
-            {
-                cout << i << " ";
-                sum = sum + i;
-            }
+        if(a>b){
+            temp = a;
+            a = b;
+            b = temp;
         }
-        else
+        for (j = a; i <=b; j++)
         {
-            for (int i = b; i <= a; i++)
-            {
-                cout << i << " ";
-                sum = sum + i;
-            }
+            cout << j << " ";
+            sum += i;
         }
+        
 
         cout << "Sum=" << sum << endl;
         /* code */
