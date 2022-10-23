@@ -9,7 +9,7 @@ int main()
 {
     long long n;
     cin >> n;
-    int c = 1;
+    long long c = 1;
     while (n!=0)
     {
         long long a, b;
