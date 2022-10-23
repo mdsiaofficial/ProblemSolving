@@ -10,7 +10,7 @@ int main()
 
         if (a == 2002)
         {
-            cout << "Acesso Permitido" 
+            cout << "Acesso Permitido" << endl;
             break;
         }else
         {
