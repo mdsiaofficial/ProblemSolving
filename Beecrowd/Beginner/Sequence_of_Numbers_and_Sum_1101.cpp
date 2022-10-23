@@ -6,6 +6,8 @@ using namespace std;
 int main()
 {
 
+
+/*  // solution 1;
     int count;
     cin>>count;
 
@@ -31,13 +33,41 @@ int main()
             }
 
         }
-        
-        
-        
         cout<<"Sum="<<sum<<endl;
 
     }
     
+
+ */
+
+
+    // solution 2 ;
+    int n;
+    int x, y, aux;
+    int soma;
+    
+    while(true){
+                
+                cin >> x;
+                cin >> y;
+                if(x <= 0) break;
+                if(y <= 0) break;
+                
+                if(x > y){
+                     aux = x;
+                     x = y;
+                     y = aux;
+                }
+                sum = 0;
+                for(int i = x; i <= y; i++){
+                        cout << i << " ";
+                       soma += i;
+                }
+                cout << "Sum=" << sum << endl;
+    }
+
+
+
 
     return 0;
 }
