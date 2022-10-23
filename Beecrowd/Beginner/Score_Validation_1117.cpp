@@ -2,6 +2,7 @@
 using namespace std;
 int main()
 {
+    //unsolved
 
     float number1, number2, c=0;
     while (1)
