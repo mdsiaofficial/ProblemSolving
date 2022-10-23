@@ -53,8 +53,11 @@ int main()
                 
         cin >> x;
         cin >> y;
-        if(x <= 0) break;
-        if(y <= 0) break;
+        // if(x <= 0) break;
+        // if(y <= 0) break;
+        if(x<=0 || y<=0){
+            break;
+        }
         
         if(x > y){
                 temp= x;
