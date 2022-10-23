@@ -43,13 +43,13 @@ int main()
  */
 
 
-/* 
+
     // solution 2 ;
     int n;
-    int x, y, aux;
+    int x, y, temp;
     int sum;
     
-    while(true){
+    while(1){
                 
         cin >> x;
         cin >> y;
@@ -57,9 +57,9 @@ int main()
         if(y <= 0) break;
         
         if(x > y){
-                aux = x;
+                temp= x;
                 x = y;
-                y = aux;
+                y = temp;
         }
         sum = 0;
         for(int i = x; i <= y; i++){
@@ -70,8 +70,11 @@ int main()
     }
 
 
- */
 
+
+
+
+/* 
     int a, b, i, j, temp, x = 0;
     int sum=0;
     for (; i; i++)
@@ -92,10 +95,10 @@ int main()
         
 
         cout << "Sum=" << sum << endl;
-        /* code */
+       
     }
     
-
+ */
 
 return 0;
 }
