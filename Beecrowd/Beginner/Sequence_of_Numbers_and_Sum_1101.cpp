@@ -11,7 +11,7 @@ int main()
     //int count;
     //cin>>count;
 
-    for (int i = 0; i < count; i++)
+    for (int i = 0; i = 0; i++)
     {
         
         int a,b;
