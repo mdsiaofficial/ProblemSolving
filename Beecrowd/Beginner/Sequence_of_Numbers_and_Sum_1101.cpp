@@ -34,7 +34,7 @@ int main()
         
         
         
-        cout<<sum<<endl;
+        cout<<"Sum="<<sum<<endl;
 
     }
     
