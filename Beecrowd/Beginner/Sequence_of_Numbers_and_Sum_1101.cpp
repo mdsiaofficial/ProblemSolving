@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 
-
+/* 
  // solution 1;
     int count;
     //cin>>count;
@@ -40,7 +40,7 @@ int main()
 
     }
     
-
+ */
 
 
 /* 
@@ -72,5 +72,34 @@ int main()
 
  */
 
-    return 0;
+    int a, b, i, j, temp, x = 0;
+    for (; i; i++)
+    {
+        cin >> a >> b;
+        if(a<=0 || b<=0) break;
+
+        if (a < b)
+        {
+            for (int i = a; i <= b; i++)
+            {
+                cout << i << " ";
+                sum = sum + i;
+            }
+        }
+        else
+        {
+            for (int i = b; i <= a; i++)
+            {
+                cout << i << " ";
+                sum = sum + i;
+            }
+        }
+
+        cout << "Sum=" << sum << endl;
+        /* code */
+    }
+    
+
+
+return 0;
 }
