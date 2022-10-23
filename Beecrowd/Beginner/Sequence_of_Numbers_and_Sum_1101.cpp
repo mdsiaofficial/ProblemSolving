@@ -8,56 +8,35 @@ int main()
 
 
  // solution 1;
-    //int count;
+    int count;
     //cin>>count;
-    int i;
-    for (; i; i++)
+
+    for (int i = 0; i = count; i++)
     {
+        
+        int a,b;
+        cin>>a>>b;
+        int sum=0;
 
-        int a, b;
-        cin >> a >> b;
-        int sum = 0;
 
-        if(a<=0) break;
-        if(b<=0) break;
-
-        if (a < b)
-        {
-            for (int i = a; i <= b; i++)
-            {
-                cout << i << " ";
-                sum = sum + i;
-            }
-        }
-        else
-        {
-            for (int i = b; i <= a; i++)
-            {
-                cout << i << " ";
-                sum = sum + i;
-            }
-        }
-        /* if (a > 0 && b > 0)
-        {
-            if (a < b)
-            {
-                for (int i = a; i <= b; i++)
-                {
-                    cout << i << " ";
-                    sum = sum + i;
+        if(a>0 && b>0){
+            if(a<b){
+                for(int i=a; i<=b; i++){
+                    cout<<i<<" ";
+                    sum=sum+i;
+                    
+                }
+            }else{
+                for(int i=b; i<=a; i++){
+                    cout<<i<<" ";
+                    sum=sum+i;
+                    
                 }
             }
-            else
-            {
-                for (int i = b; i <= a; i++)
-                {
-                    cout << i << " ";
-                    sum = sum + i;
-                }
-            }
+
         }
- */
-        cout << "Sum=" << sum << endl;
+        
+        cout<<"Sum="<<sum<<endl;
 
     }
     
