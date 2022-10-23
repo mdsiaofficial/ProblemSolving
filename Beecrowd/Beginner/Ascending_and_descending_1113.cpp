@@ -9,11 +9,15 @@ int main()
         cin >> a >> b;
 
         if(a==b){
-            cout << "Crescente" << endl;
+            
             break;
         }
 
-        cout << "Decrescente" << endl;
+        if(a<b){
+            cout << "Crescente" << endl;
+        }else{
+            cout << "Decrescente" << endl;
+        }
     }
     
     return 0;
