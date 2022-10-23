@@ -48,22 +48,22 @@ int main()
     
     while(true){
                 
-                cin >> x;
-                cin >> y;
-                if(x <= 0) break;
-                if(y <= 0) break;
-                
-                if(x > y){
-                     aux = x;
-                     x = y;
-                     y = aux;
-                }
-                sum = 0;
-                for(int i = x; i <= y; i++){
-                        cout << i << " ";
-                       sum += i;
-                }
-                cout << "Sum=" << sum << endl;
+        cin >> x;
+        cin >> y;
+        if(x <= 0) break;
+        if(y <= 0) break;
+        
+        if(x > y){
+                aux = x;
+                x = y;
+                y = aux;
+        }
+        sum = 0;
+        for(int i = x; i <= y; i++){
+                cout << i << " ";
+                sum += i;
+        }
+        cout << "Sum=" << sum << endl;
     }
 
 
