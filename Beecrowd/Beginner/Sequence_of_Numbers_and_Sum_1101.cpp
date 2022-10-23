@@ -44,7 +44,7 @@ int main()
     // solution 2 ;
     int n;
     int x, y, aux;
-    int soma;
+    int sum;
     
     while(true){
                 
@@ -61,7 +61,7 @@ int main()
                 sum = 0;
                 for(int i = x; i <= y; i++){
                         cout << i << " ";
-                       soma += i;
+                       sum += i;
                 }
                 cout << "Sum=" << sum << endl;
     }
