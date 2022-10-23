@@ -1,9 +1,8 @@
 #include <iostream>
-//#include <iomanip>
-//#include <cmath>
+#include <iomanip>
+#include <cmath>
 using namespace std;
 
-// unsolved
 
 int main()
 {
@@ -16,7 +15,7 @@ int main()
             c++;
             
         }
-        /* code */
+        
     }
     cout << c << endl;
 
