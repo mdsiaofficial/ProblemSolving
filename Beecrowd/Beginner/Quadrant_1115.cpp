@@ -21,7 +21,7 @@ int main()
         }else if(x<0 && y>0){
             cout << "segundo" << endl;
         }
-        
+
     }
     
     return 0;
