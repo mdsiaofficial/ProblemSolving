@@ -9,14 +9,15 @@ int main()
     int a, b;
     cin >> a >> b;
     int c = a;
-    for (int i = c; i <= b; i++)
+    int i, j;
+    for (i = a; i <= b; i++)
     {
-        for (int i = 1; i <3; i++)
+        for (int j = 1; j <3; j++)
         {
-            cout << i << " ";
+            cout << j << " ";
         }
-        cout << i<<endl;
-        c = i;
+        cout << j<<endl;
+        c = j;
     }
     
 
