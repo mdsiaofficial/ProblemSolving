@@ -5,21 +5,64 @@ using namespace std;
 
 int main()
 {
-
+/* 
     int a, b;
     cin >> a >> b;
-    int c;
-    int i, j;
-    for (i = 1; i <= b; i++)
+    int c=1;
+    
+    for (int i = 1; i <= b; i++)
     {
-        for (j = c; j <a; j++)
+        for (int j = c; j<a; j++)
         {
             cout << j << " ";
-        }
-        cout << j<<endl;
-        c = j;
-    }
-    
+            c++;
 
-    return 0;
+        }
+        cout <<c<<endl;
+        
+    }
+ */
+
+/*  // solved 
+    int x, y;
+    cin >> x;
+    cin >> y;
+    int n = 1;
+    for (int i = 1; i <= y; i++)
+    {
+        if (n == x)
+        {
+            cout << i << "\n";
+            n = 1;
+        }
+        else
+        {
+            cout << i << " ";
+            n++;
+        }
+    }
+
+ */
+
+
+
+    //try3
+
+    int x, y, line, col;
+    cin >> x >> y;
+
+    line = y / x;
+    int d = x;
+    int temp = 1;
+    for (int i = 1; i <= k; I++){
+        cout << temp;
+        for (int j = temp+1; i <d ; j++)
+        {
+            cout << " " << j;
+        }
+        cout << endl;
+        
+    }
+
+        return 0;
 }
