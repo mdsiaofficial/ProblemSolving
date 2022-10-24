@@ -60,7 +60,7 @@ int main()
     }
 */
 
-// try3
+/* // try3
 
     int x, y, line, col;
     cin >> x >> y;
@@ -79,5 +79,7 @@ int main()
         temp = j;
     }
 
+
+ */
     return 0;
 }
