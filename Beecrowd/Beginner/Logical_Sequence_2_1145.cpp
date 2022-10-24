@@ -8,11 +8,11 @@ int main()
 
     int a, b;
     cin >> a >> b;
-    int c = a;
+    int c;
     int i, j;
-    for (i = a; i <= b; i++)
+    for (i = 1; i <= b; i++)
     {
-        for (int j = 1; j <3; j++)
+        for (j = c; j <a; j++)
         {
             cout << j << " ";
         }
