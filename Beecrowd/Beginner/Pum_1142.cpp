@@ -8,14 +8,17 @@ int main()
     int n;
     int i, j;
     cin >> n;
-
-    for (i = 0; i <=n; i++)
+    int c = 1;
+    for (i = 0; i <n; i++)
     {
-        for (j = 1; j <=3; j++)
+        for (j=c; j <=(c+2); j++)
         {
             cout << j << " ";
+            // j++;
         }
+        c = j + 1;
         cout << "PUM\n";
+        
     }
     
     return 0;
