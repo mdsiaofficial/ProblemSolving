@@ -15,7 +15,7 @@ int main()
 
         }
 
-        for (int i = 1; i < x; i++)
+        for (int i = 1; i <=x; i++)
         {
             cout << i << " ";
         }
