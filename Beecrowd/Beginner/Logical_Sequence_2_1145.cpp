@@ -44,9 +44,22 @@ int main()
 
  */
 
+/*
+    int x,y,i,count=0;
+    scanf("%d %d",&x,&y);
+    for(i=1;i<=y;i++)
+    {
+        printf("%d ",i);
+        count++;
+        if(count==x)
+        {
+            printf("\n");
+            count=0;
+        }
+    }
+*/
 
-
-    //try3
+// try3
 
     int x, y, line, col;
     cin >> x >> y;
@@ -54,15 +67,16 @@ int main()
     line = y / x;
     int d = x;
     int temp = 1;
-    for (int i = 1; i <= k; I++){
+    for (int i = 1; i <= k; I++)
+    {
         cout << temp;
-        for (int j = temp+1; i <d ; j++)
+        for (int j = temp + 1; i < d; j++)
         {
             cout << " " << j;
         }
         cout << endl;
-        
+            
     }
 
-        return 0;
+    return 0;
 }
