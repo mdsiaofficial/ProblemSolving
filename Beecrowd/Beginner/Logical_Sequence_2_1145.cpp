@@ -44,7 +44,8 @@ int main()
 
  */
 
-/*
+/*  //converted from python code:
+
     int x,y,i,count=0;
     scanf("%d %d",&x,&y);
     for(i=1;i<=y;i++)
@@ -75,7 +76,7 @@ int main()
             cout << " " << j;
         }
         cout << endl;
-            
+        temp = j;
     }
 
     return 0;
