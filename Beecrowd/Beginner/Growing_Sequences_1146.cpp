@@ -13,14 +13,17 @@ int main()
         if(x==0){
             break;
 
+        }else{
+            for (int i = 1; i <x; i++)
+            {
+                cout << i << " ";
+            }
+            cout <<x<<endl;
         }
 
-        for (int i = 1; i <=x; i++)
-        {
-            cout << i << " ";
-        }
+        
 
-        cout << endl;
+        
     }
 
     return 0;
