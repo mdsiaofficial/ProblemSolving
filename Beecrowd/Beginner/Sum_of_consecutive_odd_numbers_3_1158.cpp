@@ -11,10 +11,10 @@ int main()
     for (int i = 1; i <= n; i++){
         int x, y;
         cin >> x >> y;
-        int sum = 0;
+        int sum;
         for (int j = x; j <= y; j++){
             if(j%2!=0){
-                sum += j;
+                sum =sum + j;
             }
         }
         cout << sum << endl;
