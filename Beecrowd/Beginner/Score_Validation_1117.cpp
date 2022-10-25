@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    //unsolved
+    //solved
 
     //float number1, number2, c=0;
     float x;
