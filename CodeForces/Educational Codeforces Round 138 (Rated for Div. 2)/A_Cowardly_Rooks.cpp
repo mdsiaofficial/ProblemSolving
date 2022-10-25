@@ -8,17 +8,19 @@ int main(){
     cin>>c;
 
     int n, m;
-    cin>>n>>m;
-    int x1, y1, x2, y2;
     
+    int x[m],y[m];
+
 
     for(int i=0; i<c; i++){
 
+        cin>>n>>m;
         
-        cin >> x1 >> y1;
-        cin >> x2 >> y2;
-
-
+        for (int j = 0; j < m; j++)
+        {
+            cin >> x[j] >> y[j];
+        }
+        
         if(m<n){
             cout << "Yes" << endl;
         }else{
