@@ -89,14 +89,13 @@ int main(){
         
         if(n == 1) cout << "novo calculo (1-sim 2-nao)n";
                      
-    }    
-
-
+    }
 
  */
 
 
-
+/* 
+    // solved 1:
 
     float x = -1, y = -1;
     int value = 1;
@@ -120,6 +119,36 @@ int main(){
         }while(value != 1 && value != 2);
     }
 
+
+ */
+
+    float x;
+    float sum = 0;
+    int c = 0;
+    int again=1;
+    while (again==1)
+    {
+        cin >> x;
+
+        if(x>=0, x<=10){
+            sum = sum + x;
+            c++;
+        }else{
+            cout << "nota invalida" << endl;
+        }
+
+        if(c>1){
+            cout <<fixed<<setprecision(2)<< "media = " << (sum / 2) << endl;
+        }
+
+        cout << "novo calculo (1-sim 2-nao)" << endl;
+        cin >> again;
+        if(again!=1 && again!=2){
+            cout << "novo calculo (1-sim 2-nao)" << endl;
+            cin >> again;
+        }
+    }
+    
     return 0;
 
 }
