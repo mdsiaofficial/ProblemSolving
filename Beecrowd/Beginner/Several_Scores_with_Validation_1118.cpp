@@ -122,6 +122,9 @@ int main(){
 
  */
 
+/*
+    // failed here;
+
     float x;
     float sum = 0;
     int c = 0;
@@ -130,7 +133,7 @@ int main(){
     {
         cin >> x;
 
-        if(x>=0, x<=10){
+        if(x>=0.0, x<=10.0){
             sum = sum + x;
             c++;
         }else{
@@ -148,7 +151,52 @@ int main(){
             cin >> again;
         }
     }
-    
+
+ */
+
+    float x;
+    float arr[3];
+    int index = 0;
+
+    while (1)
+    {
+        while (1)
+        {
+            cin >> x;
+
+            if (x >= 0 && x <= 10)
+            {
+                arr[index] = x;
+                index++;
+            }
+            else
+            {
+                cout << "nota invalida" << endl;
+            }
+            if (index > 1)
+            {
+                break;
+            }
+        }
+        float avrg = (arr[0] + arr[1]) / 2.0;
+        cout <<fixed<<setprecision(2)<< "media = " << avrg << endl;
+
+        int again;
+        while (1)
+        {
+            cout << "novo calculo (1-sim 2-nao)" << endl;
+            cin >> again;
+            if(x==1 || x==2){
+                break;
+            }
+        }
+        if(x==1){
+            continue;
+        }else{
+            break;
+        }
+    }
+
     return 0;
 
 }
