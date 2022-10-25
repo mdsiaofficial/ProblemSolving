@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 #include<iostream>
-#include <iomanip>
+#include<iomanip>
 
 using namespace std;
 
