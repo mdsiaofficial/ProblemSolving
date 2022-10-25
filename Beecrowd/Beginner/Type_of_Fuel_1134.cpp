@@ -25,6 +25,8 @@ int main(){
             //cout << "Diesel: " << diesel << endl;
         }else if(x==4){
             break;
+        }else{
+            continue;
         }
 
     }
