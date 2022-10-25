@@ -4,19 +4,19 @@ using namespace std;
 int main(){
     
 
-    long long c;
+    int c;
     cin>>c;
 
-    long long n, m;
+    int n, m;
     
-    long long x[m],y[m];
+    int x[m],y[m];
 
 
-    for(long long i=0; i<c; i++){
+    for(int i=0; i<c; i++){
 
         cin>>n>>m;
         
-        for (long long j = 0; j < m; j++)
+        for (int j = 0; j < m; j++)
         {
             cin >> x[j] >> y[j];
         }
