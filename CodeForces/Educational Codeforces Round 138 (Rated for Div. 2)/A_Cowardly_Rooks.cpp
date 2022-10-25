@@ -1,4 +1,7 @@
 #include<bits/stdc++.h>
+#include <iostream>
+#include <iomanip>
+#include <cmath>
 using namespace std;
 
 int main(){
@@ -9,9 +12,6 @@ int main(){
 
     long long n, m;
     
-    
-
-
     //for(long long i=0; i<c; i++){
     while(c--){
         cin>>n>>m;
