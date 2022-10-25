@@ -7,9 +7,9 @@ int main()
 {
 
     int y, m, o;
-    cin >> a >> b;
+    cin >> y >> m;
 
-    o = m - y;
+    o = m+(m - y);
     cout << o << endl;
     return 0;
 }
