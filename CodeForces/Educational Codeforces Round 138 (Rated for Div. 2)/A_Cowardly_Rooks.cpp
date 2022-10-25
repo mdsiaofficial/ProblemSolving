@@ -21,10 +21,10 @@ int main(){
             cin >> x[j] >> y[j];
         }
         
-        if(m<n){
-            cout << "Yes" << endl;
-        }else{
+        if(m==n){
             cout << "No" << endl;
+        }else{
+            cout << "Yes" << endl;
         }
     }
 
