@@ -182,6 +182,7 @@ int main(){
         cout <<fixed<<setprecision(2)<< "media = " << avrg << endl;
 
         int again;
+        index = 0;
         while (1)
         {
             cout << "novo calculo (1-sim 2-nao)" << endl;
