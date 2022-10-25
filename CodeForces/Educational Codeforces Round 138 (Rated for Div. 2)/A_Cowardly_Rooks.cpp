@@ -9,16 +9,16 @@ int main(){
 
     long long n, m;
     
-    long long x[m],y[m];
+    
 
 
     //for(long long i=0; i<c; i++){
     while(c--){
         cin>>n>>m;
-        
+        long long x,y;
         for (long long j = 0; j < m; j++)
         {
-            cin >> x[j] >> y[j];
+            cin >> x >> y;
         }
         
         if(m==n){
