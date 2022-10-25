@@ -8,13 +8,16 @@ int main(){
     cin>>c;
 
     int n, m;
-
-    int x,y;
+    cin>>n>>m;
+    int x1, y1, x2, y2;
+    
 
     for(int i=0; i<c; i++){
 
-        cin>>n>>m;
-        cin>>x>>y;
+        
+        cin >> x1 >> y1;
+        cin >> x2 >> y2;
+
 
         if(m<n){
             cout << "Yes" << endl;
@@ -22,7 +25,7 @@ int main(){
             cout << "No" << endl;
         }
     }
-    
+
     return 0;
 }
 
