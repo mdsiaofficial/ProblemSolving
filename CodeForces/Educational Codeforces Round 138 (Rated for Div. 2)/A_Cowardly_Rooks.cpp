@@ -21,7 +21,7 @@ int main(){
             cin >> x[j] >> y[j];
         }
         
-        if(m==n || m>n){
+        if(m==n){
             cout << "No" << endl;
         }else{
             cout << "Yes" << endl;
