@@ -12,8 +12,8 @@ int main(){
     long long x[m],y[m];
 
 
-    for(long long i=0; i<c; i++){
-
+    //for(long long i=0; i<c; i++){
+    while(c--){
         cin>>n>>m;
         
         for (long long j = 0; j < m; j++)
