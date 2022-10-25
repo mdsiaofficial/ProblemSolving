@@ -4,34 +4,28 @@ int main()
 {
     //unsolved
 
-    float number1, number2, c=0;
+    //float number1, number2, c=0;
+    float x;
+    float arr[3];
+    int index = 0;
     while (1)
     {
-        cin >> number1;
-        if(number1>= 0.0 && number1<=10.0){
-            cout << "nota invalida" << endl;
-            continue;
-        }
+        cin >> x;
 
-        cin >> number2;
-        if (number2 >= 0.0 && number1 <= 10.0)
-        {
+        if(x>=0 && x<=10){
+            arr[index] = x;
+            index++;
+        }else{
             cout << "nota invalida" << endl;
-            continue;
-        }
 
-        /* code */
+        }
+        if(index>1){
+            break;
+        }
     }
-    
-/* 
-2
-2 2
-1 2
-2 1
-3 1
-2 2
- */
-    
+    float avrg = (arr[0] + arr[1]) / 2.0;
+    cout <<fixed<<setprecision(2)<< "media = " << avrg << endl;
+
 
     return 0;
 }
