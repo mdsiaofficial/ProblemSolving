@@ -158,39 +158,35 @@ int main(){
     float arr[3];
     int index = 0;
 
-    while (1)
-    {
-        while (1)
-        {
+    while (1){
+        while (1){
             cin >> x;
 
-            if (x >= 0 && x <= 10)
-            {
+            if (x >= 0 && x <= 10){
                 arr[index] = x;
                 index++;
-            }
-            else
-            {
+            }else{
                 cout << "nota invalida" << endl;
             }
-            if (index > 1)
-            {
+
+            if (index > 1){
                 break;
             }
         }
+    
         float avrg = (arr[0] + arr[1]) / 2.0;
         cout <<fixed<<setprecision(2)<< "media = " << avrg << endl;
 
         int again;
         index = 0;
-        while (1)
-        {
+        while (1){
             cout << "novo calculo (1-sim 2-nao)" << endl;
             cin >> again;
             if(x==1 || x==2){
                 break;
             }
         }
+        
         if(x==1){
             continue;
         }else{
