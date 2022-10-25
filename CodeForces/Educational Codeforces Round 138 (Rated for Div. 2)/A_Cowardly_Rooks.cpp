@@ -4,24 +4,24 @@ using namespace std;
 int main(){
     
 
-    int c;
+    long long c;
     cin>>c;
 
-    int n, m;
+    long long n, m;
     
-    int x[m],y[m];
+    long long x[m],y[m];
 
 
-    for(int i=0; i<c; i++){
+    for(long long i=0; i<c; i++){
 
         cin>>n>>m;
         
-        for (int j = 0; j < m; j++)
+        for (long long j = 0; j < m; j++)
         {
             cin >> x[j] >> y[j];
         }
         
-        if(m==n||m>n){
+        if(m==n || m>n){
             cout << "No" << endl;
         }else{
             cout << "Yes" << endl;
