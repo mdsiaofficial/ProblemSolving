@@ -14,14 +14,14 @@ int main(){
         cin >> x;
 
         if(x==1){
-            alcohol = alcohol + x;
+            alcohol++;
             //cout << "Alcool: " << alcohol << endl;
 
         }else if(x==2){
-            gasoline = gasoline + x;
+            gasoline++;
             //cout << "Gasolina: " << gasoline << endl;
         }else if(x==3){
-            diesel = diesel + x;
+            diesel++;
             //cout << "Diesel: " << diesel << endl;
         }else if(x==4){
             break;
