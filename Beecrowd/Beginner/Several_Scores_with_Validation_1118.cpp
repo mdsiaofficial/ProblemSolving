@@ -155,7 +155,7 @@ int main(){
  */
 
     float x;
-    float arr[3];
+    float arr[2];
     int index = 0;
 
     while (1){
@@ -179,6 +179,7 @@ int main(){
 
         int again;
         index = 0;
+        
         while (1){
             cout << "novo calculo (1-sim 2-nao)" << endl;
             cin >> again;
