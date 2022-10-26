@@ -9,12 +9,20 @@ int main()
     int c;
     cin >> c;
     int n, m;
-    int tex[m];
+    //int tex[m];
     int g;
-    for (int i = 0; i < c; i++){
+    for (int i = 1; i <=c; i++){
         cin >> n >> m;
-
-        cout << "Case " << i + 1 << ": " << g-1 << endl;
+        g = 0;
+        for (int j = 1; j <=m; j++)
+        {
+            if(m%n==0){
+                g++;
+            }
+            
+        }
+        
+        cout << "Case " << i << ": " << g << endl;
         
     }
         return 0;
