@@ -14,13 +14,7 @@ int main()
     for (int i = 0; i < c; i++){
         cin >> n >> m;
 
-        for (int j = 0; j < m; j++){
-            g = 1;
-            tex[j] = g;
-            g++;
-        }
-
-        cout << "Case " << i + 1 << ": " << g << endl;
+        cout << "Case " << i + 1 << ": " << g-1 << endl;
         
     }
         return 0;
