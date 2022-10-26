@@ -12,7 +12,12 @@ int main()
     {
         int n, x, y;
         cin >> n >> x >> y;
-        
+
+        if(y%x==0){
+            cout << "YES" << endl;
+        }else{
+            cout << "NO" << endl;
+        }
     }
     
 
