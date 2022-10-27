@@ -6,15 +6,15 @@ using namespace std;
 
 int main()
 {
-    int n;
+    long long n;
     cin >> n;
 
-    for (int i = 1; i <=n; i++){
+    for (long long i = 1; i <=n; i++){
         long long x;
         cin >> x;
         int div;
 
-        for(int j = 1; j <= x; j++) {
+        for(long long j = 1; j <= x; j++) {
             if(x % j == 0){
                 if(j%2!=0){
                     div = j;
