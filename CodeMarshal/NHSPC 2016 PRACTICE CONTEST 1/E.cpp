@@ -31,21 +31,22 @@ int main()
     for (int i = 1; i <=n; i++){
         long long x;
         cin >> x;
-        int divisior;
+        int div;
 
-        for(i = 1; i <= n; i++) {
-            if(n % i == 0){
-                //int lel = n % i;
-                //printf("%d\t\n", i); 
+        for(int j = 1; j <= x; j++) {
+            if(n % j == 0){
+                //int lel = n % j;
+                //printf("%d\t\n", j); 
                 
-                if(i%2!=0){
-                    div = i;
+                if(j%2!=0){
+                    div = j;
                 }
                     
             }
             
         }
-        
+        cout << "Case " << i << ": " << div << endl;
+
     }
 
 
