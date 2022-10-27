@@ -8,7 +8,7 @@ int main()
 {
     int n;
     cin >> n;
-    
+
     for (int i = 1; i <=n; i++){
         long long x;
         cin >> x;
@@ -16,9 +16,6 @@ int main()
 
         for(int j = 1; j <= x; j++) {
             if(x % j == 0){
-                //int lel = n % j;
-                //printf("%d\t\n", j);
-
                 if(j%2!=0){
                     div = j;
                 }
@@ -29,8 +26,6 @@ int main()
         cout << "Case " << i << ": " << div << endl;
 
     }
-
-        
 
     return 0;
 }
