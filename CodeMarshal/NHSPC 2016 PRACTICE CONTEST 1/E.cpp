@@ -14,13 +14,16 @@ int main()
         int x;
         cin >> x;
         int divisior;
-        if(x%2==0){
-            divisior = x/2;
-        }else{
-            divisior = x/3;
+
+        for (int j = x; j >= 1; j--){
+            if(x%x1!=0){
+                divisior = j;
+                break;
+            }else{
+                continue;
+            }
         }
-        
-        
+
         cout << "Case " << i << ": " << divisior << endl;
         
     }
