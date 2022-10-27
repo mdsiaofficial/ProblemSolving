@@ -15,10 +15,17 @@ int main()
         cin >> x;
         int divisior;
 
+        for (int j = 1; j <=x/2; j++)
+        {
+            if(x%j==0){
+                //divisior = x / j;
+                cout << "Case " << i << ": " << j << endl;
+            }
+        }
         
         
 
-        cout << "Case " << i << ": " << divisior << endl;
+        
         
     }
 
