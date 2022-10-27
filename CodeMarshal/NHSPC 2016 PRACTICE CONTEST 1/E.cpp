@@ -15,14 +15,8 @@ int main()
         cin >> x;
         int divisior;
 
-        for (int j = x; j >= 1; j--){
-            if(x%j!=0){
-                divisior = j;
-                break;
-            }else{
-                continue;
-            }
-        }
+        
+        
 
         cout << "Case " << i << ": " << divisior << endl;
         
