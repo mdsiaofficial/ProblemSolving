@@ -12,7 +12,10 @@ int main()
     for (int i = 0; i < a; i++){
         cin >> b;
 
-        
+        for (int j = 1; j <= b; j++){
+            
+            cout << "||" << endl;
+        }
     }
 
     return 0;
