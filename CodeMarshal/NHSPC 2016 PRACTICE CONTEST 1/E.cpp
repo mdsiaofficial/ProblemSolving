@@ -11,12 +11,12 @@ int main()
 
 
     for (int i = 1; i <=n; i++){
-        int x;
+        long long x;
         cin >> x;
         int divisior;
 
         for (int j = x; j >= 1; j--){
-            if(x%x1!=0){
+            if(x%j!=0){
                 divisior = j;
                 break;
             }else{
