@@ -24,8 +24,18 @@ int main()
 
     cin >> t;
     for (int i = 0; i < t; i++){
-    
-    
+
+        int n;
+        cin >> n;
+
+        if(n==1971){
+            cout << "Joy Bangla" << endl;
+        }else if(n%2==0){
+            cout << "Bangla" << endl;
+
+        }else if(n%2!=0){
+            cout << "Joy" << endl;
+        }
     }
 
     return 0;
