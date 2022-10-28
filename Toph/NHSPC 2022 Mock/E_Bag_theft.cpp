@@ -30,10 +30,15 @@ int main()
         //string th = time[0] + time[1];
         string th = time.substr(0, 2);
         string tm = time.substr(2, 3);
+        int hh = stoi(th);
+        int mm = stoi(tm);
         //int hh = (int)time[0] + (int)time[1];
         //int hh = stoi(th);
         //int mm = time[2] + time[3];
-        cout << th << " " << tm;
+        //cout << th << " " << tm;
+
+        
+    
     }
     return 0;
 }
