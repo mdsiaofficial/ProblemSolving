@@ -32,13 +32,20 @@ int main()
         string tm = time.substr(2, 3);
         int hh = stoi(th);
         int mm = stoi(tm);
+        int pp = 9 * 60;
+        int totalm = (hh * 60) + mm;
+        int difm = totalm - pp;
         //int hh = (int)time[0] + (int)time[1];
         //int hh = stoi(th);
         //int mm = time[2] + time[3];
         //cout << th << " " << tm;
 
-        
-    
+        int entry = (difm / 5) * 8;
+        int out = (difm / 15) * 8;
+        int people = entry - out;
+
+        cout << people << endl;
     }
+
     return 0;
 }
