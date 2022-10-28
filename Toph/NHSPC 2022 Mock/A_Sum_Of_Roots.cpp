@@ -4,6 +4,7 @@
 #include <cmath>
 using namespace std;
 
+
 double mySqrt(double x) {
     double r = x;
     double precision = 10e-10;
@@ -17,12 +18,12 @@ double mySqrt(double x) {
 
 int main()
 {
+    int a, b, c;
+    cin >> a >> b >> c;
 
-    double n;
-    cin >> n;
+    int res = mySqrt(a) + mySqrt(b) + mySqrt(c);
 
-    cout <<fixed<<setprecision(0)<< mySqrt(n) << endl;
-
-
+    cout << res << endl;
+    
     return 0;
 }
