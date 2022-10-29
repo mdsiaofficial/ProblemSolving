@@ -14,9 +14,9 @@ int main()
     for (int i = 1; i <= t; i++){
         float total = 0.0;
         cin >> n;
-        float x;
+        
         for (int j = 1; i <= n; j++){
-            
+            float x;
             cin >> x;
             total = total + x;
         }
