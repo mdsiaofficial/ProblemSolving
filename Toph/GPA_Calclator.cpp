@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-
+/* 
     int t;
     int n;
     cin >> t;
@@ -23,8 +23,8 @@ int main()
         cout << fixed << setprecision(3) <<"Case "<<i<<": "<< (total / (float)n) << endl;
     }
     
+ */
 
-/* 
 
 //COPIED
 
@@ -46,7 +46,7 @@ int main()
     }
 
 
- */
+ 
 
     return 0;
 }
