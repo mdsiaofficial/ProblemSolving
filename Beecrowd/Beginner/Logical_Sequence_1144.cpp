@@ -10,7 +10,7 @@ int main()
     cin >> n;
 
     for (long long i = 1; i <= n; i++){
-        cout << i << " " << pow(i, 2) << " " << pow(i, 3) << endl;
+        cout << i << " " << (i*i) << " " << (i*i*i) << endl;
         cout << i << " " << (i*i)+1 << " " << (i*i*i)+1 << endl;
         
     }
