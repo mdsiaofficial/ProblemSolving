@@ -5,25 +5,27 @@ using namespace std;
 
 int main()
 {
-/* 
+
     int t;
     int n;
     cin >> t;
     
-    
+    double x;
     for (int i = 1; i <= t; i++){
-        float total = 0.0;
+        double total = 0.0;
         cin >> n;
         
-        for (int j = 1; i <= n; j++){
-            float x;
+        for (int j = 0; i < n; j++){
+            
             cin >> x;
             total = total + x;
+
         }
-        cout << fixed << setprecision(3) <<"Case "<<i<<": "<< (total / (float)n) << endl;
+        
+        cout << fixed << setprecision(3) <<"Case "<<i<<": "<< (total/n) << endl;
     }
     
- */
+ 
 
 /* 
 //COPIED
