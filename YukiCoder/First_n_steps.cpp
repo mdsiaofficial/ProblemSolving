@@ -11,7 +11,7 @@ int main()
     long long steps = b / a;
     long long rem = b % a;
 
-    cout << steps + rem << endl;
-    
+    //cout << steps + rem << endl;
+    cout << (b + a - 1) / a << endl;
     return 0;
 }
