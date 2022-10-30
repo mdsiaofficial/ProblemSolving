@@ -25,7 +25,7 @@ int main()
     
  */
 
-
+/* 
 //COPIED
 
     int t, n;
@@ -46,7 +46,10 @@ int main()
     }
 
 
- 
+  */
+
+    unsigned long long power = pow(10, 10);
+    cout << power;
 
     return 0;
 }
