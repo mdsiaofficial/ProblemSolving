@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
 {
-
+/* 
     int t;
-    int n;
+    double n;
     cin >> t;
     
     double x;
@@ -22,12 +22,13 @@ int main()
 
         }
         
-        cout << fixed << setprecision(3) <<"Case "<<i<<": "<< (total/n) << endl;
+        //cout <<"Case "<<i<<": "<< fixed << setprecision(3)<< (total/n) << endl;
+        printf("Case %d: %.3lf\n", i, (total/(double)n));
     }
     
- 
+   */
 
-/* 
+
 //COPIED
 
     int t, n;
@@ -48,7 +49,7 @@ int main()
     }
 
 
-  */
+  
 
     // unsigned long long power = pow(10, 10);
     // cout << power;
