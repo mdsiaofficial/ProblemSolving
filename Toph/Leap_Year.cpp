@@ -4,14 +4,16 @@
 #include <cmath>
 
 #define ll long long
-
-double sp(int n){
-    return setprecision(n);
-}
 using namespace std;
 int main(){
 
-
+    int year;
+    cin >> year;
+    if(year%4==0){
+        cout << "Yes" << endl;
+    }else{
+        cout << "No" << endl;
+    }
 
     return 0;
 }
