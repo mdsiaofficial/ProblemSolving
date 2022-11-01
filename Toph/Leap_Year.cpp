@@ -12,7 +12,7 @@ int main(){
 
     // leap year if perfectly divisible by 400
     if (year % 400 == 0) {
-        cout << "Yes";
+        cout << "No";
     }
     // not a leap year if divisible by 100
     // but not divisible by 400
