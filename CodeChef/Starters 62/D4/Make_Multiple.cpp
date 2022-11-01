@@ -12,7 +12,14 @@ int main(){
     for (int i = 0; i < t; i++){
         int a, b;
         cin >> a >> b;
-        
+
+        for (int j = 0; j < b; j++){
+
+            if((b+i)%(a+i)==0){
+                cout << "YES" << endl;
+                break;
+            }
+        }
     }
     return 0;
 }
