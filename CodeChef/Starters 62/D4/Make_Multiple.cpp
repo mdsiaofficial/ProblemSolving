@@ -18,8 +18,13 @@ int main(){
             if((b+i)%(a+i)==0){
                 cout << "YES" << endl;
                 break;
+            }else{
+                continue;
             }
         }
     }
+
+
+    
     return 0;
 }
