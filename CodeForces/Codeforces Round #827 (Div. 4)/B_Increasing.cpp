@@ -1,8 +1,7 @@
-#include<bits/stdc++.h>// ei library add korle ar kisu add kora lage nah 
+#include<bits/stdc++.h>
 #include <iostream>
-#include <iomanip>//this library need to use setprecision
+#include <iomanip>
 #include <cmath>
-
 
 #define ll long long
 #define pi 3.14159
@@ -16,6 +15,7 @@ int main(){
     cin >> n;
     for (int i = 0; i <n; i++){
         int tt;
+        cin >> tt;
         int c = 0;
         for (int j = 0; j < tt; j++){
             
@@ -28,7 +28,7 @@ int main(){
             }
         }
 
-        if(c>0){
+        if(c>1){
             cout << "NO" << endl;
 
         }else{
