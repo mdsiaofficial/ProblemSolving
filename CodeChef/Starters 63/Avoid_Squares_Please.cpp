@@ -11,17 +11,18 @@ int main()
     cin >> t;
     
     for (int i = 0; i < t;i++){
-        int box;
+        int box=0;
         int shelves, books, boxholds;
         cin >> shelves >> books >> boxholds;
 
-        while (books<boxholds)
+        while (books>boxholds)
         {
-            int temp = books / boxholds;
-            books = books % boxholds;
-            box = temp;
+            
+            books = books - boxholds;
+            box++;
         }
-        cout << box << endl;
+        box++;
+        cout << box*shelves << endl;
     }
     return 0;
 }
