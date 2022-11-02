@@ -14,15 +14,15 @@ int main(){
     int n;
     cin >> n;
     for (int i = 0; i <n; i++){
-        int tt;
+        long long tt;
         cin >> tt;
         int c = 0;
         for (int j = 0; j < tt; j++){
             
-            int arrr[tt];
+            long long arrr[tt];
             cin >> arrr[j];
             
-            int test = arrr[0];
+            long long test = arrr[0];
             if(arrr[j]==test){
                 c++;
             }
