@@ -17,21 +17,36 @@ int main(){
         long long tt;
         cin >> tt;
         int c = 0;
+        int cc[tt];
+        long long arrr[tt];
         for (int j = 0; j < tt; j++){
             
-            long long arrr[tt];
-            cin >> arrr[j];
             
-            long long test = arrr[0];
-            if(arrr[j]==test){
-                c++;
-            }
+            cin >> arrr[j];
+            cc[j] = 0;
+            // long long test = arrr[0];
+            // if(arrr[j]==test){
+            //     c++;
+            // }
+
+
         }
 
-        if(c>1){
-            cout << "NO" << endl;
+        for (int k = 0; k < tt; k++){
+            for (int u = 0; u << tt; u++){
+                if (arrr[k] == arrr[u]){
+                    cc[k]++;
+                }
+            }
+                
+        }
 
-        }else{
+        if (c > tt)
+        {
+            cout << "NO" << endl;
+        }
+        else
+        {
             cout << "YES" << endl;
         }
             
