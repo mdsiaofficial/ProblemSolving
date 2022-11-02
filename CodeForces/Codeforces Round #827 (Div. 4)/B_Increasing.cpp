@@ -14,11 +14,25 @@ int main(){
 
     int n;
     cin >> n;
-    forn(i, n){
+    for (int i = 0; i <n; i++){
         int tt;
-        forn(j, tt){
+        int c = 0;
+        for (int j = 0; j < tt; j++){
+            
             int arrr[tt];
             cin >> arrr[j];
+            
+            int test = arrr[0];
+            if(arrr[j]==test){
+                c++;
+            }
+        }
+
+        if(c>0){
+            cout << "NO" << endl;
+
+        }else{
+            cout << "YES" << endl;
         }
             
     }
