@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>// ei library add korle ar kisu add kora lage nah 
+#include<bits/stdc++.h>// ei library add korle ar kisu add kora lage nah 
 #include <iostream>
 #include <iomanip>//this library need to use setprecision
 #include <cmath>
@@ -12,11 +12,6 @@
 using namespace std;
 int main(){
 
-    int n;
-    cin >> n;
-    forn(i, n){
-        
-        
-    }
+    
     return 0;
 }
