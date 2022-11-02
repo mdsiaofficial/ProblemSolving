@@ -26,11 +26,31 @@
 #define inf 1000000000000000LL
 #define N 200000
 #define fastio std::ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
+
 using namespace std;
  
  
 int main()
 {
-    
-    
+
+    int t;
+    cin >> t;
+
+    for (int i = 0; i < t;i++){
+        int cho, ca;
+        cin >> cho >> ca;
+
+        int tcho = cho * 2;
+        int tca = ca * 5;
+
+        if(tcho>tca){
+            cout << "Chocolate" << endl;
+
+        }else if(tcho<tca){
+            cout << "Candy" << endl;
+        }else if(tcho==tca){
+            cout << "Either" << endl;
+        }
+    }
+    return 0;
 }
