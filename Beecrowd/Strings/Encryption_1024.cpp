@@ -2,6 +2,7 @@
 #include <iostream>
 #include <iomanip>//this library need to use setprecision
 #include <cmath>
+#include <string>
 
 
 #define ll long long
@@ -12,11 +13,14 @@
 using namespace std;
 int main(){
 
-    int n;
-    cin >> n;
-    forn(i, n){
-        
-        
+    int line;
+    cin >> line;
+
+    for (int i = 0; i < line; i++){
+        string ss;
+        getline(cin, ss);
+
+        cout << ss << endl;
     }
-    return 0;
+        return 0;
 }
