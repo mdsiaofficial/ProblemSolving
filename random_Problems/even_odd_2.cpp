@@ -12,12 +12,13 @@
 
 using namespace std;
 int main(){
+    
     int test;
     cin >> test;
     for (int i = 0; i < test; i++){
         int number;
         cin >> number;
-        
+
         if(number%2==0){
             cout << "even" << endl;
         }else{
