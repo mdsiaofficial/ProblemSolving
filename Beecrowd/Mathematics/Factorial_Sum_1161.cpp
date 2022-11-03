@@ -3,29 +3,33 @@
 using namespace std;
 int main(){
 
-/* 
+    // my solution: solved
     long long a,b;
-    cin>>a>>b;
-    long long factA=1;
-    long long factB=1;
+    //cin>>a>>b;
+    while (cin >> a >> b)
+    {
+        long long factA=1;
+        long long factB=1;
+        for(int i=a; i>=1; i--){
+            // a=a*i;
+            factA*=i;
+            //cout<<a<<endl;
+        }
+        for(
+            int i=b; i>=1; i--){
+            // a=a*i;
+            factB*=i;
+            //cout<<a<<endl;
+        }
+        cout<<factA+factB<<endl;
+    }
+    
+  
     
 
-    for(int i=a; i>=1; i--){
-        // a=a*i;
-        factA*=i;
-        //cout<<a<<endl;
-    }
-    for(
-        int i=b; i>=1; i--){
-        // a=a*i;
-        factB*=i;
-        //cout<<a<<endl;
-    }
-    cout<<factA+factB<<endl;
-*/
 
-
-
+/* 
+    //solved
     long long m, n;
     long long fat[21];
     fat[0] = 1;
@@ -40,7 +44,9 @@ int main(){
     }
 
 
+ */
 
+    //long long m,n;
 
 
     return 0;

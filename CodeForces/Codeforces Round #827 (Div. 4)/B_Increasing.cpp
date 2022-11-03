@@ -28,8 +28,6 @@ int main(){
             // if(arrr[j]==test){
             //     c++;
             // }
-
-
         }
 
         for (int k = 0; k < tt; k++){
