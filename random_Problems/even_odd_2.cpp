@@ -12,14 +12,21 @@
 
 using namespace std;
 int main(){
-    
-    int test;
-    cin >> test;
-    for (int i = 0; i < test; i++){
-        int number;
-        cin >> number;
 
-        if(number%2==0){
+    long long test;
+    cin >> test;
+
+    
+    for (long long i = 0; i < test; i++){
+
+        long long number;
+        string nnn;
+        
+        cin >> nnn;
+
+        number = strlen(nnn);
+
+        if(nnn(number-1)%2==0){
             cout << "even" << endl;
         }else{
             cout << "odd" << endl;
