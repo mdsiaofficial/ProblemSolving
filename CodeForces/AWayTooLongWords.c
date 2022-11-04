@@ -4,6 +4,8 @@
 int main()
 
 {
+
+/*
     int n, len, p, i, j;
     char s[1001];
     scanf("%d", &n)
@@ -18,5 +20,7 @@ int main()
             printf("%s\n", s);
         }
     }
+*/
+
     return 0;
 }
