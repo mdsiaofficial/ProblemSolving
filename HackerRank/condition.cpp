@@ -5,6 +5,8 @@ int main(){
     long long n;
     cin>>n;
 
+
+
     if(1<=n && n<=9){
         if(n==1){
             cout<<"one"<<endl;
@@ -26,9 +28,13 @@ int main(){
             cout<<"nine"<<endl;
         }
 
+
     }else{
         cout<<"Greater than 9"<<endl;
     }
     
+
+//
+//
     return 0;
 }
