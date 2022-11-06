@@ -10,13 +10,27 @@ int main(){
         int a,b,c;
         cin>>a>>b>>c;
 
-        if(a==(b+c) || b==(a+c) || c==(a+b)){
+        if(a==(b+c) || b==(a+c) || c==(a+b))
             cout<<"YES"<<endl;
-        }else{
+        else
             cout<<"NO"<<endl;
-        }
+        
         
     }
+    // while (1)
+    // {
+    //     cout << "eh";
+
+            if{
+
+            }else if(){
+
+            }else if(a==b){
+        cout << "0";
+        continue;
+            }
+    // }
+    
 
     
     
