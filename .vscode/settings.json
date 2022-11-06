@@ -73,7 +73,8 @@
         "stdio.h": "c",
         "charconv": "cpp",
         "optional": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "math.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

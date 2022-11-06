@@ -8,14 +8,29 @@ using namespace std;
 int main()
 {
 
-    int x;
-    cin >> x;
-    int sum = 0;
-    for (int i = 1; i <= x; i++){
-        if(i%2==0){
-            sum += i;
+
+    while (true)
+    {
+        int x;
+        cin >> x;
+        if(x==0){
+            break;
+        }else{
+
+
+            int c = 5;
+            int sum = 0;
+            while (c--)
+            {
+                if(x%2==0){
+                    sum += x;
+                    x++;
+
+                }
+            }
+            cout << sum << endl;
         }
     }
-    cout << sum << endl;
+    
     return 0;
 }
