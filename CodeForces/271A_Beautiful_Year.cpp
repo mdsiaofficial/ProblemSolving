@@ -19,6 +19,14 @@ int main(){
     int temp = year / 10;
 
     two = temp % 10;
-    three 
+    temp = temp / 10;
+    three = temp % 10;
+    temp = temp / 10;
+    four = temp % 10;
+
+    for (int i = 0; i < 4; i++){
+        if()
+    }
+        cout << one << two << three << four;
     return 0;
 }
