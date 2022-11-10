@@ -11,10 +11,10 @@ int main()
     //int nn[t];
     // int max = 0;
     // int min = 0;
-    vector<int> nn(t);
+    vector<int>nn(t);
     for (int i = 0; i < t;i++){
         
-        cin >> nn[t];
+        cin >> nn[i];
 
     }
 /*
