@@ -18,6 +18,7 @@ int main()
     float sub2 = c-d;
     
     printf("%d %d\n", sum1, sub1);
+    //cout<<sum1<<" "<<sub1<<endl;
     printf("%0.1f %0.1f", sum2, sub2);
     
     return 0;
