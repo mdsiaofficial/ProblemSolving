@@ -6,6 +6,8 @@ int main(){
     int res{number + nnn};
     cout << res << endl;
 
+
+    //new
     return 0;
 
 }
