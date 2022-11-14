@@ -23,7 +23,7 @@ int main()
         }
 */
 
-        cout << c << endl;
+        cout << c<<" dias" << endl;
     }
     return 0;
 }
