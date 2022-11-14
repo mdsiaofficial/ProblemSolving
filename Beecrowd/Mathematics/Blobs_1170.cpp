@@ -9,9 +9,16 @@ int main()
         float x;
         cin >> x;
         int c;
+
+        /*
         while (x <= 1)
         {
             x = (x/2);
+            c++;
+        }
+        */
+
+        for (int j = x; j <= 1; j=j/2){
             c++;
         }
         cout << c << endl;
