@@ -10,17 +10,19 @@ int main()
         cin >> x;
         int c=0;
 
-        /*
-        while (x <= 1)
+        
+        while (x>0 && x <= 1)
         {
             x = (x/2);
             c++;
         }
-        */
-
-        for (int j = x; j <= 1; j=j/2){
+        
+        /*
+        for (float j = x; j <= 1; j=j/2){
             c++;
         }
+        */
+       
         cout << c << endl;
     }
     return 0;
