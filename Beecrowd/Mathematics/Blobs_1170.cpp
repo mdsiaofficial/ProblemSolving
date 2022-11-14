@@ -8,7 +8,7 @@ int main()
 
         float x;
         cin >> x;
-        int c;
+        int c=0;
 
         /*
         while (x <= 1)
