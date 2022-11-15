@@ -24,10 +24,27 @@ int main(){
 
         int x;
         cin >> x;
+        int arr[x];
+        int sum = 0;
+        for (int j = 0; j < x; j++)
+        {
+            cin >> arr[j];
+        }
 
-        for (int j = 0; j < x; j++){
+        for (int l = 0; l < x; l++){
+            for (int k = 0; k < count; k++)
+            {
+                if(abs(arr[l])==abs(arr[k])){
+                    arr[l] = 0;
+                }
+            }
             
         }
+
+        for (int h = 0; h < x;h++){
+            sum = sum + arr[h];
+        }
+        cout << sum << endl;
     }
     return 0;
 }
