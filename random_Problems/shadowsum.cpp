@@ -32,9 +32,9 @@ int main(){
         }
 
         for (int l = 0; l < x; l++){
-            for (int k = 0; k < count; k++)
+            for (int k = 0; k < x; k++)
             {
-                if(abs(arr[l])==abs(arr[k])){
+                if(arr[l]==arr[k]){
                     arr[l] = 0;
                 }
             }
