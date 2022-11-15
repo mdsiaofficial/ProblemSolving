@@ -17,17 +17,18 @@
 using namespace std;
 int main(){
 
-    ld a, b;
-    char x;
-    cin >> a >> x >> b;
-    //ld c = a + b;
-    string cc = to_string(a+b);
-    //cout <<fs(0)<< a+b << endl;
-    //cout << cc << endl;
+    int t;
+    cin>>t;
 
-    cout.setf(ios::fixed);
-    cout << setprecision(0) << a + b << endl;
-    
+    for (int i = 0; i < t; i++){
+
+        int x;
+        cin >> x;
+
+        for (int j = 0; j < x; j++){
+            
+        }
+    }
     return 0;
 }
 
