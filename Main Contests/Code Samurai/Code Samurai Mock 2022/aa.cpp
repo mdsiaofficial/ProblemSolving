@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>// ei library add korle ar kisu add kora lage nah 
 #include <iostream>
+#include <algorithm>
 #include <iomanip>//this library need to use setprecision
 #include <cmath>
 #include <string>
@@ -17,7 +18,8 @@ int main() {
 
     string a,x,b;
     cin>>a>>x>>b;
-    string d=reverse(a.begin(), a.end());
+    string one=reverse(a.begin(), a.end());
+    string two=reverse(b.begin(), b.end());
     cout<<d<<endl;
 
     return 0;
