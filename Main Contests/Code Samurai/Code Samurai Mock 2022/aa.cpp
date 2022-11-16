@@ -18,9 +18,9 @@ int main() {
 
     string a,x,b;
     cin>>a>>x>>b;
-    string one=reverse(a.begin(), a.end());
-    string two=reverse(b.begin(), b.end());
-    cout<<one<<endl;
+    reverse(a.begin(), a.end());
+    reverse(b.begin(), b.end());
+    cout<<a<<endl;
 
     return 0;
 }
