@@ -20,7 +20,7 @@ int main() {
     cin>>a>>x>>b;
     string one=reverse(a.begin(), a.end());
     string two=reverse(b.begin(), b.end());
-    cout<<d<<endl;
+    cout<<one<<endl;
 
     return 0;
 }
