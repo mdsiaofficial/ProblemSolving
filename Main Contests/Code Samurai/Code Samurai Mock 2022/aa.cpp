@@ -15,6 +15,10 @@ using namespace std;
 
 int main() {
 
+    string a,x,b;
+    cin>>a>>x>>b;
+    string d=reverse(a.begin(), a.end());
+    cout<<d<<endl;
 
-   return 0;
+    return 0;
 }
