@@ -18,6 +18,7 @@ using namespace std;
 
 int main() {
 
+/*
     int n;
     cin>>n;
 
@@ -39,5 +40,27 @@ int main() {
         cout << "Isosceles" << endl;
     }
 
+*/
+
+
+    int N;
+
+    //scanf("%d", &N);
+    cin >> n;
+
+    if(N>=3 && N<=1000000){
+        if(N%3==0){
+            //printf("Equilateral\n");
+            cout << "Equilateral\n";
+        }
+        else
+        {
+            //printf("Isosceles\n");
+            cout << "Isosceles\n";
+        }
+    }else{
+            //printf("Invalid\n");
+            cout << "Invalid\n";
+    }
     return 0;
 }
