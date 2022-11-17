@@ -17,6 +17,7 @@ using namespace std;
 
 int main() {
 
+/*
     int t;
     cin>>t;
     char ns[10]={0,1,2,3,4,5,6,7,8,9};
@@ -41,7 +42,7 @@ int main() {
         cout << led << endl;
     }
 
-
+*/
 
 
     int t;
@@ -88,6 +89,7 @@ int main() {
                 break;
             }
         }
+        cout << led << endl;
     }
 
     return 0;
