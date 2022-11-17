@@ -5,6 +5,7 @@
 #include <cmath>
 #include <algorithm>
 #include <string>
+#include <cstring>
 
 #define pi 3.14159
 #define forn(i, n) for (int i = 0; i < int(n); i++)
@@ -44,7 +45,7 @@ int main() {
 
 */
 
-
+/*
     int n, j;
     string num;
     ll leds;
@@ -55,7 +56,7 @@ int main() {
         j = 0;
         leds = 0;
         while(true){
-            if(num[j] == '') break;
+            if(num[j] == ' ') break;
             if(num[j] == '1') leds += 2;
             if(num[j] == '2') leds += 5;
             if(num[j] == '3') leds += 5;
@@ -72,6 +73,67 @@ int main() {
         cout << leds << endl;
 
     }
+*/
+
+/*
+    int n, j;
+    char num[101];
+    long long leds;
+    
+    
+    scanf("%d", &n);
+    
+    for(int i = 0; i < n; i++){
+        scanf("%s", num);
+        j = 0;
+        leds = 0;
+        while(true){
+            if(num[j] == ' ') break;
+            if(num[j] == '1') leds += 2;
+            if(num[j] == '2') leds += 5;
+            if(num[j] == '3') leds += 5;
+            if(num[j] == '4') leds += 4;
+            if(num[j] == '5') leds += 5;
+            if(num[j] == '6') leds += 6;
+            if(num[j] == '7') leds += 3;
+            if(num[j] == '8') leds += 7;
+            if(num[j] == '9') leds += 6;
+            if(num[j] == '0') leds += 6;
+            j++;
+        }
+        printf("%lld leds\n", leds);
+    }
+
+*/
+
+    int x, tmp, size;
+    string s;
+    cin >> x;
+    for (int i = 0; i < x; ++i)
+    {
+        tmp = 0;
+        cin >> s;
+        size = s.length();
+        for (int j = 0; j < size; ++j)
+        {
+            if(s[j] == '0' || s[j] == '9' || s[j] == '6'){
+                tmp += 6;
+            }else if(s[j] == '1'){
+                tmp += 2;
+            }else if(s[j] == '2' || s[j] == '3' || s[j] == '5'){
+                tmp += 5;
+            }else if(s[j] == '4'){
+                tmp += 4;
+            }else if(s[j] == '7'){
+                tmp += 3;
+            }else{
+                tmp += 7;
+            }
+        }
+        cout << tmp << " leds" << endl;
+    }
+
+
 
     return 0;
 }
