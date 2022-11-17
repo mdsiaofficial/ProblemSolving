@@ -45,51 +45,32 @@ int main() {
 */
 
 
-    int t;
-    cin>t;
-    for (int i = 0; i < t;i++){
-        string num;
+    int n, j;
+    string num;
+    ll leds;
+    cin >> n;
+    
+    for(int i = 0; i < n; i++){
         cin >> num;
-
-        ll leds = 0;
-
-        for (int j = 0; j < sizeof(num); j++){
-
-            if(num[j]=='0'){
-                led = led + 6;
-            }
-            if(num[j]=='1'){
-                led = led + 2;
-            }
-            if(num[j]=='2'){
-                led = led + 5;
-            }
-            if(num[j]=='3'){
-                led = led + 5;
-            }
-            if(num[j]=='4'){
-                led = led + 4;
-            }
-            if(num[j]=='5'){
-                led = led + 5;
-            }
-            if(num[j]=='6'){
-                led = led + 6;
-            }
-            if(num[j]=='7'){
-                led = led + 3;
-            }
-            if(num[j]=='8'){
-                led = led + 7;
-            }
-            if(num[j]=='9'){
-                led = led + 6;
-            }
-            if(num[j]==''){
-                break;
-            }
+        j = 0;
+        leds = 0;
+        while(true){
+            if(num[j] == '') break;
+            if(num[j] == '1') leds += 2;
+            if(num[j] == '2') leds += 5;
+            if(num[j] == '3') leds += 5;
+            if(num[j] == '4') leds += 4;
+            if(num[j] == '5') leds += 5;
+            if(num[j] == '6') leds += 6;
+            if(num[j] == '7') leds += 3;
+            if(num[j] == '8') leds += 7;
+            if(num[j] == '9') leds += 6;
+            if(num[j] == '0') leds += 6;
+            j++;
         }
-        cout << led << endl;
+
+        cout << leds << endl;
+
     }
 
     return 0;
