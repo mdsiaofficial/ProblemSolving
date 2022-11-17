@@ -43,10 +43,10 @@ int main() {
 */
 
 
-    ll n;
+    ll N;
 
     //scanf("%d", &N);
-    cin >> n;
+    cin >> N;
 
     if(N>=3 && N<=1000000){
         if(N%3==0){
