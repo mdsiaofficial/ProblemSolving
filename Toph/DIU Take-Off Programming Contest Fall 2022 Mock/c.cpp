@@ -43,7 +43,7 @@ int main() {
 */
 
 
-    int N;
+    int n;
 
     //scanf("%d", &N);
     cin >> n;
