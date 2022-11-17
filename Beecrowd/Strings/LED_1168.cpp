@@ -19,10 +19,21 @@ int main() {
 
     int t;
     cin>>t;
-    int nums[10]={6,2,5,5,4,5,6,3,7,6}
+    int ns[10]={0,1,2,3,4,5,6,7,8,9};
+    int nums[10]={6,2,5,5,4,5,6,3,7,6};
     for(int i=0;i<t;i++){
         string number;
+        int led=0;
         cin>>number;
+
+
+        for(int j=0;j<number.length();j++){
+            for(int k=0; j<nums.length(); k++){
+                if(number[j]==ns[k]){
+                    led = led + nums[k];
+                }
+            }
+        }
     }
 
 
