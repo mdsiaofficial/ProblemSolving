@@ -21,12 +21,23 @@ int main() {
     int n;
     cin>>n;
 
-    if(n%3==0){
+    int a = n / 3;
+    int b = n / 3;
+    int c = n / 3;
+    
+    if(n<3){
+
+        cout << "Invalid" << endl;
+    }
+    else if (n % 3 == 0)
+    {
 
         cout << "Equilateral" << endl;
-    }else{
+    }
+    else
+    {
         cout << "Isosceles" << endl;
     }
-    
+
     return 0;
 }
