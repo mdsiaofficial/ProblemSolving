@@ -16,11 +16,15 @@ using namespace std;
 
 int main() {
 
+
+
     string a,x,b;
     cin>>a>>x>>b;
     reverse(a.begin(), a.end());
     reverse(b.begin(), b.end());
     cout<<a<<endl;
+
+
 
     return 0;
 }
