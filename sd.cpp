@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include <stdlib.h>
 #define ll long long
 #define pb push_back
 #define pf push_front
@@ -31,21 +32,28 @@ using namespace std;
  
 int main()
 {
-    fastio;
-    int t,ts=1;cin>>t;
-    while(t--){
-        int n;cin>>n;
-        map<int,int> cnt;
-        for(int i=0;i<n;i++){
-            int x;cin>>x;
-            cnt[x]++;
-        }
-        int ans=1;
-        for(auto x:cnt){
-            if(x.ss>1) ans=0;
-        }
-        cnt.clear();
-        if(ans) YES;
-        else NO;
+
+
+/* 
+    //  100 Totally random numbers: 
+    for (int i = 0; i < 100; i++){
+        cout << rand() << endl;
     }
+ */
+
+
+    //   100 Random numbers in range 1 - 12:
+    for (int i = 0; i < 100; i++){
+        cout << 1+rand()%12 << endl;
+    }
+
+
+
+/* 
+    //   100 Random numbers in range 1 - 100:
+    for (int i = 0; i < 100; i++){
+        cout << 1+rand()%100 << endl;
+    }
+ */
+    return 0;
 }
