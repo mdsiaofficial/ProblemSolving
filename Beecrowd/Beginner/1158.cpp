@@ -29,13 +29,15 @@ int main(){
         int temp = x;
         while (true)
         {
-            if(x%2!=0){
-                sum += x;
+            if(temp%2!=0){
+                sum += temp;
+                cout << sum << endl;
             }
             if(c==y){
                 break;
             }
             c++;
+            temp++;
         }
         cout << sum << endl;
     }
