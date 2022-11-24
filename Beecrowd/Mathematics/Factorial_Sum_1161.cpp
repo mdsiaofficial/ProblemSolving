@@ -46,8 +46,5 @@ int main(){
 
  */
 
-    //long long m,n;
-
-
     return 0;
 }
