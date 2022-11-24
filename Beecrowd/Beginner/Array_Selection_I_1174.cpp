@@ -12,7 +12,7 @@
 using namespace std;
 int main(){
 
-    float number[100];
+    double number[100];
 
     for(int i=0; i<100; i++){
         cin >> number[i];
