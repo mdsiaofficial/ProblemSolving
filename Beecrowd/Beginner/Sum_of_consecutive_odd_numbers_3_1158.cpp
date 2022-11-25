@@ -14,6 +14,7 @@ int main()
 
         int sum=0;
         int c = 0;
+        int j = x;
 
         // for (int j = x; j <= y; j++){
         //     if(j%2!=0){
@@ -25,10 +26,18 @@ int main()
         {
             if(j%2!=0){
                 sum =sum + j;
+                c++;
             }
+            
+            j++;
         }
         
+
+
         cout << sum << endl;
     }
-        return 0;
+
+
+
+    return 0;
 }
