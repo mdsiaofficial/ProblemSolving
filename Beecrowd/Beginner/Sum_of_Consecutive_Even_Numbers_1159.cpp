@@ -4,7 +4,9 @@
 
 using namespace std;
  
- // uns
+
+
+
 int main()
 {
 
@@ -16,19 +18,18 @@ int main()
         if(x==0){
             break;
         }else{
-
-
             int c = 5;
             int sum = 0;
             while (c--)
             {
-                if(x%2==0){
-                    sum += x;
+                if(x%2!=0){
                     x++;
-
                 }
+                sum = sum + x;
+                x = x + 2;
             }
             cout << sum << endl;
+            sum = 0;
         }
     }
     
