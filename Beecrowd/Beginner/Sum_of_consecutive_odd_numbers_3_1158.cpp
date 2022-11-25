@@ -22,17 +22,45 @@ int main()
         //     }
         // }
 
-        while (c<=y)
-        {
-            if(j%2!=0){
-                sum =sum + j;
-                c++;
-            }
+        // while (c<=y)
+        // {
+        //     if(j%2!=0){
+        //         sum =sum + j;
+        //         c++;
+        //     }
             
-            j++;
-        }
+        //     j++;
+        // }
         
+        if(x%2==0){
+            x++;
 
+            while (true)
+            {
+                sum = sum + x;
+                x = x + 2;
+
+                if(c==y){
+                    break;
+                }
+            }
+
+        }else{
+
+            while (true)
+            {
+                sum = sum + x;
+                x = x + 2;
+                
+                if(c==y){
+                    break;
+                }
+            }
+        
+        }
+
+        
+        
 
         cout << sum << endl;
     }
