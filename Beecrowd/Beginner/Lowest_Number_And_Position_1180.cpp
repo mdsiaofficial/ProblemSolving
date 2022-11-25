@@ -16,26 +16,26 @@
 using namespace std;
 int main(){
 
-    int t;
-    cin >> t;
-    int lowest;
-    int pos;
-    int num[t];
-    for(int i=0; i<t; i++){
-        cin >> num[t];
+
+    int n, a[2000], sml,smlp;
+
+    cin >> n;
+
+    for(int i = 0 ;i < n ;i++){
+        cin >> a[i];
     }
-    lowest = num[0];
-    pos;
-    for(int j=0; j<t; j++){
+
+    sml = a[0] ;
+
+    for (int i = 0 ; i < n ; i++ ){
     
-        if(num[j]<=lowest){
-            lowest = num[j];
-            pos = j;
+        if ( a[i] <= sml ){
+            sml = a[i] ;
+            smlp = i ;
         }
     }
 
-    cout << "Menor valor: " << lowest << endl;
-    cout << "Posicao: " << pos << endl;
+    cout << "Menor valor: " << sml << "\nPosicao: " << smlp << endl;
 
     return 0;
 }
