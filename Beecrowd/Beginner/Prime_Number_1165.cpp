@@ -13,28 +13,29 @@
 #define fs(n) fixed<<setprecision(int(n))
 #define s(n) setprecision(int(n))
 
-
-//unsolved
 using namespace std;
 int main(){
 
     ll t;
     cin >> t;
+
     for(ll i=0; i<t; i++){
         ll x;
         cin >> x;
 
-        if(x<=1){
-            cout << x<<" nao eh primo" << endl;
+        for (int j = 2; j < x; j++){
+            if(x%j==0){
+                c++;
+                break;
+            }
         }
-        
-        if(x%(x+1)!=0){
-            cout << x<<" nao eh primo" << endl;
-        }else{
+
+        if(c==0){
             cout << x<<" eh primo" << endl;
+        }else{
+            cout << x<<" nao eh primo" << endl;
         }
-        
-        
+
     }
     return 0;
 }
