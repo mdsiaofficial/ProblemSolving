@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>// ei library add korle ar kisu add kora lage nah 
+#include <bits/stdc++.h>// ei library add korle ar kisu add kora lage nah 
 #include <iostream>
 #include <iomanip>//this library need to use setprecision
 #include <cmath>
@@ -28,7 +28,7 @@ int main(){
     sml = a[0] ;
 
     for (int i = 0 ; i < n ; i++ ){
-    
+
         if ( a[i] <= sml ){
             sml = a[i] ;
             smlp = i ;
