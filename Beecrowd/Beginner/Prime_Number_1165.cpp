@@ -13,6 +13,8 @@
 #define fs(n) fixed<<setprecision(int(n))
 #define s(n) setprecision(int(n))
 
+
+//unsolved
 using namespace std;
 int main(){
 
