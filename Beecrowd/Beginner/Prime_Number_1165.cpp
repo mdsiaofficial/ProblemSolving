@@ -22,7 +22,7 @@ int main(){
     for(ll i=0; i<t; i++){
         ll x;
         cin >> x;
-
+        int c = 0;
         for (int j = 2; j < x; j++){
             if(x%j==0){
                 c++;
