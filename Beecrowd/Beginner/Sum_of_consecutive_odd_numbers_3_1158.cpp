@@ -12,9 +12,29 @@ int main()
         int x, y;
         cin >> x >> y;
 
-        int sum=0;
-        int c = 0;
-        int j = x;
+        int odds[y];
+        int sum = 0;
+        if(x%2==0){
+            x++;
+        }
+
+        for(int i=0; i<y; i++){
+
+            odds[i]=x;
+            x=x+2;
+            
+        }
+
+        for(int i=0; i<y; i++){
+
+            sum = sum + odds[i];
+            
+        }
+
+        
+        // int sum=0;
+        // int c = 0;
+        // int j = x;
 
         // for (int j = x; j <= y; j++){
         //     if(j%2!=0){
@@ -32,7 +52,7 @@ int main()
         //     j++;
         // }
         
-        if(x%2==0){
+/*         if(x%2==0){
             x++;
 
             while (true)
@@ -51,14 +71,14 @@ int main()
             {
                 sum = sum + x;
                 x = x + 2;
-                
+
                 if(c==y){
                     break;
                 }
             }
         
         }
-
+ */
         
         
 
