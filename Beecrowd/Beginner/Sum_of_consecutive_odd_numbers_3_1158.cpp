@@ -3,6 +3,8 @@
 #include <cmath>
 using namespace std;
 
+// Solved 
+
 int main()
 {
     int n;
@@ -31,7 +33,7 @@ int main()
             
         }
 
-        
+
         // int sum=0;
         // int c = 0;
         // int j = x;
