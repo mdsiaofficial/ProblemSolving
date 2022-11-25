@@ -1,16 +1,10 @@
 #include<bits/stdc++.h>
 #define ll long long
 
-
 using namespace std;
- 
-
-
 
 int main()
 {
-
-
     while (true)
     {
         int x;
@@ -33,6 +27,5 @@ int main()
         }
     }
     
-
     return 0;
 }
