@@ -14,22 +14,30 @@
 #define s(n) setprecision(int(n))
 
 using namespace std;
-int main(){
 
-    int t;
-    cin>>t;
-
-    for(int i=0; i<t; i++){
-    
-        ll n;
-        cin>>n;
-        int p=2;
-        int x;
-        for(int i=1; x<n; i++){
-            x= pow(p,i);
+int poweroftwo(int n){
+    int i;
+    for(i=0;i<n;i++){
+        int j;
+        scanf("%d",&j);
+        int count=0;
+        while(j>0){
+            count += j & 1;
+            j >>= 1;
         }
-        cout<<x<<endl;
-        
+        if(count == 1){
+            printf("True\n");
+        }
+        else{
+            printf("False\n");
+        }
     }
+    return 0;
+}
+
+int main(){
+    int n;
+    scanf("%d",&n);
+    poweroftwo(n);
     return 0;
 }
