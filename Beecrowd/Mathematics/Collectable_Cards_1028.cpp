@@ -14,6 +14,9 @@
 #define s(n) setprecision(int(n))
 
 using namespace std;
+
+
+
 int main(){
 
     int t;
@@ -24,8 +27,9 @@ int main(){
         scanf("%d%d", &num1, &num2);
 
         
-        min = (num1<num2) ? num1 : num2;
-
+        int n1 = (num1>num2) ? num1 : num2;
+        int n2 = (num1<num2) ? num1 : num2;
+/*      
         for(int j=1; j<=min; j++)
         {
             
@@ -34,8 +38,16 @@ int main(){
                 hcf = j;
             }
         }
+ */
 
-        printf("%d\n",hcf);
+        while (n2!=0)
+        {
+            hcf = n1%n2;
+            n1=n2;
+            n2= hcf;
+        }
+        
+        printf("%d\n",n1);
     }
     return 0;
 }
