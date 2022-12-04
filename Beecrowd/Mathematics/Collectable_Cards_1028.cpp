@@ -20,18 +20,22 @@ int main(){
     cin >> t;
 
     for(int i=0; i<t; i++){
-        int a,b;
-        cin>>a>>b;
-        int gcd=1;
-        int min=(a<b)?a:b;
-        for(int j=1; i<=min; i++){
+        int num1, num2, min, hcf=1;
+        scanf("%d%d", &num1, &num2);
 
-            if(a%j==0 && b%j==0){
+        
+        min = (num1<num2) ? num1 : num2;
 
-                gcd=j;
+        for(int j=1; j<=min; j++)
+        {
+            
+            if(num1%j==0 && num2%j==0)
+            {
+                hcf = j;
             }
         }
-        cout<<gcd<<endl;
+
+        printf("%d\n",hcf);
     }
     return 0;
 }
