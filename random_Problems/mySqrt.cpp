@@ -20,8 +20,8 @@ int main()
 
     double n;
     cin >> n;
-
-    cout <<fixed<<setprecision(0)<< mySqrt(n) << endl;
+    cout<<sqrt(n)<<endl;
+    cout <<fixed<<setprecision(2)<< mySqrt(n) << endl;
 
 
     return 0;
