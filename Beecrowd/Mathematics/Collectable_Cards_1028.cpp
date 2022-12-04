@@ -16,13 +16,13 @@
 using namespace std;
 int main(){
 
-    ll t;
+    int t;
     cin >> t;
 
-    for(ll i=0; i<t; i++){
+    for(int i=0; i<t; i++){
         int a,b;
         cin>>a>>b;
-        int gcd;
+        int gcd=1;
         int min=(a<b)?a:b;
         for(int j=1; i<=min; i++){
 
@@ -32,7 +32,6 @@ int main(){
             }
         }
         cout<<gcd<<endl;
-
     }
     return 0;
 }
