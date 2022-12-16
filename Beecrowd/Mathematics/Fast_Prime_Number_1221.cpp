@@ -51,19 +51,6 @@ bool checkprime(ll n){
     return x;
 }
 
-int findprime(ll n){
-    for(int i=2; i<n; i++){
-        if(n%i==0){
-            c++;
-            break;
-        }
-    }
-    if(c==0){
-        cout<<"Prime"<<endl;
-    }else{
-        cout<<"Not Prime"<<endl;
-    }
-}
 
 // unsolved
 int main(){
@@ -135,7 +122,7 @@ int main(){
             cout<<"Prime"<<endl;
         }
 
-        for(int i=2; i<n; i++){
+        for(int i=2; i<sqrt(n)+1; i++){
 
             if(n%i==0){
                 c++;
