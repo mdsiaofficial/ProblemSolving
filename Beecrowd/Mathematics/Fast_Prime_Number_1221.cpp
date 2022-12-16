@@ -103,39 +103,44 @@ int main(){
      */
 
 
-    ll t;
-    cin>>t;
-    for(ll i=0; i<t; i++){
-        int c=0;
-        int n;
-        cin>>n;
-
-        if(n==0){
-            cout<<"Not Prime"<<endl;
+    int n, t;
+    long long p;
+    
+    cin >> n;
+    
+    for(int i = 0; i <n; i++){
+        t = 0;
+        cin >> p;
+        
+        if(p == 0){
+            cout << "Not Prime" << endl;
+            continue;
         }
         
-        if(n==1){
-            cout<<"Not Prime"<<endl;
+        if(p == 1){
+            cout << "Not Prime" << endl;
+            continue;
         }
-
-        if(n==2){
-            cout<<"Prime"<<endl;
+        
+        if(p == 2){
+            cout << "Prime" << endl;
+            continue;
         }
-
-        for(int i=2; i<sqrt(n)+1; i++){
-
-            if(n%i==0){
-                c++;
+        
+        for(int i = 2; i < sqrt(p)+1; i++){
+            if(p%i == 0){
+                t++;
+            }
+            if(t == 2){
                 break;
             }
         }
-        if(c==0){
-            cout<<"Prime"<<endl;
+        
+        if(t >= 1){
+            cout << "Not Prime" << endl;
         }else{
-            cout<<"Not Prime"<<endl;
+            cout << "Prime" << endl;
         }
-
     }
-
     return 0;
 }

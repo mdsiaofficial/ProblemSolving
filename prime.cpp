@@ -1,4 +1,3 @@
-//Input code
 #include <iostream>
 #include <math.h>
 using namespace std;
@@ -29,8 +28,12 @@ int main(){
         }
         
         for(int i = 2; i < sqrt(p)+1; i++){
-            if(p%i == 0) t++;
-            if(t == 2) break;
+            if(p%i == 0){
+                t++;
+            }
+            if(t == 2){
+                break;
+            }
         }
         
         if(t >= 1){
