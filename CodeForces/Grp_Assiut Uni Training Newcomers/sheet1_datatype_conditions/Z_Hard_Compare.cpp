@@ -79,21 +79,16 @@ int main(){
 
  */
 
-
     // try 3 : solved
-
-    // long long power1 = pow(a,b);
-    // long long power2 = pow(c,d);
     // log compresses the whole number into small fractional number
-
     double power1 = b*log(a);
     double power2 = d*log(c);
-
     if(power1>power2){
         cout<<"YES"<<endl;
     }else{
         cout<<"NO"<<endl;
     }
+
 
     return 0;
 }
