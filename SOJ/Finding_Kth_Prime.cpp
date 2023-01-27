@@ -15,33 +15,37 @@
 #define s(n) setprecision(int(n))
 using namespace std;
 
-void sieve(int n){
-
-    int prime [n+3];
-    memset (prime, 0, sizeof(prime));
-    for(int i=2; i<=sqrt(n); i++){
-        if(prime[i]==0){
-            for(int j=i; i<=sqrt(n); j=j+i){
-                prime[j]=1;
-            }
-        }
+bool prime[90000001];
+int n=90000000;
+void sieve (int n){
+    if(n<2){
+        return false;
     }
-    for(int i=2; i<=n; i++){
-        if(prime[i]==0){
-            cout<<i<<" ";
-        }
+    if(n<=3){
+        return true;
     }
-    cout<<endl;
+    if(n%2==0){
+        return false;
+    }
 
+    for(ll i=3; i<=sqrt(n); i=i+2){
+        if(n%i==0) return false;
+    }
+    return true;
 }
+
 int main(){
-    
-    while (1)
-    {
-        int n;
+
+    ll t;
+    cin>>t;
+    for(ll i=0; i<t; i++){
+        ll n;
         cin>>n;
-        sieve(n);
+        if(checkprime(n)){
+            cout<<"yes"<<endl;
+        }else{
+            cout<<"no"<<endl;
+        }
     }
-    
     return 0;
 }
