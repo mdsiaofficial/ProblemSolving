@@ -16,32 +16,29 @@
 using namespace std;
 
 void sieve(int n){
-
-    int prime [n+3];
-    memset (prime, 0, sizeof(prime));
+    int prime[n];
+    memset(prime, 0, sizeof(prime));
     for(int i=2; i<=sqrt(n); i++){
         if(prime[i]==0){
-            for(int j=i; i<=sqrt(n); j=j+i){
+            for(int j=i+i; j<=n; j+=i){
                 prime[j]=1;
             }
         }
     }
     for(int i=2; i<=n; i++){
-        if(prime[i]==0){
-            cout<<i<<" ";
-        }
+        if(prime[i]==0) cout<<i<<" ";
     }
     cout<<endl;
-
 }
-int main(){
-    
-    while (1)
-    {
-        int n;
-        cin>>n;
-        sieve(n);
-    }
-    
-    return 0;
+
+int main(int argc, char *argv[])
+{
+	while(1){
+	    
+	    int n;
+	    cin>>n;
+	    sieve(n);
+	
+	}
+	return 0;
 }
