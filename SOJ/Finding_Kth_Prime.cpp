@@ -14,38 +14,36 @@
 #define fs(n) fixed<<setprecision(int(n))
 #define s(n) setprecision(int(n))
 using namespace std;
-
-bool prime[90000001];
+bool p[90000001];
 int n=90000000;
-void sieve (int n){
-    if(n<2){
-        return false;
-    }
-    if(n<=3){
-        return true;
-    }
-    if(n%2==0){
-        return false;
-    }
+vector<int>v;
 
-    for(ll i=3; i<=sqrt(n); i=i+2){
-        if(n%i==0) return false;
+void sieve(){
+    
+    for(int i=2; i<=sqrt(n); i++){
+        if(p[i]==false){
+            for(int j=i+i; j<=n; j+=i){
+                p[j]=true;
+            }
+        }
     }
-    return true;
+    for(int i=2; i<=n; i++){
+        if(p[i]==0){
+            v.push_back(i);
+        }
+    }
+    
+    
 }
 
 int main(){
-
+    sieve();
     ll t;
     cin>>t;
-    for(ll i=0; i<t; i++){
-        ll n;
-        cin>>n;
-        if(checkprime(n)){
-            cout<<"yes"<<endl;
-        }else{
-            cout<<"no"<<endl;
-        }
+    for(int i=0; i<t; i++){
+        int x;
+        cin>>x;
+        cout<<v[n-1]<<endl;;
     }
     return 0;
 }
