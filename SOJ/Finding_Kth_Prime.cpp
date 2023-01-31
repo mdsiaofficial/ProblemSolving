@@ -2,6 +2,7 @@
 #include <iostream>
 #include <iomanip>//this library need to use setprecision
 #include <cmath>
+#include <vector>
 #include <string>
 
 #define pi 3.14159
@@ -16,7 +17,7 @@
 using namespace std;
 bool p[90000001];
 int n=90000000;
-vector<int>v;
+vector<int>vp;
 
 void sieve(){
     
@@ -29,21 +30,20 @@ void sieve(){
     }
     for(int i=2; i<=n; i++){
         if(p[i]==0){
-            v.push_back(i);
+            vp.push_back(i);
         }
     }
-    
-    
 }
 
 int main(){
     sieve();
-    ll t;
+    int t;
     cin>>t;
-    for(int i=0; i<t; i++){
+    while (t--)
+    {
         int x;
         cin>>x;
-        cout<<v[n-1]<<endl;;
+        cout<<vp[x-1]<<endl;;
     }
     return 0;
 }
