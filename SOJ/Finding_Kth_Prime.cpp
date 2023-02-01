@@ -15,8 +15,8 @@
 #define fs(n) fixed<<setprecision(int(n))
 #define s(n) setprecision(int(n))
 using namespace std;
-bool p[90000001];
-int n=90000000;
+bool p[86500001];
+int n=86500001;
 vector<int>vp;
 
 void sieve(){
