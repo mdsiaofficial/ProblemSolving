@@ -1,6 +1,6 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h>// ei library add korle ar kisu add kora lage nah 
 #include <iostream>
-#include <iomanip>
+#include <iomanip>//this library need to use setprecision
 #include <cmath>
 #include <vector>
 #include <string>
@@ -10,39 +10,40 @@
 
 #define ll long long
 #define ld long double
-#define ull unsigned long long
+#define llu unsigned long long
 
 #define fs(n) fixed<<setprecision(int(n))
 #define s(n) setprecision(int(n))
 using namespace std;
-bool p[90000001];
-int n=90000000;
+bool p[86500001];
+int n=86500001;
 vector<int>vp;
 
 void sieve(){
-    for(ll i=2; i<=sqrt(n); i++){
+    
+    for(int i=2; i<=sqrt(n); i++){
         if(p[i]==false){
-            for(ll j=i+i; j<=n; j+=i){
+            for(int j=i+i; j<=n; j+=i){
                 p[j]=true;
             }
         }
     }
-    for(ll i=2; i<=n; i++){
-        if(p[i]==false){
-            pp.push_back(i);
+    for(int i=2; i<=n; i++){
+        if(p[i]==0){
+            vp.push_back(i);
         }
     }
 }
 
 int main(){
     sieve();
-    ll t;
+    int t;
     cin>>t;
-    for(ll i=0; i<t; i++){
-        ll x;
+    while (t--)
+    {
+        int x;
         cin>>x;
-        cout<<pp[x-1]<<endl;
+        cout<<vp[x-1]<<endl;;
     }
-
     return 0;
 }
