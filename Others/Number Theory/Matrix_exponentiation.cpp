@@ -15,28 +15,21 @@
 #define s(n) setprecision(int(n))
 using namespace std;
 
-// binary exponantiatioin to solve this.
-// solved 
-llu last_digit_of_pwr(llu b, llu p){
+// matrix exponantiatioin to solve this.
 
-    llu r=1;
-    while (p)
-    {
-        if(p%2==0){
-            b=(b*b)%10;
-            p=p/2;
-        }else{
-            r=(r*b)%10;
-            p=p-1;
-        }
-    }
-    return r%10;
-}
 
 int main(int argc, char *argv[])
 {
-    llu p;
-    cin>>p;
-    cout<<last_digit_of_pwr(1378, p)<<endl;
+    ll t;
+    cin>>t;
+    while (t--)
+    {
+        ll n;
+        
+        
+        /* code */
+    }
+    
+
 	return 0;
 }
