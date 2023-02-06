@@ -112,7 +112,7 @@ int main()    // main function
 	while(t--)
 	{
 		ll n,p,i,j,k;
-		cin>>n>>p;
+		cin>>n>>p; // matrix size= n x n || p = power
 		for(i=1;i<=n;i++)
 		{
 			for(j=1;j<=n;j++)
