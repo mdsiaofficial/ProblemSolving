@@ -1,6 +1,6 @@
-#include <bits/stdc++.h>// ei library add korle ar kisu add kora lage nah 
+#include <bits/stdc++.h>
 #include <iostream>
-#include <iomanip>//this library need to use setprecision
+#include <iomanip>
 #include <cmath>
 #include <vector>
 #include <string>
@@ -12,9 +12,6 @@
 #define ld long double
 #define llu unsigned long long
 
-
-// unsolved
-
 #define fs(n) fixed<<setprecision(int(n))
 #define s(n) setprecision(int(n))
 using namespace std;
@@ -22,23 +19,23 @@ int main(){
 
     int t;
     cin>>t;
-
     while (t--)
     {
-        ll n;
-        cin>>n;
-        int d[n];
-        for(int i=0; i<n; i++)
-        {
-            cin>>d[i];
-            if(d[i]==1){
-                d[i]=-1;
-            }else{
-                d[i]=1;
+        string s;
+        cin>>s;
+        string check []={"YES","yES","YeS","YEs","yeS","Yes","yEs","yes"};
+        int c=0;
+        for(int i=0; i<8; i++){
+            
+            if(s==check[i]){
+                c++;
             }
-            /* code */
+            if(c>1){
+                break;
+            }
         }
-
+        if(c>0) cout<<"YES"<<endl;
+        else cout<<"NO"<<endl;
     }
     
     return 0;
