@@ -16,20 +16,84 @@
 using namespace std;
 
 // matrix exponantiatioin to solve this.
-
-
-int main(int argc, char *argv[])
-{
-    ll t;
-    cin>>t;
-    while (t--)
+long long binary_exp(long long b, long long p){
+    long long r=1;
+    while (p)
     {
-        ll n;
-        
-        
-        /* code */
+        if(p%2==0){
+            b=b*b;
+            p=p/2;
+        }else{
+            r=r*b;
+            p=p-1;
+        }
     }
-    
+    return r;
+}
+long long binary_exp_2(long long b, long long p){
+    long long r=1;
+        
+    while (p)
+    {
+        if(p%2==0){
+            b=(b*b)%mod;
+            p=p/2;
+        }else{
+            r=(r*b)%mod;
+            p=p-1;
+        }
+    }
+    return r;
+}
 
-	return 0;
+void matrix_multiply(ll idm[n][n], ll arr[n][n], )
+
+int main(){
+    int t;
+    cin>>t;
+    while (t--){
+        // n - size of matrix
+        // p - power of matrix
+        ll n, p; 
+        cin>>n>>p;
+
+        ll arr[n][n];
+        ll idm[n][n];
+
+        // taking input to user matrix
+        for(ll i=1;i<=n;i++)
+		{
+			for(ll j=1;j<=n;j++)
+			{
+				cin>>ar[i][j];
+			}
+		}
+
+        // here is identity matrix :
+        for(ll i=1;i<=n;i++)
+		{
+			for(ll j=1;j<=n;j++)
+			{
+                if(i==j) idm[i][j]=1;
+                else idm[i][j]=0;
+			}
+		}
+
+        // doing exponentiation
+        while(p)
+        {
+            if(p%2==0){
+                //b=(b*b)%mod;
+
+                p=p/2;
+            }else{
+                //r=(r*b)%mod;
+                p=p-1;
+            }
+        }
+
+
+        //cout<<binary_exp(b,p)<<endl;
+    }
+    return 0;
 }
