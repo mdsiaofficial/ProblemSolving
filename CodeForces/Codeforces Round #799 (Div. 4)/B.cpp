@@ -21,7 +21,21 @@ int main(){
     cin>>t;
     while (t--)
     {
-        
+        int n;
+        cin>>n;
+        map<int, int>mp;
+        for(int i=0; i<n; i++){
+            int x;
+            cin>>x;
+            mp[x]++;
+        }
+        int c=0;
+        int even=0;
+        for(auto i: mp){
+            if(i.second%2==1) c++;
+            else even++;
+        }
+        cout<<c+((even/2)*2)<<endl;
     }
     
     return 0;
