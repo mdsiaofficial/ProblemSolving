@@ -16,38 +16,57 @@
 using namespace std;
 
 // matrix exponantiatioin to solve this.
-long long binary_exp(long long b, long long p){
-    long long r=1;
-    while (p)
+
+void matrix_multiply(ll a[n][n], ll b[n][n], ll n){
+    ll result [n][n];
+    // a, b matrix multiply
+    for(ll i=0; i<n; i++){
+        for(ll j=0; j<n; j++){
+            result [i][j]=0;
+            for(ll k=0; k<n; k++){
+                ll u= a[i][k]*b[k][j];
+                result[i][j]=result[i][j]+u;
+            }
+        }
+    }
+    for(ll i=0; i<n; i++){
+        for(ll j=0; j<n; j++){
+            a[i][j]=result[i][j];
+        }
+    }
+}
+
+
+void exp(ll a[n][n], ll b[n][n], ll p){
+    // here is identity matrix :
+    for(ll i=1;i<=n;i++)
+    {
+        for(ll j=1;j<=n;j++)
+        {
+            if(i==j) idm[i][j]=1;
+            else idm[i][j]=0;
+        }
+    }
+
+    // doing exponentiation
+    while(p)
     {
         if(p%2==0){
-            b=b*b;
+            //b=(b*b)%mod;
+            matrix_multiply(arr, arr, n);
             p=p/2;
         }else{
-            r=r*b;
+            //r=(r*b)%mod;
+            matrix_multiply(idm, arr, n);
             p=p-1;
         }
     }
-    return r;
-}
-long long binary_exp_2(long long b, long long p){
-    long long r=1;
-        
-    while (p)
-    {
-        if(p%2==0){
-            b=(b*b)%mod;
-            p=p/2;
-        }else{
-            r=(r*b)%mod;
-            p=p-1;
+    for(ll i=0; i<n; i++){
+        for(ll j=0; j<n; j++){
+            arr[i][j]=idm[i][j];
         }
     }
-    return r;
 }
-
-void matrix_multiply(ll idm[n][n], ll arr[n][n], )
-
 int main(){
     int t;
     cin>>t;
@@ -84,11 +103,17 @@ int main(){
         {
             if(p%2==0){
                 //b=(b*b)%mod;
-
+                matrix_multiply(arr, arr, n);
                 p=p/2;
             }else{
                 //r=(r*b)%mod;
+                matrix_multiply(idm, arr, n);
                 p=p-1;
+            }
+        }
+        for(ll i=0; i<n; i++){
+            for(ll j=0; j<n; j++){
+                arr[i][j]=idm[i][j];
             }
         }
 
