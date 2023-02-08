@@ -7,6 +7,7 @@
 #define pi 3.14159
 #define forn(i, n) for (int i = 0; i < int(n); i++)
 
+#define nl      '\n'
 #define ll long long
 #define ld long double
 #define llu unsigned long long
@@ -16,109 +17,130 @@
 using namespace std;
 
 // matrix exponantiatioin to solve this.
+#define N 101    // define N as 101
+ll ar[N][N],I[N][N];    // define ar and I as two dimensional arrays of size [N][N]
+ll mod = 1000000007;    // Initialize mod with value 1000000007
+void mul(ll A[][N],ll B[][N],ll n)    // Define function mul(A,B,n)
+{
+    /*
+    Returns the multiplication of two matrices A and B of size n.
+    Parameters
+    ----------
+    A : ll[][]
+        First matrix.
+    B : ll[][]
+        Second matrix.
+    n : ll
+        Size of the matrices.
 
-void matrix_multiply(ll a[n][n], ll b[n][n], ll n){
-    ll result [n][n];
-    // a, b matrix multiply
-    for(ll i=0; i<n; i++){
-        for(ll j=0; j<n; j++){
-            result [i][j]=0;
-            for(ll k=0; k<n; k++){
-                ll u= a[i][k]*b[k][j];
-                result[i][j]=result[i][j]+u;
-            }
-        }
-    }
-    for(ll i=0; i<n; i++){
-        for(ll j=0; j<n; j++){
-            a[i][j]=result[i][j];
-        }
-    }
-}
-
-
-void exp(ll a[n][n], ll b[n][n], ll p){
-    // here is identity matrix :
-    for(ll i=1;i<=n;i++)
-    {
-        for(ll j=1;j<=n;j++)
-        {
-            if(i==j) idm[i][j]=1;
-            else idm[i][j]=0;
-        }
-    }
-
-    // doing exponentiation
-    while(p)
-    {
-        if(p%2==0){
-            //b=(b*b)%mod;
-            matrix_multiply(arr, arr, n);
-            p=p/2;
-        }else{
-            //r=(r*b)%mod;
-            matrix_multiply(idm, arr, n);
-            p=p-1;
-        }
-    }
-    for(ll i=0; i<n; i++){
-        for(ll j=0; j<n; j++){
-            arr[i][j]=idm[i][j];
-        }
-    }
-}
-int main(){
-    int t;
-    cin>>t;
-    while (t--){
-        // n - size of matrix
-        // p - power of matrix
-        ll n, p; 
-        cin>>n>>p;
-
-        ll arr[n][n];
-        ll idm[n][n];
-
-        // taking input to user matrix
-        for(ll i=1;i<=n;i++)
+    Returns
+    -------
+    None
+    */
+	ll i,j,k;
+	ll R[n+1][n+1];
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n;j++)
 		{
-			for(ll j=1;j<=n;j++)
+			R[i][j]=0;
+			for(k=1;k<=n;k++)
+			{
+				ll x = (A[i][k]*B[k][j]);
+				R[i][j]=(R[i][j]+x);
+			}
+		}
+	}
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n;j++)
+		{
+			A[i][j]=R[i][j];
+		}
+	}
+}
+void power(ll A[][N],ll n,ll p)    // Define function power(A,n,p)
+{
+    /*
+    Returns the matrix A raised to the power p.
+    Parameters
+    ----------
+    A : ll[][]
+        Matrix.
+    n : ll
+        Size of the matrix.
+    p : ll
+        Power to raise the matrix to.
+
+    Returns
+    -------
+    None
+    */
+	ll i,j;
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n;j++)
+		{
+			if(i==j)I[i][j]=1;
+			else I[i][j]=0;
+		}
+	}
+	while(p)
+	{
+		if(p%2==1)
+		{
+			mul(I,A,n);
+			p--;
+		}
+		else{
+			mul(A,A,n);
+			p/=2;
+		}
+	}
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n;j++)
+		{
+			A[i][j]=I[i][j];
+		}
+	}
+}
+int main()    // main function
+{
+    /*
+    Main function to run code.
+    Parameters
+    ----------
+    None
+
+    Returns
+    -------
+    int
+        Return status code.
+    */
+	ll t;
+	cin>>t;
+	while(t--)
+	{
+		ll n,p,i,j,k;
+		cin>>n>>p; // matrix size= n x n || p = power
+		for(i=1;i<=n;i++)
+		{
+			for(j=1;j<=n;j++)
 			{
 				cin>>ar[i][j];
 			}
 		}
-
-        // here is identity matrix :
-        for(ll i=1;i<=n;i++)
+		power(ar,n,p);
+		//cout<<"print the answer"<<nl;
+		for(i=1;i<=n;i++)
 		{
-			for(ll j=1;j<=n;j++)
+			for(j=1;j<=n;j++)
 			{
-                if(i==j) idm[i][j]=1;
-                else idm[i][j]=0;
+				cout<<ar[i][j]<<" ";
 			}
+			cout<<nl;
 		}
-
-        // doing exponentiation
-        while(p)
-        {
-            if(p%2==0){
-                //b=(b*b)%mod;
-                matrix_multiply(arr, arr, n);
-                p=p/2;
-            }else{
-                //r=(r*b)%mod;
-                matrix_multiply(idm, arr, n);
-                p=p-1;
-            }
-        }
-        for(ll i=0; i<n; i++){
-            for(ll j=0; j<n; j++){
-                arr[i][j]=idm[i][j];
-            }
-        }
-
-
-        //cout<<binary_exp(b,p)<<endl;
-    }
-    return 0;
+	}
+	return 0;
 }

@@ -6,6 +6,9 @@ using  namespace  std;    // Specify namespace std
 #define nl      '\n'    // define nl as new line character
 typedef long long int ll;    // define ll as long long integer
 typedef unsigned long long int  llu;    // define llu as unsigned long long integer
+
+
+
 #define N 101    // define N as 101
 ll ar[N][N],I[N][N];    // define ar and I as two dimensional arrays of size [N][N]
 ll mod = 1000000007;    // Initialize mod with value 1000000007
