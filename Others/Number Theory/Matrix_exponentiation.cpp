@@ -11,7 +11,7 @@
 #define ll long long
 #define ld long double
 #define llu unsigned long long
-#define mod 90000007
+
 #define fs(n) fixed<<setprecision(int(n))
 #define s(n) setprecision(int(n))
 using namespace std;
@@ -19,7 +19,7 @@ using namespace std;
 // matrix exponantiatioin to solve this.
 #define N 101    // define N as 101
 ll ar[N][N],I[N][N];    // define ar and I as two dimensional arrays of size [N][N]
-ll mod = 1000000007;    // Initialize mod with value 1000000007
+
 void mul(ll A[][N],ll B[][N],ll n)    // Define function mul(A,B,n)
 {
     /*
