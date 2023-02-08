@@ -15,27 +15,48 @@
 #define fs(n) fixed<<setprecision(int(n))
 #define s(n) setprecision(int(n))
 using namespace std;
+
+void all_distinct(){
+    int n;
+    cin>>n;
+    map<int, int>mp;
+    for(int i=0; i<n; i++){
+        int x;
+        cin>>x;
+        mp[x]++;
+    }
+    int c=0;
+    int even=0;
+    for(auto it: mp){
+        if(it.second%2==1) c++;
+        else even++;
+    }
+    cout<<c+((even/2)*2)<<endl;
+}
+
+void all_distinct_2(){
+    int n;
+    cin>>n;
+    map<int, int>nums;
+    for(int i=0; i<n; i++){
+        int x;
+        cin>>x;
+        nums[x]++;
+    }
+    int alldis=nums.size();
+    if((n-alldis)%2){
+        alldis--;
+    }
+    cout<<alldis<<endl;
+}
+
 int main(){
 
     int t;
     cin>>t;
     while (t--)
     {
-        int n;
-        cin>>n;
-        map<int, int>mp;
-        for(int i=0; i<n; i++){
-            int x;
-            cin>>x;
-            mp[x]++;
-        }
-        int c=0;
-        int even=0;
-        for(auto i: mp){
-            if(i.second%2==1) c++;
-            else even++;
-        }
-        cout<<c+((even/2)*2)<<endl;
+        all_distinct();
     }
     
     return 0;
