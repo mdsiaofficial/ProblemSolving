@@ -56,7 +56,7 @@ int main(){
     cin>>t;
     while (t--)
     {
-        all_distinct();
+        all_distinct_2();
     }
     
     return 0;
