@@ -31,7 +31,7 @@ void number_of_divisors(ll n){
     cout<<nl;
 }
 
-void new_algo_of_divisior(ll n){
+void new_algo_of_divisior(ll n, ll k){
     set<ll>s;
     for(int i=1; i<=sqrt(n); i++){
         if(n%i==0){
@@ -39,26 +39,29 @@ void new_algo_of_divisior(ll n){
             s.insert(n/i);
         }
     }
+    vector<ll>v;
+    v.assign(s.begin(), s.end());
 
-    
-    cout<<"Count: "<<s.size()<<endl;
-    cout<<"Divisors: ";
-    for(auto i: s){
-        cout<<i<<" ";
-    }
-    cout<<nl;
+    if(v.size()>k) cout<<v[k-1]<<endl;
+    else cout<<-1<<endl;
+
 }
-
 
 int main()
 {
+    /*
 	ll t;
 	cin>>t;
 	while(t--)
 	{
-        int n;
-        cin>>n;
-        new_algo_of_divisior(n);
+        int n,k;
+        cin>>n>>k;
+        new_algo_of_divisior(n, k);
 	}
+    */
+
+    int n,k;
+    cin>>n>>k;
+    new_algo_of_divisior(n, k);
 	return 0;
 }
