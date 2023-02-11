@@ -30,25 +30,35 @@ int main(){
 
         int sum=0;
         int arr[n];
+        int cpyarr[n];
         for(int p=0; p<k; p++){
-            int sum1=time[0];
-            for(int y=1; y<=n; y++){
+            int sum1=0;
+            for(int y=0; y<n; y++){
                 sum1=sum1+time[y];
-                arr[y]=sum1+time[y];
-/* 
-                if(arr[y-1]<sum1){
-                    
-                } */
-                cout<<sum1<<" ";
+                arr[y]=sum1;
             }
-/* 
-            //sample
-            for(int w=0; w<n; w++){
-                cout<<arr[w]<<" ";
-            } */
+
+            for(int q=1; q<n; q++){
+                sum=arr[0];
+                if(arr[q-1]>arr[q]) 
+                    //sum=arr[q]+1;
+                    arr[q]=sum1+1;
+                    for(int e=0; e<n; e++){
+                        cpyarr[e]= arr[e];
+                        //cout<<"Case "<<i<<": "<<cpyarr[e]<<endl;
+                    }
+
+                sum=arr[q]+sum;
+                cout<<arr[q]<<" ";
+            }
         }
         //cout<<"Case "<<i<<": "<<arr[n-1]<<endl;
-        
+        for(int e=0; e<n; e++){
+            cpyarr[e]= arr[e];
+            //cout<<"Case "<<i<<": "<<cpyarr[e]<<endl;
+
+        }
+        //cout<<"Case "<<i<<": "<<sum1<<endl;
     }
     return 0;
 }
