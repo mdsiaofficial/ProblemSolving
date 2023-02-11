@@ -31,15 +31,23 @@ int main(){
         int sum=0;
         int arr[n];
         for(int p=0; p<k; p++){
-            int sum1=0;
-            for(int y=0; y<n; y++){
+            int sum1=time[0];
+            for(int y=1; y<=n; y++){
                 sum1=sum1+time[y];
-                arr[y]=sum1+1;
-                
+                arr[y]=sum1+time[y];
+/* 
+                if(arr[y-1]<sum1){
+                    
+                } */
+                cout<<sum1<<" ";
             }
-            sum+=arr[y];
+/* 
+            //sample
+            for(int w=0; w<n; w++){
+                cout<<arr[w]<<" ";
+            } */
         }
-        cout<<"Case "<<i<<": "<<sum<<endl;
+        //cout<<"Case "<<i<<": "<<arr[n-1]<<endl;
         
     }
     return 0;
