@@ -1,9 +1,4 @@
-#include <bits/stdc++.h>// ei library add korle ar kisu add kora lage nah 
-#include <iostream>
-#include <iomanip>//this library need to use setprecision
-#include <cmath>
-#include <vector>
-#include <string>
+#include <bits/stdc++.h>
 
 #define pi 3.14159
 #define forn(i, n) for (int i = 0; i < int(n); i++)
