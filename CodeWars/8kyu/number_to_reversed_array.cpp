@@ -21,16 +21,16 @@ int digits(int t){
 
 vector<int> digitize(unsigned long long n) {
     vector<int> result;
-    while (n > 0) {
+    do{
         result.push_back(n % 10);
         n /= 10;
-    }
+    }while(n > 0);
     return result;
 }
 
 int main() {
 
-    int n = 123456789;
-    cout<<digitize(n);
+
+
     return 0;
 }
