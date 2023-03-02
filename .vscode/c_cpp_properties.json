@@ -39,7 +39,7 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "G:/Coding App/Code Blocks/codeblocks-20.03mingw-nosetup/MinGW/bin/g++.exe",
+            "compilerPath": "C://MinGW/bin/g++.exe",
             "cStandard": "c17",
             "cppStandard": "c++20",
             "intelliSenseMode": "windows-gcc-x64"
