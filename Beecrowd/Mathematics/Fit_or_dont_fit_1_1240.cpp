@@ -22,6 +22,19 @@ int main(){
     for(int i=0; i<t; i++){
         int a,b;
         cin>>a>>b;
+
+        if(a>b){
+            for(int j=0; j<sizeof(b); j++){
+                if((a%10)==(b%10)){
+                    a=a/10;
+                    b=b/10;
+                }else{
+                    
+                }
+            }
+        }else{
+            cout<<"nao encaixa"<<endl;
+        }
         
     }
     return 0;
