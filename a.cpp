@@ -51,7 +51,7 @@ int main(){
     }
     */
 
-    
+    /* 
     int t;
     scanf("%d", &t);
     int mid;
@@ -81,6 +81,19 @@ int main(){
 
         printf("Case %d: %d\n", i, mid);
     }
-    
+     */
+
+
+    while (1)
+    {
+        long long int n;
+        scanf("%d", &n);
+        if(n<0) break;
+        int s=1;
+        for(int i=1; i<=n; i++){
+            s=s+i;
+        }
+        printf("%d\n", s);
+    }
     return 0;
 }
