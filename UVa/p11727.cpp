@@ -1,12 +1,14 @@
 #include<stdio.h>
 int main(){
     int t;
-    scanf("%d", &t);
+    //scanf("%d", &t);
+    cin>>t;
     int mid;
     for(int i=1; i<=t; i++)
     {
         int a,b,c;
-        scanf("%d%d%d", &a, &b, &c);
+        //scanf("%d%d%d", &a, &b, &c);
+        cin>>a>>b>>c;
         if(a>b && a>c){
             if(b>c){
                 mid=b;
