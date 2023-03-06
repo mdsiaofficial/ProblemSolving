@@ -1,10 +1,10 @@
 #include<bits/stdc++.h>
+using namespace std;
 int main(){
-
     while (1)
     {
-        long long int n;
-        scanf("%lld", &n);
+        long long n;
+        cin>>n;
         /* 
         if(n<0) break;
         int s=1;
@@ -13,8 +13,9 @@ int main(){
         }
          */
         if(n<0) break;
-        int s=((n*(n+1))/2);
-        printf("%d\n", s+1);
+        long long s=((n*(n+1))/2);
+        //printf("%d\n", s+1);
+        cout<<s+1<<endl;
     }
     return 0;
 }
