@@ -15,7 +15,10 @@ int main(){
         //sum=sum+x;
     }
     double avrg = accumulate(costs.begin(),costs.end()) /costs.size();
-    vector<double>
+    vector<double>diff;
+    for(int i:costs){
+        diff.push_back(abs(i-avrg));
+    }
 
 
     
