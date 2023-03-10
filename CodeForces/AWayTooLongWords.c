@@ -4,11 +4,9 @@
 int main()
 
 {
-
-/*
     int n, len, p, i, j;
     char s[1001];
-    scanf("%d", &n)
+    scanf("%d", &n);
     for(i=1; i<=n; i++){
         scanf("%s", s);
         len = strlen(s);
@@ -20,7 +18,6 @@ int main()
             printf("%s\n", s);
         }
     }
-*/
 
     return 0;
 }
