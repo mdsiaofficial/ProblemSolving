@@ -98,7 +98,8 @@ int main(){
 
 */
 
-    int a;
-    printf("%d", sizeof(a));
+    double n, m, a;
+    scanf("%lf %lf %lf", &n, &m, &a);
+    printf("%ld", (long int)ceil(n/a)*(long int)ceil(m/a));
     return 0;
 }

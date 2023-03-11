@@ -1,8 +1,4 @@
 #include <bits/stdc++.h>
-#include <iostream>
-#include <iomanip>
-#include <cmath>
-#include <string>
 
 #define ll long long
 #define pi 3.14159
