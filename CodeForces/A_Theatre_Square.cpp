@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+/* #include <bits/stdc++.h>
 
 #define ll long long
 #define pi 3.14159
@@ -15,6 +15,18 @@ int main(){
     double n, m, a;
     cin>>n>>m>>a;
     cout<<fixed<<setprecision(0)<<ceil(n/a)*ceil(m/a);
+
+    return 0;
+}
+
+ */
+
+#include <math.h>
+
+int main(){
+    double n, m, a;
+    scanf("%lf %lf %lf", &n, &m, &a);
+    printf("%.0lf", ceil(n/a)*ceil(m/a));
 
     return 0;
 }
