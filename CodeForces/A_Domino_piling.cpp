@@ -9,7 +9,7 @@ using namespace std;
 int main(){
     ll m,n;
     cin>>m>>n;
-    
+    cout<<ceil((m*n)/2)<<endl;
     
     return 0;
 }
