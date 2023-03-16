@@ -15,7 +15,7 @@ int main() {
             max_i=i;
         }
 
-        if(s[i]<min){
+        if(s[i]<=min){
             min=s[i];
             min_i=i;
         }
@@ -28,6 +28,14 @@ int main() {
     // and minimum to the last position.
     // max_index-0 = move_number
     // min_index-last_index = move_number
-    
+    // ei rules e ektu jhamela... mile na.
+    if(min_i<max_i) min_i++; // eibar milse. 
+    cout<<(abs(max_i-0)+abs(min_i-(n-1)))<<endl;
+
+
+    // right algo
+    // max_index+last_index-min_index
+    //cout<<max_i+(n-1)-min_i<<endl;
+
 	return 0;
 }
