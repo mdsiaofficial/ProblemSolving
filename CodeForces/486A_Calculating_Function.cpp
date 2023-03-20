@@ -26,6 +26,5 @@ If n is even, the sum is equal to # n/2 - n.
     ll s2=-((n+1)/2);
     if(n%2==0) cout<<s1<<el;
     else cout<<s2<<el;
-
 	return 0;
 }
