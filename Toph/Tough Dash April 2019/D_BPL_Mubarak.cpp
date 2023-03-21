@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
-#include <iomanip> //this library need to use setprecision
-#include <cmath>
-#include <string>
+#include<iomanip>
+#include<cmath>
+#include<string>
 using namespace std;
 
 int main(){
