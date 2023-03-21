@@ -1,15 +1,21 @@
 #include<bits/stdc++.h>
+#include<cstring>
+#include <string>
 using namespace std;
 int main(){
-    string s;
+    string s, dot;
     cin>>s;
-    tolower(a)
+    transform(s.begin(),s.end(),s.begin(), ::tolower);
     for(int i=0; i<s.length(); i++){
-        if(s[i]== 'a' && s[i]== 'e' && s[i]== 'i' && s[i]== 'o' && s[i]== 'u' && s[i]== 'A' && s[i]== 'E' && s[i]== 'I' && s[i]== 'O' && s[i]== 'U' && s[i]== 'y' && s[i]== 'Y'){
-            s[i]='\0';
+        if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'||s[i]=='y'||s[i]=='A'||s[i]=='E'||s[i]=='O'||s[i]=='I'||s[i]=='U'||s[i]=='Y'){
+            continue;
+
         }else{
-            s[i-1]='.';
+            dot=dot+'.';
+            
+            dot=dot+s[i];
         }
     }
+    cout<<dot<<endl;
     
 }
