@@ -9,7 +9,6 @@ void reverseWords(string s)
 	vector<string> tmp;
 	string str = "";
 	for (int i = 0; i < s.length(); i++) {
-
 		// Check if we encounter space
 		// push word(str) to vector
 		// and make str NULL
@@ -17,13 +16,11 @@ void reverseWords(string s)
 			tmp.push_back(str);
 			str = "";
 		}
-
 		// Else add character to
 		// str to form current word
 		else
 			str += s[i];
 	}
-
 	// Last word remaining,add it to vector
 	tmp.push_back(str);
 
