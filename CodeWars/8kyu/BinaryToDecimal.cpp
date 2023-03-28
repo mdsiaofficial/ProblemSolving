@@ -45,27 +45,25 @@ void to_what(){
     printf ("to Binary: 2\nto Decimal: 10\nto Octal: 8\nto Hexa: 16\nEnter any: ");
     scanf ("%d",&to);
 
-    if(to==2)
+    if(to==2){
         itoa (i,buffer,2);
         printf ("binary: %s\n",buffer);
-    else if(to==8)
+    }else if(to==8){
         itoa (i,buffer,8);
-        printf ("binary: %s\n",buffer);
-    else if(to==10)
+        printf ("octal: %s\n",buffer);
+    }else if(to==10){
         itoa (i,buffer,10);
         printf ("decimal: %s\n",buffer);
-    else if(to==16)
+    }else if(to==16){
         itoa (i,buffer,16);
         printf ("hexadecimal: %s\n",buffer);
-    else
+    }else{
         cout<<"Wrong input"<<endl;
-    
-    
-    return 0;
+    }
 }
 int main() {
 
-    to_binary(158);
+    to_what();
 
     return 0;
 }
