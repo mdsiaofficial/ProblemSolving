@@ -36,21 +36,34 @@ int binaryToDecimal(long long n){
     return ans;
 }
 
-unsigned long long to_binary(unsigned long long n){
+void to_what(){
     int i;
-    char buffer [33];
+    int to;
+    char buffer [100];
     printf ("Enter a number: ");
     scanf ("%d",&i);
-    itoa (i,buffer,10);
-    printf ("decimal: %s\n",buffer);
-    itoa (i,buffer,16);
-    printf ("hexadecimal: %s\n",buffer);
-    itoa (i,buffer,2);
-    printf ("binary: %s\n",buffer);
+    printf ("to Binary: 2\nto Decimal: 10\nto Octal: 8\nto Hexa: 16\nEnter any: ");
+    scanf ("%d",&to);
+
+    if(to==2)
+        itoa (i,buffer,2);
+        printf ("binary: %s\n",buffer);
+    else if(to==8)
+        itoa (i,buffer,8);
+        printf ("binary: %s\n",buffer);
+    else if(to==10)
+        itoa (i,buffer,10);
+        printf ("decimal: %s\n",buffer);
+    else if(to==16)
+        itoa (i,buffer,16);
+        printf ("hexadecimal: %s\n",buffer);
+    else
+        cout<<"Wrong input"<<endl;
+    
+    
     return 0;
 }
 int main() {
-    cout<<add_binary(2,3)<<endl;
 
     to_binary(158);
 
