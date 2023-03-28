@@ -1,43 +1,40 @@
-// C++ program to reverse a string
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+
 using namespace std;
 
-
-
-// Function to reverse words*/
-void reverseWords(string s)
-{
-	// temporary vector to store all words
-	vector<string> tmp;
-	string str = "";
-	for (int i = 0; i < s.length(); i++) {
-		// Check if we encounter space
-		// push word(str) to vector
-		// and make str NULL
-		if (s[i] == ' ') {
-			tmp.push_back(str);
-			str = "";
-		}
-		// Else add character to
-		// str to form current word
-		else
-			str += s[i];
-	}
-	// Last word remaining,add it to vector
-	tmp.push_back(str);
-
-	// Now print from last to first in vector
-	int i;
-	for (i = tmp.size() - 1; i > 0; i--)
-		cout << tmp[i] << " ";
-	// Last word remaining,print it
-	cout << tmp[0] << endl;
+string reverse_words(string s) {
+    vector<string> words;
+    string current_word = "";
+    
+    for (int i = 0; i < s.length(); i++) {
+        if (s[i] == ' ') {
+            words.push_back(current_word);
+            current_word = "";
+        } else {
+            current_word += s[i];
+        }
+    }
+    
+    words.push_back(current_word);
+    reverse(words.begin(), words.end());
+    
+    string reversed_words = "";
+    
+    for (int i = 0; i < words.size(); i++) {
+        reversed_words += words[i];
+        if (i != words.size() - 1) {
+            reversed_words += " ";
+        }
+    }
+    
+    return reversed_words;
 }
 
-// Driver Code
-int main()
-{
-	string s = "i like this program very much";
-	reverseWords(s);
-	return 0;
+int main() {
+    string s = "Hello world!";
+    cout << reverse_words(s) << endl;  // Output: "world! Hello"
+    return 0;
 }
