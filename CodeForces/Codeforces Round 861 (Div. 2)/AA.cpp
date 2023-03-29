@@ -25,6 +25,7 @@ int main() {
                 max_luckiness = luckiness;
                 luckiest_number = x;
             }
+            if(luckiness == max_luckiness)
         }
         cout << luckiest_number << endl;
     }
