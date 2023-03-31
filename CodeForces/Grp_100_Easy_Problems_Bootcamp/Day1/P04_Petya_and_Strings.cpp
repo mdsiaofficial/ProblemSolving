@@ -9,8 +9,8 @@ int main() {
     cin>>s>>m;
     transform(s.begin(), s.end(), s.begin(), ::tolower);
     transform(m.begin(), m.end(), m.begin(), ::tolower);
-    cout<<s<<m<<endl;
-    /* 
+    //cout<<s<<m<<endl;
+    
     int sss=0;
     int mmm=0;
     for(int i=0; i<s.length(); i++){
@@ -23,6 +23,6 @@ int main() {
     if(sss>mmm) cout<<1<<endl;
     else if (sss<mmm) cout<<-1<<endl;
     else cout<<0<<endl;
- */
+
     return 0;
 }
