@@ -4,10 +4,10 @@
 int main()
 
 {
-    int n, len, p, i, j;
+    int n, len, p;
     char s[1001];
     scanf("%d", &n);
-    for(i=1; i<=n; i++){
+    for(int i=1; i<=n; i++){
         scanf("%s", s);
         len = strlen(s);
 
