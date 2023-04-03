@@ -1,28 +1,14 @@
 #include <iostream>
-#include <string>
+#include <string.h>
 #include <cstring>
 #include <algorithm>
 using namespace std;
 int main() {
 
-    string s,m;
-    cin>>s>>m;
-    transform(s.begin(), s.end(), s.begin(), ::tolower);
-    transform(m.begin(), m.end(), m.begin(), ::tolower);
-    //cout<<s<<m<<endl;
-    
-    int sss=0;
-    int mmm=0;
-    for(int i=0; i<s.length(); i++){
-        int x=(int)s[i];
-        int y=(int)m[i];
-        sss=sss+x;
-        mmm=mmm+y;
-    }
-
-    if(sss>mmm) cout<<1<<endl;
-    else if (sss<mmm) cout<<-1<<endl;
-    else cout<<0<<endl;
-
+    char s[1001], m[1001];
+    cin >> s >> m;
+    transform(s, s + strlen(s), s, ::tolower);
+    transform(m, m + strlen(m), m, ::tolower);
+    cout << strcmp(s, m) << endl;
     return 0;
 }
