@@ -1,13 +1,29 @@
+#include <iostream>
+#include <string.h>
+#include <cstring>
+#include <algorithm>
+#include <vector>
+using namespace std;
+int main() {
 
-    int sss=0;
-    int mmm=0;
-    for(int i=0; i<s.length(); i++){
-        int x=(int)s[i];
-        int y=(int)m[i];
-        sss=sss+x;
-        mmm=mmm+y;
+    string n;
+    cin>>n;
+    vector<int>r;
+    string ne;
+    vector<char>c;
+    for(int i=0; i<n.length(); i++){
+        if(n[i]>47 && n[i]<57){
+            r.push_back(n[i]);
+        }
     }
-
-    if(sss>mmm) cout<<1<<endl;
-    else if (sss<mmm) cout<<-1<<endl;
-    else cout<<0<<endl;
+    sort(r.begin(), r.end());
+    for(auto i:r){
+        c.push_back(char(i));
+        c.push_back('+');
+    }
+    c.pop_back();
+    for(auto i:c){
+        cout<<i;
+    }
+    return 0;
+}

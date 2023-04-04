@@ -19,8 +19,9 @@ int main() {
     sort(r.begin(), r.end());
     for(auto i:r){
         c.push_back(char(i));
-        if((n[i+1])!='\0') c.push_back('+');
+        c.push_back('+');
     }
+    c.pop_back();
     for(auto i:c){
         cout<<i;
     }
