@@ -13,7 +13,8 @@ int main(){
             }
         }
         if(c>0){
-            cout<<(s.length()/11)<<endl;
+            if(c>=(s.length()/11)) cout<<(s.length()/11)<<endl;
+            else cout<<c<<endl;
         }else{
             cout<<0<<endl;
         }
