@@ -14,9 +14,12 @@ int main() {
     else cout<<"IGNORE HIM!\n";
     */
 
-    // Solve try 2: 
+
+    // Solve try 2: solved
     int p=unique(n.begin(), n.end())-n.begin(); 
     if(p%2==0) cout<<"CHAT WITH HER!\n";
     else cout<<"IGNORE HIM!\n";
+
+
     return 0;
 }
