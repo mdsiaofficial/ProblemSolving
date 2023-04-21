@@ -1,17 +1,22 @@
 #include <stdio.h>
 #include <string.h>
-#include <math.h>
-#include <stdlib.h>
-#include <ctype.h>
-int main() {
-    char str[1001];
-    scanf("%d", str);
 
-    int a[25];
-    for(int int i=0; i<strlen(str); i++){
-        for(int j=97; j<123; j++){
-            if(str[i]==97) 
-        }
+int main()
+{
+    char str[1001];
+    int c[26] = {0};
+    int i, index;
+
+    scanf("%s", str);
+
+    for (i = 0; i < strlen(str); i++) {
+        index = str[i] - 'a';
+        c[index]++;
     }
+
+    for (i = 0; i < 26; i++) {
+        printf("%c - %d\n", 'a' + i, c[i]);
+    }
+
     return 0;
 }
