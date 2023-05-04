@@ -3,6 +3,7 @@ using namespace std;
 int main(){
     int n, k, l, c, d, p, nl, np;
     cin>>n>>k>>l>>c>>d>>p>>nl>>np;
+    // scanf("%d%d%d%d%d%d%d%d",&n,&k,&l,&c,&d,&p,&nl,&np);
 
     int td = k*l;
     int ts = c*d;
@@ -15,5 +16,5 @@ int main(){
         count++;
     }
     cout<<count/n<<endl;
-    
+    // printf("%d", count/n);
 }
