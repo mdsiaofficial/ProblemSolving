@@ -1,31 +1,27 @@
 #include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
 
 int main() {
     int n, m;
     scanf("%d%d", &n, &m);
     int arr[n][m];
-    
-    for(int i=0; i<n; i++){
-        for(int j=0; j<n; j++){
+
+    // Read the matrix elements
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
             scanf("%d", &arr[i][j]);
         }
     }
 
-    for(int i=n-1; i<n; i++){
-        
-        for(int j=0; j<m; j++){
-            printf("%d ", arr[i][j]);
-        }
+    // Print the last row
+    for (int j = 0; j < m; j++) {
+        printf("%d ", arr[n - 1][j]);
     }
     printf("\n");
-    for(int i=m-1; i<m; i++){
-        for(int j=0; j<n; j++){
-            printf("%d ", arr[j][i]);
-        }
-    }
 
+    // Print the last column
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i][m - 1]);
+    }
+    printf("\n");
     return 0;
 }
