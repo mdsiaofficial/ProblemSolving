@@ -6,13 +6,18 @@ void y(int n){
     int x=d-1;
     if(n==0) return;
     y(n/10);
-    cout<<n%10;
-    
+    cout<<n%10<<" ";
 }
 int main(){
-    int n;
-    cin>>n;
-    y(n);
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        y(n);
+        cout<<endl;
+    }
+    
 }
 
 //     3967
