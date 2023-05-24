@@ -1,12 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
-void x(int n){
-    int h=n;
-    if(n-(h-1)==n) return;
-    cout<<n-(h-1)<<endl; x(n+1);
+
+void y(int n){
+
+    if(n==0) return;
+    cout<<n;
+    if(n>1) cout<<" ";
+    y(n-1);
 }
 int main(){
     int n;
     cin>>n;
-    x(n);
+    y(n);
 }

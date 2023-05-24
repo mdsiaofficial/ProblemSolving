@@ -2,7 +2,8 @@
 using namespace std;
 void x(int n){
     if(n==0) return;
-    cout<<"I love recursion\n"; x(n-1);
+    cout<<"I love recursion\n"; 
+    x(n-1);
     
 }
 int main(){
