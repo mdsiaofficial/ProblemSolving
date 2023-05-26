@@ -28,3 +28,9 @@ int main(){
 
 
 // 3967 -> 396 -> 39 -> 3 -> 0 << 3 << 9 << 6 << 7 << end
+/*
+1. Find the length and position of the axes of the conic ax2 + 2hxy + by2 + 2gx + 2fy + c = 0
+2. Identity the conic given by x3 + 4xy + y2 - 2x + 2y -6 = 0 also find the length and equation of its axes.
+3. Reduce the conic 4x3 + y2 - 4xy - 8x - 6y + 5 = 0 to standard form.
+
+*/
