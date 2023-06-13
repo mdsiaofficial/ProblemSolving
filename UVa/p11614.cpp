@@ -1,19 +1,23 @@
-#include<bits/stdc++.h>
+#include <iostream>
+#include <cmath>
 using namespace std;
+int calculateRows(long long int ww) {
+    // Calculate the number of rows using the quadratic equation
+    // n = (sqrt(8 * warriors + 1) - 1) / 2
+    return static_cast<int>((std::sqrt(8 * ww + 1) - 1) / 2);
+}
 
-int main(){
+int main() {
     int t;
-    cin>>t;
-    while(t--){
-        long long n;
-        cin>>n;
-        long long x=1;
-        long long c=0;
-        long long y=1;
-        for(int i = 1 i<=11; i++){
-            for(int j=1; j<y; j++){
-                y=y+i;
-            }
-        }
+    cin >> t;
+
+    for (int i = 0; i < t; i++) {
+        long long int w;
+        cin >> w;
+
+        int rows = calculateRows(w);
+        cout << rows << endl;
     }
+
+    return 0;
 }
