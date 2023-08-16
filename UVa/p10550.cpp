@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+// solved
 int main() {
     while (true) {
         int start, combo1, combo2, combo3;
