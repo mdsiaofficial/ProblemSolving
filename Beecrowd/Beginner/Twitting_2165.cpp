@@ -8,9 +8,9 @@ int main() {
     //cin>>t;
     //gets(t);
     getline (cin, t);
-    cout<<t.size();
-    cout<<t.length();
-    if(t.size()<=140) cout<<"TWEET"<<endl;
+    //cout<<t.size();
+    //cout<<t.length();
+    if(t.length()<=140) cout<<"TWEET"<<endl;
     else cout<<"MUTE"<<endl;
     return 0;
 }
