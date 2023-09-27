@@ -10,7 +10,6 @@ def solve(n):
         # Check if 3*current is divisible by the sum of the last two elements
         while (3 * current) % (arr[-2] + arr[-1]) == 0:
             current += 1
-        
         # Append the current integer to the array
         arr.append(current)
         current += 1
