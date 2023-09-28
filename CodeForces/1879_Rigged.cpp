@@ -2,9 +2,9 @@
 #include <vector>
 #include <map>
  
- // mine solved
+
 using namespace std;
- 
+ //unsolved
 int main() {
     
     int t;
