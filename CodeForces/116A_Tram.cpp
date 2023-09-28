@@ -12,7 +12,49 @@ int main()
 		cin>>a>>b;
 		t=t-a+b;
 	}
-    
+
 	cout<<ans;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    int n;
+    cin>>n;
+    int arr[n];
+    int x=0;
+    for(int i=0; i<n; i++){
+        int a, b;
+        cin>>a>>b;
+        x = x-a+b;
+        arr[i]=x;
+    }
+    int l = sizeof(arr)/sizeof(arr[0]);
+    sort(arr, arr+l);
+
+    cout<<arr[l-1];
 	return 0;
 }
