@@ -2,7 +2,6 @@
 #include <vector>
 #include <map>
  
-
 using namespace std;
  //unsolved
 int main() {
@@ -13,12 +12,17 @@ int main() {
 
         int n;
         cin>>n;
-        int s[n];
-        int e[n];
+        int x, y, ps, pe, w;
         for(int i=0; i<n; i++){
-            cin>>s[i]>>e[i];
+            cin>>x>>y;
+            if(i==0){
+                ps=x; pe=y; w=x;
+            }else{
+                if(x>=ps && y>=pe) w=-1;
+            }
         }
-        cout<<s[0]<<" "<<e[0]<<endl;
+
+        cout<<w<<endl;
     }
     
     return 0;
