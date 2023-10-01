@@ -1,7 +1,12 @@
 #include <iostream>
-#include <cmath>
+
 using namespace std;
-int countDivisibleBy3(int N) {
+
+int main() {
+    // Read N from input
+    int N;
+    cin >> N;
+
     int count = 0;
     int currentNumber = 0;
 
@@ -12,15 +17,8 @@ int countDivisibleBy3(int N) {
         }
     }
 
-    return count;
-}
-
-int main() {
-    int N;
-    cin >> N;
-
-    int result = countDivisibleBy3(N);
-    cout << result << endl;
+    // Print the count of numbers divisible by 3
+    cout << count << endl;
 
     return 0;
 }
