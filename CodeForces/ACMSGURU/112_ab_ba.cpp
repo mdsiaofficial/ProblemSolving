@@ -1,14 +1,14 @@
 #include <iostream>
-#include <vector>
-#include <map>
 #include <cmath>
-using namespace std;
-// unsolved
+// solved the problem but not accepted with this code... i got accepted with the python code.
 int main() {
-    double a,b;
-    cin>>a>>b;
+    int a, b;
+    std::cin >> a >> b;
 
-    double f = pow(a,b)-pow(b,a);
-    cout<<f<<endl;
+    long long pa = pow(a, b);
+    long long pb = pow(b, a);
+
+    std::cout << pa - pb << std::endl;
+
     return 0;
 }
