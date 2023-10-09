@@ -17,7 +17,7 @@ int main() {
             cout << "1 2 " << n - 3 << endl;
         } else {
             cout << "YES" << endl;
-            cout << "1 1 " << n - 2 << endl;
+            cout << "1 2 " << n - 3 << endl;
         }
     }
     
