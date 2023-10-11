@@ -19,7 +19,7 @@ int fibo (int n){
 ll caller=1,callee=0;
 pair<ll, ll>findCallerAndCallee(ll n, ll p, ll k, ll caller){
     if(n<p){
-        return {-9223372036854775808, -9223372036854775808};
+        return {LLONG_MIN, LLONG_MIN};
     }
 
     if(k==1){
@@ -28,7 +28,7 @@ pair<ll, ll>findCallerAndCallee(ll n, ll p, ll k, ll caller){
 
     ll remain_Call = 0;
     for(ll i=1; i<=p; i++){
-        pair<ll, ll>callsinI = findCallee(n-i, p, k-remain_Call, caller);
+        pair<ll, ll>callsinI = findCallerAndCallee(n-i, p, k-remain_Call, caller);
         remain_Call = remain_Call + callsinI.first;
 
         if(k<=remain_Call){
@@ -71,7 +71,7 @@ int main(){
         cin>>n>>p>>k;
         pair<ll, ll>res=findCallerAndCallee(n,p,k,1);
 
-        if(res.first == -9223372036854775808){
+        if(res.first == LLONG_MIN){
             cout<<"Case "<<i<<": "<<res.first<<" "<<res.second<<endl;
         }
     }
