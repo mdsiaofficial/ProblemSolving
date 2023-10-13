@@ -21,24 +21,17 @@ int main() {
         cin >> strengths[i];
     }
 
+    int min_strength = strengths[0];
+    int max_strength = strengths[0];
+
     int count = 0;
 
-    for (int i = 0; i < n; ++i) {
-        bool hasLess = false;
-        bool hasGreater = false;
-
-        for (int j = 0; j < n; ++j) {
-            if (i != j) {
-                if (strengths[j] < strengths[i]) {
-                    hasLess = true;
-                }
-                if (strengths[j] > strengths[i]) {
-                    hasGreater = true;
-                }
-            }
-        }
-
-        if (hasLess && hasGreater) {
+    for (int i = 1; i < n; ++i) {
+        if (strengths[i] < min_strength) {
+            min_strength = strengths[i];
+        } else if (strengths[i] > max_strength) {
+            max_strength = strengths[i];
+        } else {
             count++;
         }
     }
