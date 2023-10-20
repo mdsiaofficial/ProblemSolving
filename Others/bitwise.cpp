@@ -4,6 +4,7 @@
 #include <cmath>
 #include <string>
 
+#define ell cout<<endl
 #define el endl
 #define ll long long
 #define pi 3.14159
@@ -54,7 +55,8 @@ int main()
         cout<<"x && y is false"<<el;
     }
 
-
+    ell;
+    ell;
 
     // Bitwise OR (|) operator.
 
@@ -76,7 +78,7 @@ int main()
         cout<<"x || y is false"<<el;
     }
 
-
+    ell; ell;
 
     // Bitwise Left Shift (<<) operator.
 
@@ -89,7 +91,7 @@ int main()
     // 5 << 3 means , 5 * 2^3 = 40
     cout<<"Left shift: u << 3 = "<<(u<<3)<<el;
 
-    
+    ell;ell;
 
     // Bitwise Right Shift (<<) operator.
     
@@ -103,5 +105,30 @@ int main()
     // 5 << 3 means , 5 / 2^3 = 0
 
     cout<<"Right shift: p >> 3 = "<<(p>>3)<<el;
+
+    ell;ell;
+
+
+    // Bitwise XOR (^) operator:
+
+    int a=6, b=5;
+    cout<< a <<" "<< b <<el;
+    a = a^b;
+    cout<< a <<" "<< b <<el;
+    b = a^b;
+    cout<< a <<" "<< b <<el;
+    a = a^b;
+    cout<< a <<" "<< b <<el;
+
+    ell; ell;
+
+
+    // Bitwise NOT (~) operator:
+
+    int g = 22;
+    int h = ~g;
+    cout<< ~g <<el;
+
+    ell;ell;
 }
 
