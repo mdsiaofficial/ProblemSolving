@@ -36,7 +36,7 @@ int main()
     // bitwise operator
     // x=1(0000 0001)
     // y=2(0000 0010)
-    //1&2 = 0(0000 0000) bitwise and operatorP
+    //1&2 = 0(0000 0000) bitwise and operator
 
     // logical operator
     // on the other hand
@@ -57,12 +57,12 @@ int main()
 
 
     // Bitwise OR (|) operator.
+
     x=6, y=4; 
     // bitwise operator
     // x=6(0000 0110)
     // y=4(0000 0100)
     //6|4 = 6(0000 0110) bitwise or operatorP
-
     
     if(x|y){
         cout<<"x | y is true"<<el;
@@ -77,5 +77,31 @@ int main()
     }
 
 
+
+    // Bitwise Left Shift (<<) operator.
+
+    char u= 5; // 5 = 0000 0101
+                                // 5 = 0 0 0 0 0 1 0 1
+                                //     ! ! ! ! ! ! ! !  
+    // when u<<1 then ->               X 0 0 0 0 1 0 1 0 (here last trailing position    
+                                                        //filled with zero)
+    // Left shift = First Operand * 2^Second Operand
+    // 5 << 3 means , 5 * 2^3 = 40
+    cout<<"Left shift: u << 3 = "<<(u<<3)<<el;
+
+    
+
+    // Bitwise Right Shift (<<) operator.
+    
+    char p= 5; // 5 = 0000 0101
+                                // 5 = 0 0 0 0 0 1 0 1
+                                //     ! ! ! ! ! ! ! !  
+    // when p<<1 then ->             0 0 0 0 0 0 1 0 x (here first leading position    
+                                                    //      filled with zero)
+
+    // Right shift = First Operand / 2^Second Operand
+    // 5 << 3 means , 5 / 2^3 = 0
+
+    cout<<"Right shift: p >> 3 = "<<(p>>3)<<el;
 }
 
