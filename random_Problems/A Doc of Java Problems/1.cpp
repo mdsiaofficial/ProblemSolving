@@ -17,31 +17,28 @@ using namespace std;
 
 
 int main() {
-    
-    int rungame=1;
-    int a;
-    int avrg=0, product=1;
-    int c=0;
-    while (rungame)
-    {
-        auto q;
-        cout<<"Input 'q' to quit the game.\nYou can continue with number:";
-        cin>>q;
-        if(q=='q'){
+    int num, count = 0;
+    long long product = 1;
+    double sum = 0.0;
+
+    while (true) {
+        cout << "Enter an integer (press 'q' to quit): ";
+        if (!(cin >> num)) {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
             break;
-            rungame=0;
-        }else{
-            a=q;
         }
-
-        
-        c++;
-        avrg=avrg+a;
-        product=product*a;
-
+        sum += num;
+        product *= num;
+        count++;
     }
-    cout<<"Average: "<<avrg/c<<endl;
-    cout<<"Product: "<<product<<endl;
+
+    if (count > 0) {
+        cout << "Average: " << sum / count << endl;
+        cout << "Product: " << product << endl;
+    } else {
+        cout << "No numbers were entered." << endl;
+    }
 
     return 0;
 }
