@@ -21,14 +21,11 @@ int main(){
 	int n, b;
 	int a[110];
 	cin >> n >> b;
-	for(int i = 0; i < n; i++){
-        cin >> a[i];
-    }
 
 	int x = 0, s = 0;
-
 	for(int i = 0; i < n; i++){
-        x = max(x, a[i]);
+        cin >> a[i];
+		x = max(x, a[i]);
     }
 
 	for(int i = 0; i < n; i++){
