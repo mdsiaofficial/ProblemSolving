@@ -16,16 +16,31 @@
 #define s(n) setprecision(int(n))
 using namespace std;
 
-class Pereson{
+class Person{
 
     private:
         string first;
         string last;
 
     public:
-        void setName(string f, string l){
+
+        Person(string fff, string lll): first(fff), last(lll){}
+
+        Person() = default;
+
+        void setNameFirst(string f){
             this->first = f;
+            
+        }
+
+        void setNameLast(string l){
+            
             this->last = l;
+        }
+
+        void setName(string f, string l){
+            this->first=f;
+            this->last=l;
         }
 
         string getName(){
@@ -37,19 +52,40 @@ class Pereson{
         }
 };
 
+class Employee: public Person{
+    string department;
+    public:
+        Employee(string fiName, string laName, string dept):Person(fiName, laName), department(dept){}
+
+        string getDept(string dept){
+            return dept;
+        }
+
+        void setDept(string dept){
+            this->department=dept;
+        }
+
+        void printInfo(){
+            // cout<<"First Name: "<<first<<endl;
+            cout<<"Name: "<< getName() <<endl;
+            cout<<"Department: "<<department<<endl;
+        }
+};
+
 int main() {
 
     // string firstName = "Shoriful";
     // string lastName = "Ashiq";
 
-    Pereson p1;
+    Person p1("Shoriful", "New");
 
     // p1.first = "Shoriful";
     // p1.last = "Ashiq";
-    p1.setName("Shoriful", "Ashiq");
-
+    // p1.setNameFirst("Shoriful");
+    // p1.setNameLast("Ashiq");
+    // cout<<p1.getName();
     p1.printFullName();
-    cout<<p1.getName()<<endl;
+    // cout<<p1.getName()<<endl;
 
 
     /* 
@@ -65,14 +101,27 @@ int main() {
         encapsulation - granting access to private data only through controlled public interface
 
         inheritance - we can create derived classes that inherit properties from there parent class
+            Parent Class -> Child Class
 
         polymorphism - we can create multiple different objects as their base object type
      */
 
-    Pereson p2;
+    // Person p2;
     // p2.first = "Anika";
     // p2.last = "Jannat";
-    p2.printFullName();
+    // p2.printFullName();
 
+    // Employee e;
+    // e.setName("Panku", "Abul"); // Assuming setName is not accessible or not a member of Employee
+    // e.printFullName(); // Assuming printFullName is not accessible or not a member of Employee
+    // Instead, we can directly set the names if the members are public in the Person class
+    // or use the constructor if available and accessible in the Employee class.
+    // If the members are private and there is no public method to set them, 
+    // then we need to add such methods in the Employee class or in the Person class.
+
+    
+
+    Employee e("Panku", "Abul", "Nantu");
+    e.printInfo();
     return 0;
 }
