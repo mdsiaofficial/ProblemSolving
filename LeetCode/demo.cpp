@@ -66,9 +66,10 @@ class Employee: public Person{
         }
 
         void printInfo(){
-            // cout<<"First Name: "<<first<<endl;
-            cout<<"Name: "<< getName() <<endl;
-            cout<<"Department: "<<department<<endl;
+            cout<<"First Name: "<<first<<endl;
+            cout<<"Last Name: "<<last<<endl;
+            // cout<<"Name: "<< getName() <<endl;
+            // cout<<"Department: "<<department<<endl;
         }
 };
 
