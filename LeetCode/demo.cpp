@@ -24,8 +24,18 @@ class Person{
 
     public:
 
-        Person(string fff, string lll): first(fff), last(lll){}
+        // here ct1 and ct2 is the same. cause they work same...just 
 
+        // ID: ct1
+        // Person(string fff, string lll): first(fff), last(lll){}
+/* 
+        // ID: ct2
+        Person{string fff2, string fff2}{
+            this->first = fff2;
+            this->last = lll2;
+        }
+
+ */
         Person() = default;
 
         void setNameFirst(string f){
@@ -55,23 +65,29 @@ class Person{
 class Employee: public Person{
     string department;
     public:
-        Employee(string fiName, string laName, string dept):Person(fiName, laName), department(dept){}
+    // Employee(string fiName, string laName, string dept):Person(fiName, laName), department(dept){}
 
-        string getDept(string dept){
-            return dept;
-        }
+    string getDept(string dept){
+        return dept;
+    }
 
-        void setDept(string dept){
-            this->department=dept;
-        }
+    void setDept(string dept){
+        this->department=dept;
+    }
 
-        void printInfo(){
-            cout<<"First Name: "<<first<<endl;
-            cout<<"Last Name: "<<last<<endl;
-            // cout<<"Name: "<< getName() <<endl;
-            // cout<<"Department: "<<department<<endl;
-        }
+    void printInfo(){
+        cout<<"First Name: "<<first<<endl;
+        cout<<"Last Name: "<<last<<endl;
+        // cout<<"Name: "<< getName() <<endl;
+        // cout<<"Department: "<<department<<endl;
+    }
 };
+
+class SalaryList: Person{
+
+}
+
+
 
 int main() {
 
@@ -85,7 +101,7 @@ int main() {
     // p1.setNameFirst("Shoriful");
     // p1.setNameLast("Ashiq");
     // cout<<p1.getName();
-    p1.printFullName();
+    // p1.printFullName();
     // cout<<p1.getName()<<endl;
 
 
@@ -96,6 +112,9 @@ int main() {
         instantiating - creating the object from a class
         data members - class variables
         methods - functions
+        parent class(base class) - inherited from
+        child class(derived class) - does the inherite
+
 
         abstraction - a concept where you make something easy by hiding the complicated stuff
 
@@ -106,6 +125,8 @@ int main() {
 
         polymorphism - we can create multiple different objects as their base object type
      */
+
+
 
     // Person p2;
     // p2.first = "Anika";
@@ -122,7 +143,10 @@ int main() {
 
     
 
-    Employee e("Panku", "Abul", "Nantu");
-    e.printInfo();
+    // Employee e("Panku", "Abul", "Nantu");
+    Employee em;
+    // e.printInfo();
+    em.setName("Ashiq", "Chester");
+    em.printFullName();
     return 0;
 }

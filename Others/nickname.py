@@ -9,5 +9,3 @@ fs2=random.choice(secondL)
 fs=fs1+fs2
 print("Your name is: ")
 print(fs)
-print("")
-print("")
