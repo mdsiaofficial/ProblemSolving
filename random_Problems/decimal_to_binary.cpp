@@ -41,15 +41,15 @@ string binary(int n){
 
 int main()
 {
-    cout<<binary(7);
+    // cout<<binary(15);
     
-/* 
+
     int d =1;
-    for(int i=0; i<=30; i++){
+    for(int i=0; i<=100; i++){
         cout<<d<<"  "<<binary(d)<<nl;
         d++;
     }
- */
+
 
     return 0;
 }
