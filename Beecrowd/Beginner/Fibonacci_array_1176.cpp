@@ -16,6 +16,20 @@ void fibo(ull n){
         s=nt;
     }
 }
+
+void fibo_Recursion(ull n){
+    ull f=0;
+    ull s=1;
+    fibos.push_back(f);
+    fibos.push_back(s);
+    while (n--)
+    {
+        ull nt=f+s;
+        fibos.push_back(nt);
+        f=s;
+        s=nt;
+    }
+}
 int main()
 {
     unsigned long long t;
