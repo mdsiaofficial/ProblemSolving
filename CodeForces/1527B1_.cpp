@@ -15,9 +15,11 @@
 #define s(n) setprecision(int(n))
 using namespace std;
 
-int main(int argc, char *argv[])
+int main()
 {
-
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int test;
     cin>>test;
     while(test--){

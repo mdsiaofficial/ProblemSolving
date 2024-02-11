@@ -17,20 +17,9 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-/* 
-    int t;
-    cin >> t;
-    while (t--)
-    {
-        int n;
-        cin >> n;
-        int k = 1;
-        while (k <= n)
-            k <<= 1;
-        cout << (k >> 1) - 1 << '\n';
-    }
- */
-
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
     int test;
     cin>>test;
     while(test--){
