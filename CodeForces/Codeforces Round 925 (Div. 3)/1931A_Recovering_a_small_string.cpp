@@ -16,19 +16,16 @@
 using namespace std;
 
 string smallestEncodedWord(int n) {
-    // The alphabet has 26 letters
-    int alphabetSize = 26;
-    
-    // Determine the positions of each letter in the word
-    int pos1 = (n - 1) / (alphabetSize * alphabetSize);
-    int pos2 = ((n - 1) / alphabetSize) % alphabetSize;
-    int pos3 = (n - 1) % alphabetSize;
+    // Convert the encoded number into three letters
+    char first = 'a' + (n - 1) / 676; // 676 = 26 * 26
+    char second = 'a' + ((n - 1) % 676) / 26;
+    char third = 'a' + ((n - 1) % 26);
 
-    // Construct the word using the positions of the letters
+    // Construct the word using the letters
     string word = "";
-    word += ('a' + pos1);
-    word += ('a' + pos2);
-    word += ('a' + pos3);
+    word += first;
+    word += second;
+    word += third;
 
     return word;
 }
