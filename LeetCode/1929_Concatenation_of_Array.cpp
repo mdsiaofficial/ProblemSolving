@@ -39,6 +39,12 @@ public:
 
 int main() {
     Solution soln;
+    
+    vector<int> nums = {1,2,3,4,5};
+    vector<int> ans = soln.getConcatenation(nums);
+    for (int i = 0; i < ans.size(); i++) {
+        cout << ans[i] << " ";
+    }
 
     return 0;
 }
