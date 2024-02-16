@@ -31,7 +31,9 @@ string binary(int n){
 
     // cout<<"64 bit binary: "<<bitset<64>(n)<<nl;
     // cout<<" "<<typeid(bitset<64>(n)).name()<<nl;   
+    // cout<<"only usable Binary: "<<bitset<64>(n).to_string()<<nl;
     // cout<<"only usable Binary: "<<bitset<64>(n).to_string().substr(64-x-1)<<nl;
+    // cout<<"only usable Binary: "<<binaryNumber.to_string()<<nl;
     // cout<<"only usable Binary: "<<binaryNumber.to_string().substr(64-x-1)<<nl;
     // cout<<" "<<typeid(bitset<64>(n).to_string().substr(64-x-1)).name()<<nl;
 
@@ -41,14 +43,14 @@ string binary(int n){
 
 int main()
 {
-    // cout<<binary(15);
+    cout<<binary(15);
     
 
-    int d =1;
-    for(int i=0; i<=100; i++){
-        cout<<d<<"  "<<binary(d)<<nl;
-        d++;
-    }
+    // int d =1;
+    // for(int i=0; i<=100; i++){
+    //     cout<<d<<"  "<<binary(d)<<nl;
+    //     d++;
+    // }
 
 
     return 0;
