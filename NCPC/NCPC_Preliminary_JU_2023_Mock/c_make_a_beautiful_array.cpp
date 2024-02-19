@@ -96,14 +96,32 @@ public:
 };
 
 int main() {
-    Solution soln;
-
-    string a = "101000001001001101100100000101011110110110011011101111111111000111111111111110001111";
-    string b = "1101010010111011100011111001100010101000011010111010100110101101101110101001101011011";
-    // cout<<soln.addBinary__("11", "1");
-    cout<<soln.addBinary__(a, b);
-    // cout<<nl<<a.length();
+    ios::sync_with_stdio(false), cin.tie(0), cout.tie(0);
+    
+    int t;
+    cin >> t;
+    for (int i = 1; i <= t; i++) {
+        int n;
+        cin >> n;
+        vector<int> a(n);
+        for (int j = 0; j < n; j++) {
+            cin >> a[j];
+        }
+        int max_sum = a[0];
+        int current_sum = a[0];
+        int moves = 0;
+        for (int j = 1; j < n; j++) {
+            if (current_sum < 0) {
+                current_sum = a[j];
+                moves++;
+            } else {
+                current_sum += a[j];
+            }
+            max_sum = max(max_sum, current_sum);
+        }
+        cout << "Case " << i << ": " << max_sum << " " << moves << endl;
+    }
     return 0;
 }
-
+       
 
