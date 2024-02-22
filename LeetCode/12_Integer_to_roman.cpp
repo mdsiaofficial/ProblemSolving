@@ -105,9 +105,10 @@ int main(){
     fastio;
 
     Solution s;
-    cout<<s.romanToInt("MCMXCIV");
+    cout<<s.romanToInt("XI");
     cout<<nl;
-    cout<<s.intToRoman(10);
+    cout<<s.intToRoman(11);
 
+    
     return 0;
 }
