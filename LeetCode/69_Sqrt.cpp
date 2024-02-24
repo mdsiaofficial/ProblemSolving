@@ -34,6 +34,14 @@ public:
         // return (r);
         return floor(r);
     }
+
+    long long calc(b, p){
+        if(p==0) return 1;
+
+        ans = b;
+        p=p/2;
+        return (p);
+    }
 };
 
 int main() {
