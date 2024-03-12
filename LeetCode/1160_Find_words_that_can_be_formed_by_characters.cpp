@@ -87,17 +87,14 @@ public:
                     f = false;
                     break;
                 }
-                // update the result:
-
+                
             }
+            // update the result:
 
             if(f) result += w.size();
         }
         return result;
     }
-
-    
-
 };
 
 
