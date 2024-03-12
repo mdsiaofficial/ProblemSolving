@@ -36,11 +36,14 @@ int main() {
         int balloons = n;
 
         set<char>unq;
+        /* 
         for(char c:s){
             unq.insert(c);
         }
+         */
+        unq.insert(s);
         balloons +=unq.size();
-        /* code */
+        
         cout<<balloons<<nl;
     }
     
