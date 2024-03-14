@@ -22,9 +22,9 @@ using namespace std;
 
 // solved //
 
-std::vector<int> decoder(std::vector<int> current, int n, std::vector<std::pair<int, std::string>> move) {
-    std::vector<int> ans;
-    std::vector<int> arr = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+vector<int> decoder(vector<int> current, int n, vector<pair<int, string>> move) {
+    vector<int> ans;
+    vector<int> arr = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
     for (int i = 0; i < n; i++) {
         int up = 0, down = 0;
@@ -44,30 +44,30 @@ std::vector<int> decoder(std::vector<int> current, int n, std::vector<std::pair<
 
 int main() {
     int t;
-    std::cin >> t;
+    cin >> t;
 
     for (int _ = 0; _ < t; _++) {
         int n;
-        std::cin >> n;
+        cin >> n;
 
-        std::vector<int> current(n);
+        vector<int> current(n);
         for (int i = 0; i < n; i++) {
-            std::cin >> current[i];
+            cin >> current[i];
         }
 
-        std::vector<std::pair<int, std::string>> move(n);
+        vector<pair<int, string>> move(n);
         for (int i = 0; i < n; i++) {
             int x;
-            std::string y;
-            std::cin >> x >> y;
+            string y;
+            cin >> x >> y;
             move[i] = {x, y};
         }
 
-        std::vector<int> result = decoder(current, n, move);
+        vector<int> result = decoder(current, n, move);
         for (int x : result) {
-            std::cout << x << " ";
+            cout << x << " ";
         }
-        std::cout << std::endl;
+        cout << endl;
     }
 
     return 0;
