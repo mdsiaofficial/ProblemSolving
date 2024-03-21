@@ -52,6 +52,16 @@ using namespace std;
 int main(){
     fastio;
 
+    int n;
+    cin >> n;
+    int f[n+1];
+    for (int i = 1; i <= n; i++) cin >> f[i];
+    for (int i = 1; i <= n; i++) {
+        if (i == f[f[f[i]]]) {
+            YES;
+            return 0;
+        }
+    }NO;
 
 
     return 0;
