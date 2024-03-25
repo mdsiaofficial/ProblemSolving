@@ -76,33 +76,21 @@ int main(){io;
     
     while (n--)
     {
-        int t;
-        cin>>t;
-        int right=0;
-        int left=0;
-        int c=0;
-
-        while (t){
-            if(c<3){
-                right += t%10;
-                t/=10;
-                c++;
-                cout<<right<<nl;
-            }
-
-            newl;
-            
-            if(c<6){
-                left += t%10;
-                t/=10;
-                c++;
-            }
-
-            if(c>5){
-                break;
-            }
+        string s;
+        cin>>s;
+        int sum = 0;
+        for(int i = 0; i<3; i++){
+            sum+=s[i] - '0';
         }
-        cout<<left<<" "<<right<<nl;
+        for(int i = 3; i<6; i++){
+            sum-=s[i] - '0';
+        }
+
+        if(sum==0){
+            YES;
+        }else{
+            NO;
+        }
         
     }
     
