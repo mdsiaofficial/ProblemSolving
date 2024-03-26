@@ -71,6 +71,41 @@ public:
 int main(){io;  
 
 
+    int t;
+    cin>>t;
+    while (t--)
+    {
+        int n, count = 0;
+        cin>>n;
+        if(n%10!=0){
+            cout<<n%10<<" ";
+            count++;
+        }
+        int x = n%10;
+        n=n-x;
+        if(n%100!=0){
+            cout<<n%100<<" ";
+            count++;
+        }
+        x=n%100;
+        n=n-x;
+        if(n%1000!=0){
+            cout<<n%1000<<" ";
+            count++;
+        }
+        x=n%1000;
+        n=n-x;
+        if(n%10000!=0){
+            cout<<n%10000<<" ";
+            count++;
+        }
+        if(n>=10000 && n%10000==0){
+            cout<<n<<" ";
+            count++;
+        }
+
+        cout<<count<<nl;
+    }
     
     
 
