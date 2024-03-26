@@ -68,43 +68,56 @@ public:
     }
 };
 
-int main(){io;  
+int main(){
+    // io;  
 
 
     int t;
     cin>>t;
     while (t--)
     {
+        vector<int>numbers;
         int n, count = 0;
         cin>>n;
         if(n%10!=0){
-            cout<<n%10<<" ";
-            count++;
+            // cout<<n%10<<" ";
+            // count++;
+            numbers.push_back(n%10);
         }
         int x = n%10;
         n=n-x;
         if(n%100!=0){
-            cout<<n%100<<" ";
-            count++;
+            // cout<<n%100<<" ";
+            // count++;
+            numbers.push_back(n%100);
         }
         x=n%100;
         n=n-x;
         if(n%1000!=0){
-            cout<<n%1000<<" ";
-            count++;
+            // cout<<n%1000<<" ";
+            // count++;
+            numbers.push_back(n%1000);
         }
         x=n%1000;
         n=n-x;
         if(n%10000!=0){
-            cout<<n%10000<<" ";
-            count++;
+            // cout<<n%10000<<" ";
+            // count++;
+            numbers.push_back(n%10000);
         }
         if(n>=10000 && n%10000==0){
-            cout<<n<<" ";
-            count++;
+            // cout<<n<<" ";
+            // count++;
+            numbers.push_back(n);
         }
 
-        cout<<count<<nl;
+        // cout<< "Output: ";
+        cout<<numbers.size()<<nl;
+        // cout<<count<<nl;
+        for(int a:numbers){
+            cout<<a<<" ";
+        }
+        cout<<nl;
     }
     
     
