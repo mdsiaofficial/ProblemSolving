@@ -19,35 +19,51 @@ using namespace std;
 
 class Solution {
 public:
-    double mySqrt(double x) {
-        double r = x;
-        double precision = 10e-10;
-        ll t=20;
-        // while (abs(x - r * r) > precision) {
-        //     r = (r + x / r) / 2;
-        // }
-        
-        while (t--) {
-            r = (r + x / r) / 2;
+    
+    int mySqrt(int x) {
+        long long start = 0;
+        long long end = x;
+        long long key = 0;
+        while (start<=end)
+        {
+            long long mid = start + (end-start)/2;
+            cout<<"mid: "<<mid<<endl<<"star: "<<start<<endl<<"end: "<<end<<endl<<endl;
+
+            if(mid*mid<=x){
+                key = mid;
+                start = mid+1;
+            }else{
+                end = mid-1;
+            }
         }
-        
-        // return (r);
-        return floor(r);
+        return key;
     }
 
-    long long calc(b, p){
-        if(p==0) return 1;
 
-        ans = b;
-        p=p/2;
-        return (p);
+    long long Sqrt_Linear_Aprroach(long long x){
+        int y=0;
+        while (y*y<=x){
+            y++;
+        }
+        return y-1;
+        
+    }
+    // with built in function
+    long long Sqrt(long long x){
+        
+        int y = sqrt(x);
+        return y;
     }
 };
 
 int main() {
     Solution soln;
 
-    cout<<soln.mySqrt(8);
+    cout<<soln.mySqrt(925);
+    // long x = 2.23;
+    // cout<<x;
+    
+
 
     return 0;
 }
