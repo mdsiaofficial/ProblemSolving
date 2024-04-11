@@ -33,20 +33,22 @@ using namespace std;
 class Solution {
 public:
     
+
+    // using iteration
     ListNode* merge(ListNode* list1, ListNode* list2){
         if(list1 == NULL) return list2;
         if(list2 == NULL) return list1;
 
-        ListNode*result = new ListNode(-1);
-        ListNode*Tail = result;
+        ListNode*result;
+        ListNode*tail;
 
         if(list1->val <= list2->val){
             result = list1;
-            Tail = list1;
+            tail = list1;
             list1 = list1->next;
         }else{
             result = list2;
-            Tail = list2;
+            tail = list2;
             list2 = list2->next;
         }
 
@@ -68,9 +70,9 @@ public:
         if(list1 == NULL) tail->next = list2;
         else tail->next = list1;
 
-        return result->next;
-        
+        return result;
     }
+
     // using recursion
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
         if(list1 == NULL) return list2;
