@@ -17,63 +17,56 @@
 using namespace std;
 
 
-// time limit exceeded
+// solved
 
 class Solution {
 public:
     vector<int> minimumTime(int n, vector<vector<int>>& edges, vector<int>& disappear) {
-        // Step 1: Create Graph Representation
-        vector<vector<pair<int, int>>> adjacencyList(n);
-        for (const auto& edge : edges) {
-            int u = edge[0], v = edge[1], time = edge[2];
-            adjacencyList[u].push_back({v, time});
-            adjacencyList[v].push_back({u, time});
+        // Step 1: Construct adjacency list
+        unordered_map<int, vector<pair<int,int>>> adj;
+        for (auto& edge : edges) {
+            int u = edge[0];
+            int v = edge[1];
+            int w = edge[2];
+            adj[u].push_back({v, w});
+            adj[v].push_back({u, w});
         }
 
-        // Step 2: Initialize Min Heap
-        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> minHeap;
+        // Step 2: Initialize priority queue
+        priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
 
-        // Step 3: Dijkstra's Algorithm with Priority Queue and Adjacency List
-        vector<int> minTime(n, numeric_limits<int>::max());
-        minTime[0] = 0;
-        minHeap.push({0, 0}); // (time, node)
+        // Step 3: Initialize answer array and visited array
+        vector<int> ans(n, -1);
+        vector<bool> visited(n, false);
 
-        while (!minHeap.empty()) {
-            int currentTime = minHeap.top().first;
-            int currentNode = minHeap.top().second;
-            minHeap.pop();
+        // Step 4: Start from node 0
+        pq.push({0, 0});
+        ans[0] = 0;
 
-            // If the current node has already disappeared, skip it
-            if (disappear[currentNode] <= currentTime) {
-                continue;
-            }
+        // Step 5: Dijkstra's algorithm
+        while (!pq.empty()) {
+            auto topPair = pq.top();
+            pq.pop();
 
-            // Traverse neighbors and update minimum times
-            for (const auto& neighbor : adjacencyList[currentNode]) {
-                int neighborNode = neighbor.first;
-                int edgeTime = neighbor.second;
-                int updatedTime = currentTime + edgeTime;
+            int currWt = topPair.first;
+            int currNode = topPair.second;
 
-                // If the neighbor node is not reachable or has disappeared, skip it
-                if (updatedTime < minTime[neighborNode] && disappear[neighborNode] > updatedTime) {
-                    minTime[neighborNode] = updatedTime;
-                    minHeap.push({updatedTime, neighborNode});
+            // Skip if already visited with a lower weight
+            if (visited[currNode]) continue;
+            visited[currNode] = true;
+
+            // Explore neighbors
+            for (auto& nbr : adj[currNode]) {
+                int newWt = currWt + nbr.second;
+                // Update minimum time to reach node if it's not disappeared
+                if (newWt < disappear[nbr.first] && (ans[nbr.first] == -1 || newWt < ans[nbr.first])) {
+                    pq.push({newWt, nbr.first});
+                    ans[nbr.first] = newWt;
                 }
             }
         }
 
-        // Step 4: Construct the Output Array
-        vector<int> answer;
-        for (int i = 0; i < n; ++i) {
-            if (minTime[i] == numeric_limits<int>::max() || disappear[i] <= minTime[i]) {
-                answer.push_back(-1);
-            } else {
-                answer.push_back(minTime[i]);
-            }
-        }
-
-        // Step 5: Return the Output Array
-        return answer;
+        return ans;
     }
 };
 
@@ -81,7 +74,7 @@ int main() {
     // Example usage
     int n = 3;
     vector<vector<int>> edges = {{0, 1, 2}, {1, 2, 1}, {0, 2, 4}};
-    vector<int> disappear = {1, 3, 5};
+    vector<int> disappear = {1, 1, 5};
 
     Solution solution;
     vector<int> answer = solution.minimumTime(n, edges, disappear);
