@@ -26,24 +26,40 @@ public:
     vector<int> resultArray(vector<int>& nums) {
         vector<int>arr1;
         vector<int>arr2;
-        for(int i=0; i<nums.size()-1; i++){
-            if(i%2==0) arr1.push_back(nums[i]);
+        arr1.push_back(nums[0]);
+        arr2.push_back(nums[1]);
+
+
+        for(int i=2; i<nums.size(); i++){
+            // if(i%2==0) arr1.push_back(nums[i]);
+            // else arr2.push_back(nums[i]);
+
+            int s1 = arr1.size();
+            int s2 = arr2.size();
+
+            if(arr1[s1-1] > arr2[s2-1]) arr1.push_back(nums[i]);
             else arr2.push_back(nums[i]);
         }
 
-        int s1 = arr1.size();
-        int s2 = arr2.size();
+        
         // cout<<arr1[s1-1]<<" "<<arr2[s2-1]<<" "<<nums[nums.size()-1]<<endl;
 
-        if(arr1[s1-1] > arr2[s2-1]) arr1.push_back(nums[nums.size()-1]);
-        else arr2.push_back(nums[nums.size()-1]);
 
-
-        vector<int>result(nums.size());// initialize result vector without defining its size
+        vector<int>result(nums.size());
+        // initialize result vector without defining its size
         // we define the size of result vector when we copy the elements from arr1 and arr2 to result
         // so we don't need to define its size here in bracket
         std::copy(arr1.begin(),arr1.end(),result.begin());
         std::copy(arr2.begin(),arr2.end(),result.begin()+arr1.size());
+        
+        // vector<int>res;
+        // for(auto i: arr1){
+        //     res.push_back(i);
+        // }
+        // for(auto i: arr2){
+        //     res.push_back(i);
+        // }
+        
         return result;
     }
 };
