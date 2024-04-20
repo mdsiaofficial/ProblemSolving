@@ -70,45 +70,87 @@ public:
 
 
 int main() {
-    Solution s;
+    // Solution s;
 
-    // int t; cin >> t;
 
-    // while(t--){
-    //     int n;string s;cin>>n>>s;
-    //     vector<char>ch;
+    int t;cin >> t;
+    while (t--) {
+        string s;
+        cin >> s;
+        string h = s.substr(0, 2);
+        string m = s.substr(3, 5);
 
-    // }
+        // cout << h;
+        // cout << m;
+        int hh = stoi(h);
+        int mm = stoi(m);
+        string a = " AM";
+        string p = " PM";
 
-    // cout<<s.isHappy(2);
+        string out = "";
+        string h_out = "";
+        string m_out = "";
+        if (hh == 0) {
+            if (mm < 10){
+                // cout << "0" << hh - 12 << ":" << mm << p;
+                // out =h + ":" + "0" + m + p;
+                m_out = "0" + to_string(mm);
+            }
+            else {
+                m_out = m;
+            }
+            h_out = "12";
+            out = h_out + ":" + m_out + a;
+            
+        }else if (hh < 12) {
+            // cout << h << ":" << m << a;
+            out = s + a;
+        }else if (hh > 12) {
+            
+            if (hh - 12 < 10) {
+                // cout << "0" << hh - 12 << ":" << mm << p;
+                // out = "0" + h + ":" + m + p;
+                h_out = "0" + to_string(hh - 12);
+            }
+            else {
+                h_out = to_string(hh - 12);
+            }
+            
+            if (mm < 10) {
+                // cout << "0" << hh - 12 << ":" << mm << p;
+                // out =h + ":" + "0" + m + p;
+                m_out = "0" + to_string(mm);
+            }else {
+                m_out = m;
+            }
 
-    // int t;cin >> t;
-    // while (t--) {
-    //     int n;cin >> n;
-    //     checker(n);
-    // }
+            out = h_out + ":" + m_out + p;
+        }
+        else if(hh==12) {
+            // cout << hh << ":" << mm << p;
+            h_out = h;
+            if (mm < 10){
+                // cout << "0" << hh - 12 << ":" << mm << p;
+                // out =h + ":" + "0" + m + p;
+                m_out = "0" + to_string(mm);
+            }
+            else {
+                m_out = m;
+            }
 
-    // vector<int>capacity = { 5,3,7,6,1,8,2,4 };
-    // vector<int>apple = { 5,3,7,6,1,8,2,4 };
+            out = h_out + ":" + m_out + p;
+        }
 
-    // vector<int>capacity = { 4,3,1,5,2 };
-    // vector<int>apple = { 1,3,2 };
+        cout << out;
+        cout << endl;
+        // cout << hh;
+        
+    }
 
-    vector<int>capacity = { 2,4,2,7 };
-    vector<int>apple = { 5,5,5 };
-
-    // int sum = reduce(apple.rbegin(), apple.rend(), 0); // reduce not working
-    // int sum = accumulate(apple.begin(), apple.end(), 0);
-    // cout << sum << endl;
-
-    // sort(capacity.begin(), capacity.end(), greater<int>());
-    // for (int i : capacity) {
-    //     cout << i << " ";
-    // }
-
-    // cout << s.minimumBoxes(apple, capacity);
-
-    string s; cin >> s;
-
+    // string s = "";
+    // string a = "am";
+    // string p = "pm";
+    // s = a + p;
+    // cout << s;
     return 0;
 } 
