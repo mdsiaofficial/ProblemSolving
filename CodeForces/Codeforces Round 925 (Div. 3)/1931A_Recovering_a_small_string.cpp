@@ -20,19 +20,30 @@ using namespace std;
 
 // unsolved //
 
-string smallestEncodedWord(int n) {
-    // Convert the encoded number into three letters
-    char first = 'a' + (n - 1) / 676; // 676 = 26 * 26
-    char second = 'a' + ((n - 1) % 676) / 26;
-    char third = 'a' + ((n - 1) % 26);
+void smallestEncodedWord(int n) {
+    int size = 26;
+    
+    string last = "zzz";
+    string first;
 
-    // Construct the word using the letters
-    string word = "";
-    word += first;
-    word += second;
-    word += third;
-
-    return word;
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            for (int k = 0; k < size; k++) {
+                // if the sum of the indices of the characters in the alphabet (i.e. a=0, b=1, ..., z=25) is equal to n,
+                // and the sum of these indices plus 3 is also equal to n, then we have found the smallest encoded word
+                // that has length n
+                if (i + j + k + 3 == n && i + j + k >= 0) {
+                    // construct a new string with the characters at position i, j, and k in the alphabet
+                    first += char(i + 'a');
+                    first += char(j + 'a');
+                    first += char(k + 'a');
+                    // update last to be the smallest of the current first and last
+                    last = min(first, last);
+                }
+            }
+        }
+    }
+    cout << last << endl;
 }
 
 int main() {
@@ -44,8 +55,11 @@ int main() {
         cin >> n; // Encoded word
         
         // Output the lexicographically smallest word
-        cout << smallestEncodedWord(n) << endl;
+        // cout << smallestEncodedWord(n) << endl;
+        smallestEncodedWord(n);
     }
-
+    // string s;
+    // s += char(0 + 'a');
+    // cout << s;
     return 0;
 }
