@@ -21,14 +21,14 @@ public:
 
 
     //  recursive
-    // bool isPowerOfTwo(int n) {
-    //     if(n <= 0)
-    //         return false;
-    //     if(n == 1)
-    //         return true;
+    bool isPowerOfTwo(int n) {
+        if(n <= 0)
+            return false;
+        if(n == 1)
+            return true;
         
-    //     return n%2 == 0 && isPowerOfTwo(n/2);
-    // }
+        return n%2 == 0 && isPowerOfTwo(n/2);
+    }
 
 
 
@@ -42,12 +42,12 @@ public:
 
     // gcc compiler builtin function:
     // popcount: it will count the sets in a binary
-    bool isPowerOfTwo(int n) {
-        if(n <= 0)
-            return false;
+    // bool isPowerOfTwo(int n) {
+    //     if(n <= 0)
+    //         return false;
         
-        return __builtin_popcount(n) == 1;
-    }
+    //     return __builtin_popcount(n) == 1;
+    // }
 };
 
 int main() {
