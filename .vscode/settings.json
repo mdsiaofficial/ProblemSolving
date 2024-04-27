@@ -74,7 +74,8 @@
     "charconv": "cpp",
     "optional": "cpp",
     "string_view": "cpp",
-    "math.h": "c"
+    "math.h": "c",
+    "xstring": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled",
   "[python]": {
