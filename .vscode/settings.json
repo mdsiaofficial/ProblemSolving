@@ -75,7 +75,10 @@
     "optional": "cpp",
     "string_view": "cpp",
     "math.h": "c",
-    "xstring": "cpp"
+    "xstring": "cpp",
+    "format": "cpp",
+    "queue": "cpp",
+    "stack": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled",
   "[python]": {
