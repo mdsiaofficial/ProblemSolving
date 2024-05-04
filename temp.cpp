@@ -52,7 +52,12 @@ using namespace std;
 int main(){
     fastio;
 
+    int x = 7;cout<<x<<nl;
+    int &r = x;cout<<r<<nl;
+    r=r+5;cout<<r<<nl<<x<<endl;
+    int *p = &x;cout<<p<<nl;
+    *p=*p+5;cout<<*p<<nl<<x<<endl;
 
-
+    
     return 0;
 }
