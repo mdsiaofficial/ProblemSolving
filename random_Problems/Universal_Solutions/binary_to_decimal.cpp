@@ -33,9 +33,9 @@ unsigned long long decimalNumber(string b){
 
 int main()
 {
-    cout<<decimal("101")<<nl;
+    cout<<decimal("1010011100101101101")<<nl;
 
-    cout<<decimalNumber("101")<<nl;
+    cout<<decimalNumber("1010011100101101101")<<nl;
     
 
 

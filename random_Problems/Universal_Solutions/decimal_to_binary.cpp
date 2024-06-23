@@ -43,7 +43,7 @@ string binary(int n){
 
 int main()
 {
-    cout<<binary(15);
+    cout<<binary(342381);
     
 
     // int d =1;
