@@ -4,18 +4,14 @@ using namespace std;
 
 int main() {
     // Read N from input
-    int N;
+    long long N;
     cin >> N;
 
-    int count = 0;
-    int currentNumber = 0;
+    long long count = 0;
+    long long currentNumber = 0;
 
-    for (int i = 1; i <= N; i++) {
-        currentNumber = currentNumber * 10 + i;
-        if (currentNumber % 3 == 0) {
-            count++;
-        }
-    }
+    count = (N/ 3) * 2;
+    if (N % 3 == 2) count++;
 
     // Print the count of numbers divisible by 3
     cout << count << endl;
