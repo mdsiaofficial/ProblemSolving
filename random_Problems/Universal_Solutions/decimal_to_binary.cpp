@@ -37,15 +37,15 @@ string binary(int n){
     // cout<<"only usable Binary: "<<binaryNumber.to_string().substr(64-x-1)<<nl;
     // cout<<" "<<typeid(bitset<64>(n).to_string().substr(64-x-1)).name()<<nl;
 
+    // return (binaryNumber.to_string().substr(64-x-1));
     return (binaryNumber.to_string().substr(64-x-1));
     
 }
 
 int main()
 {
-    cout<<binary(342381);
+    cout << binary(5);
     
-
     // int d =1;
     // for(int i=0; i<=100; i++){
     //     cout<<d<<"  "<<binary(d)<<nl;
