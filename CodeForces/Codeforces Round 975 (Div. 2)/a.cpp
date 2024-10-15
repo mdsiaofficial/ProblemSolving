@@ -18,45 +18,27 @@ using namespace std;
 
 int main()
 {
-  int t;
+  ll t;
   cin >> t;
 
   while (t--)
   {
-    int n;
+    ll n;
     cin >> n;
 
-    vector<int> a(n);
-    for (int i = 0; i < n; ++i)
-    {
-      cin >> a[i];
+    ll res1 = -1e9, res2 = -1e9;
+    vector<ll> arr(n);
+    for (int i = 0; i < n; i++) {
+      cin >> arr[i];
+      if (i % 2) res1 = max(res1, arr[i]);
+      else res2 = max(res2, arr[i]);
     }
-    int maxValue = 0;
-    int redCount = 0;
-    for (int i = 0; i < n; i += 2)
-    {
-      maxValue = max(maxValue, a[i]);
-      redCount++;
-    }
-
-    if (n > 1)
-    {
-      int tempMaxValue = 0;
-      int tempRedCount = 0;
-      for (int i = 1; i < n; i += 2)
-      {
-        tempMaxValue = max(tempMaxValue, a[i]);
-        tempRedCount++;
-      }
-      if (tempMaxValue + tempRedCount > maxValue + redCount)
-      {
-        maxValue = tempMaxValue;
-        redCount = tempRedCount;
-      }
-    }
-
-    cout << maxValue + redCount << endl;
+    res1 = res1 + (n / 2);
+    res2 = res2 + (n + 1) / 2;
+    ll result = max(res1, res2);
+    cout << result << endl;
   }
+
 
   return 0;
 }
