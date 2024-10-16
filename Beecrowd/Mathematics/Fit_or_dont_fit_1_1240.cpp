@@ -20,23 +20,36 @@ int main(){
     cin>>t;
 
     for(int i=0; i<t; i++){
-        int a,b;
+        ll a,b;
         cin>>a>>b;
-        int c=1;
-        if(a>=b){
-            for(int j=0; j<sizeof(b); j++){
-                if((a%10)==(b%10)){
-                    a=a/10;
-                    b=b/10;
-                }else{
-                    c=0;
-                    break;                    
-                }
-            }
-            if(c==0) cout<<"nao encaixa"<<endl;
-            else cout<<"encaixa"<<endl;
+        // int c=1;
+        // if(a>=b){
+        //     for(int j=0; j<sizeof(b); j++){
+        //         if((a%10)==(b%10)){
+        //             a=a/10;
+        //             b=b/10;
+        //         }else{
+        //             c=0;
+        //             break;                    
+        //         }
+        //     }
+        //     if(c==0) cout<<"nao encaixa"<<endl;
+        //     else cout<<"encaixa"<<endl;
+        // }else{
+        //     cout<<"nao encaixa"<<endl;
+        // }
+        string aa = to_string(a);
+        string bb = to_string(b);
+        int aa_len = aa.length();
+        int bb_len = bb.length();
+        bool flag = false;
+        if(aa_len>=bb_len){
+            string aa_temp = aa.substr(aa_len-bb_len);
+            // cout<<aa_temp;
+            if(aa_temp==bb) cout<<"encaixa"<<endl;
+            else cout << "nao encaixa" << endl;
         }else{
-            cout<<"nao encaixa"<<endl;
+            cout << "nao encaixa" << endl;
         }
         
     }
