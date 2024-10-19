@@ -56,31 +56,42 @@ using namespace std;
 
 class Solution {
 public:
-    void solve() {
-
+  void solve() {
+    int n;cin >> n;
+    ll value = 0;
+    for (int i = 0; i < n;i++) {
+      ll g;cin >> g;
+      if (i % 2 == 0){ 
+        value += g;
+      }
+      else {
+        value -= g;
+      }
     }
+    cout<< value <<nl;
+  }
 };
 
 
 int main() {
-    // ios_base::sync_with_stdio(false); cin.tie(NULL);
-    //* For External input/output
-    // freopen("input.txt", "r", stdin);
-    // freopen("output.txt", "w", stdout);
+  // ios_base::sync_with_stdio(false); cin.tie(NULL);
+  //* For External input/output
+  // freopen("input.txt", "r", stdin);
+  // freopen("output.txt", "w", stdout);
 
-    Solution soln;
+  Solution soln;
 
-    ll t;
-    cin >> t;
+  ll t;
+  cin >> t;
 
-    //* Test case loop
-    for (ll i = 1; i <= t; i++) {
-        // cout<<"Case #"<<i<<": ";
-        // soln.solve();
-    }
+  //* Test case loop
+  for (ll i = 1; i <= t; i++) {
+    // cout<<"Case #"<<i<<": ";
+    soln.solve();
+  }
 
-    //* Single test
-    // soln.solve();
+  //* Single test
+  // soln.solve();
 
-    return 0;
+  return 0;
 }

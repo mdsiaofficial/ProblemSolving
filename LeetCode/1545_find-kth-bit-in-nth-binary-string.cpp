@@ -56,31 +56,61 @@ using namespace std;
 
 class Solution {
 public:
-    void solve() {
-
+  void solve() {
+    int n;cin >> n;
+    ll value = 0;
+    for (int i = 0; i < n;i++) {
+      ll g;cin >> g;
+      if (i % 2 == 0) {
+        value += g;
+      }
+      else {
+        value -= g;
+      }
     }
+    cout << value << nl;
+  }
+  char findKthBit(int n, int k) {
+    string sequence = "0";
+
+    // Generate sequence until we have enough elements or reach nth
+    // iteration
+    for (int i = 1; i < n && k > sequence.length(); ++i) {
+      sequence += '1';
+
+      // Append the inverted and reversed part of the existing sequence
+      string temp = sequence;
+      for (int j = temp.length() - 2; j >= 0; --j) {
+        char invertedBit = (temp[j] == '1') ? '0' : '1';
+        sequence += invertedBit;
+      }
+    }
+
+    // Return the kth bit
+    return sequence[k - 1];
+  }
 };
 
 
 int main() {
-    // ios_base::sync_with_stdio(false); cin.tie(NULL);
-    //* For External input/output
-    // freopen("input.txt", "r", stdin);
-    // freopen("output.txt", "w", stdout);
+  // ios_base::sync_with_stdio(false); cin.tie(NULL);
+  //* For External input/output
+  // freopen("input.txt", "r", stdin);
+  // freopen("output.txt", "w", stdout);
 
-    Solution soln;
+  Solution soln;
 
-    ll t;
-    cin >> t;
+  ll t;
+  cin >> t;
 
-    //* Test case loop
-    for (ll i = 1; i <= t; i++) {
-        // cout<<"Case #"<<i<<": ";
-        // soln.solve();
-    }
-
-    //* Single test
+  //* Test case loop
+  for (ll i = 1; i <= t; i++) {
+    // cout<<"Case #"<<i<<": ";
     // soln.solve();
+  }
 
-    return 0;
+  //* Single test
+  // soln.solve();
+
+  return 0;
 }
