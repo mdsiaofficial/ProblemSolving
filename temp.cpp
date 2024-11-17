@@ -35,7 +35,7 @@
 #define N 200000
 #define pi 3.14159
 
-#define forn(i, n) for (int i = 0; i < int(n); i++)
+#define forn(i, n) for(int i = 0; i < int(n); i++)
 
 #define mod9 90000007
 #define fs(n) fixed<<setprecision(int(n))
