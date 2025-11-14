@@ -6,9 +6,9 @@
 using namespace std;
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
     int t;
     cin >> t;
     int cs = 1;
@@ -22,10 +22,16 @@ int main()
         {
             cin >> v[i];
         }
+        if(n==1){
+            cout << "Case " << cs << ": " << 1 << endl;
+            cs++;
+            continue;
+        }
         for (int i = 0; i < n; i++)
         {
             for (int j = i - 1, k = i + 1; (j >= 0 or k < n); j--, k++)
             {
+            
                 if (j >= 0)
                 {
                     if (v[j] >= v[i])
